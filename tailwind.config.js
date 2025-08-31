@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Open Sans', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
+        sans: ['Helvetica Neue', 'Helvetica', 'Arial Nova', 'Arial', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
       },
     },
   },
