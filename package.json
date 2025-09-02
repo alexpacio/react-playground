@@ -12,7 +12,6 @@
     "lint:fix": "eslint src --ext ts,tsx --fix"
   },
   "dependencies": {
-    "@radix-ui/react-slot": "^1.2.3",
     "@react-three/drei": "^10.7.4",
     "@react-three/fiber": "^9.3.0",
     "@react-three/postprocessing": "^3.0.4",
@@ -24,6 +23,7 @@
     "clsx": "^2.1.1",
     "lucide-react": "^0.542.0",
     "maath": "^0.10.8",
+    "postprocessing": "^6.37.7",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "react-router": "^7.8.2",

@@ -1,7 +1,6 @@
 import React, { useRef, useReducer, useMemo } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { useGLTF, MeshTransmissionMaterial, Environment, Lightformer } from '@react-three/drei';
-import { CuboidCollider, BallCollider, Physics, RigidBody } from '@react-three/rapier';
 import { EffectComposer, N8AO } from '@react-three/postprocessing';
 import { easing } from 'maath';
 import * as THREE from 'three';
@@ -35,15 +34,12 @@ function Scene() {
       <color attach="background" args={['transparent']} />
       <ambientLight intensity={0.4} />
       <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} intensity={1} castShadow />
-      <Physics gravity={[0, 0, 0]}>
-        <Pointer />
-        {connectors.map((props, i) => <Connector key={i} {...props} />)}
-        <Connector position={[10, 10, 5]}>
-          <Model>
-            <MeshTransmissionMaterial clearcoat={1} thickness={0.1} anisotropicBlur={0.1} chromaticAberration={0.1} samples={8} resolution={512} />
-          </Model>
-        </Connector>
-      </Physics>
+      {connectors.map((props, i) => <Connector key={i} index={i} {...props} />)}
+      <Connector position={[10, 10, 5]} index={connectors.length}>
+        <Model>
+          <MeshTransmissionMaterial clearcoat={1} thickness={0.1} anisotropicBlur={0.1} chromaticAberration={0.1} samples={8} resolution={512} />
+        </Model>
+      </Connector>
       <EffectComposer multisampling={8}>
         <N8AO distanceFalloff={1} aoRadius={1} intensity={4} />
       </EffectComposer>
@@ -59,39 +55,31 @@ function Scene() {
   );
 }
 
-function Connector({ position, children, vec = new THREE.Vector3(), r = THREE.MathUtils.randFloatSpread, accent, ...props }: any) {
-  const api = useRef<any>(null);
-  const pos = useMemo(() => position || [r(10), r(10), r(10)], [position, r]);
+function Connector({ position, children, index = 0, accent, ...props }: any) {
+  const ref = useRef<any>(null);
+  const r = THREE.MathUtils.randFloatSpread;
+  const pos = useMemo(() => position || [r(4), r(4), r(4)], [position, r]);
   
-  useFrame((_, delta) => {
-    delta = Math.min(0.1, delta);
-    api.current?.applyImpulse(vec.copy(api.current.translation()).negate().multiplyScalar(0.2));
+  useFrame((state) => {
+    if (!ref.current) return;
+    const time = state.clock.elapsedTime;
+    
+    // Constrained floating animation
+    ref.current.position.y = pos[1] + Math.sin(time + index * 0.5) * 0.2;
+    ref.current.position.x = pos[0] + Math.cos(time * 0.7 + index * 0.3) * 0.15;
+    ref.current.rotation.x += 0.005;
+    ref.current.rotation.y += 0.003;
   });
 
   return (
-    <RigidBody linearDamping={4} angularDamping={1} friction={0.1} position={pos} ref={api} colliders={false}>
-      <CuboidCollider args={[0.38, 1.27, 0.38]} />
-      <CuboidCollider args={[1.27, 0.38, 0.38]} />
-      <CuboidCollider args={[0.38, 0.38, 1.27]} />
+    <group ref={ref} position={pos}>
       {children ? children : <Model {...props} />}
       {accent && <pointLight intensity={4} distance={2.5} color={props.color} />}
-    </RigidBody>
+    </group>
   );
 }
 
-function Pointer({ vec = new THREE.Vector3() }) {
-  const ref = useRef<any>(null);
-  
-  useFrame(({ pointer, viewport }) => {
-    ref.current?.setNextKinematicTranslation(vec.set((pointer.x * viewport.width) / 2, (pointer.y * viewport.height) / 2, 0));
-  });
-
-  return (
-    <RigidBody position={[0, 0, 0]} type="kinematicPosition" colliders={false} ref={ref}>
-      <BallCollider args={[1]} />
-    </RigidBody>
-  );
-}
+// Removed Pointer function - no longer needed without physics
 
 function Model({ children, color = 'white', roughness = 0 }: any) {
   const ref = useRef<any>(null);
@@ -111,7 +99,7 @@ function Model({ children, color = 'white', roughness = 0 }: any) {
 
 export const AnimatedBuilding: React.FC<{ className?: string }> = ({ className = '' }) => {
   return (
-    <div className={`absolute inset-0 w-full h-full pointer-events-none ${className}`}>
+    <div className={`absolute inset-0 w-full h-full pointer-events-none overflow-hidden ${className}`} style={{ clipPath: 'inset(0)' }}>
       <Scene />
     </div>
   );

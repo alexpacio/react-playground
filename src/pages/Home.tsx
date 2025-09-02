@@ -26,7 +26,7 @@ export function Home() {
         {/* Single Column Layout */}
         <div className="grid gap-8 lg:gap-12">
           {/* Consultancy Services */}
-          <div className="bg-slate-950 p-8 border border-border relative overflow-hidden">
+          <div className="bg-white p-8 border border-border relative overflow-hidden">
             <AnimatedBuilding />
             <div className="relative z-10 backdrop-blur-sm bg-white/10 p-6 w-full lg:w-1/2 shadow-lg" style={{ mixBlendMode: 'difference', boxShadow: '0 10px 15px -3px rgba(107, 114, 128, 0.1), 0 4px 6px -2px rgba(107, 114, 128, 0.05)' }}>
               <Terminal className="h-12 w-12 text-white mb-4" />
