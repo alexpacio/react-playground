@@ -1,5 +1,5 @@
 import { Button } from '@/components/ui/button';
-import { Terminal, Sparkles, Menu, X, ChevronDown } from 'lucide-react';
+import { Terminal, Sparkles, Menu, X, ChevronDown, Database } from 'lucide-react';
 import { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 
@@ -98,15 +98,15 @@ export function Header() {
                       <div className="grid gap-3 p-6 lg:grid-cols-[.75fr_1fr]">
                         <div className="row-span-3">
                           <Link
-                            to="/projects/featured"
+                            to="/netter-dsql"
                             className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none transition-colors hover:bg-accent focus:shadow-md"
                           >
-                            <Terminal className="h-6 w-6" />
+                            <Database className="h-6 w-6" />
                             <div className="mb-2 mt-4 text-lg font-medium">
-                              Featured Project
+                              Netter DSQL
                             </div>
                             <p className="text-sm leading-tight text-muted-foreground">
-                              Check out our latest and greatest work.
+                              Beyond Distributed SQL Database
                             </p>
                           </Link>
                         </div>
@@ -179,11 +179,11 @@ export function Header() {
                 <div className="text-sm font-medium text-white py-2">Projects</div>
                 <div className="pl-4 space-y-2">
                   <Link 
-                    to="/projects/featured" 
+                    to="/netter-dsql" 
                     className="block text-sm text-white/80 hover:text-white transition-colors duration-200 py-1"
                     onClick={() => setMobileMenuOpen(false)}
                   >
-                    Featured Project
+                    Netter DSQL
                   </Link>
                   <Link 
                     to="/projects/web" 
