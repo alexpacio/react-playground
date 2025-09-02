@@ -1,6 +1,6 @@
 import { Button } from '@/components/ui/button';
-import { AnimatedBuilding } from '@/components/ui/AnimatedBuilding';
-import { AnimatedCloudNative } from '@/components/ui/AnimatedCloudNative';
+import { ConsultancyTileAnimation } from '@/components/ui/ConsultancyTileAnimation';
+import { ProductsTileAnimation } from '@/components/ui/ProductsTileAnimation';
 import { Terminal, ArrowRight, Sparkles } from 'lucide-react';
 
 export function Home() {
@@ -27,7 +27,7 @@ export function Home() {
         <div className="grid gap-8 lg:gap-12">
           {/* Consultancy Services */}
           <div className="bg-white p-8 border border-border relative overflow-hidden">
-            <AnimatedBuilding />
+            <ConsultancyTileAnimation />
             <div className="relative z-10 backdrop-blur-sm bg-white/10 p-6 w-full lg:w-1/2 shadow-lg" style={{ mixBlendMode: 'difference', boxShadow: '0 10px 15px -3px rgba(107, 114, 128, 0.1), 0 4px 6px -2px rgba(107, 114, 128, 0.05)' }}>
               <Terminal className="h-12 w-12 text-white mb-4" />
               <h2 className="text-2xl font-bold tracking-tighter mb-4 text-white">
@@ -61,7 +61,7 @@ export function Home() {
 
           {/* Software Products */}
           <div className="bg-gray-900 p-8 border border-border relative overflow-hidden">
-            <AnimatedCloudNative />
+            <ProductsTileAnimation />
             <div className="relative z-10 backdrop-blur-sm bg-white/10 p-6 w-full lg:w-1/2 shadow-lg" style={{ mixBlendMode: 'difference', boxShadow: '0 10px 15px -3px rgba(107, 114, 128, 0.1), 0 4px 6px -2px rgba(107, 114, 128, 0.05)' }}>
               <Sparkles className="h-12 w-12 text-white mb-4" />
               <h2 className="text-2xl font-bold tracking-tighter mb-4 text-white">

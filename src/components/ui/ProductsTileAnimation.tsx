@@ -106,7 +106,7 @@ function Sphere({ position, children, index = 0, color = 'white', ...props }: an
   )
 }
 
-export const AnimatedCloudNative: React.FC<{ className?: string }> = ({ className = '' }) => {
+export const ProductsTileAnimation: React.FC<{ className?: string }> = ({ className = '' }) => {
   return (
     <div className={`absolute inset-0 w-full h-full pointer-events-none overflow-hidden ${className}`} style={{ clipPath: 'inset(0)' }}>
       <Scene />
