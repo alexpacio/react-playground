@@ -60,7 +60,7 @@ function Scene() {
 }
 
 function Connector({ position, children, vec = new THREE.Vector3(), r = THREE.MathUtils.randFloatSpread, accent, ...props }: any) {
-  const api = useRef<any>();
+  const api = useRef<any>(null);
   const pos = useMemo(() => position || [r(10), r(10), r(10)], [position, r]);
   
   useFrame((_, delta) => {
@@ -80,7 +80,7 @@ function Connector({ position, children, vec = new THREE.Vector3(), r = THREE.Ma
 }
 
 function Pointer({ vec = new THREE.Vector3() }) {
-  const ref = useRef<any>();
+  const ref = useRef<any>(null);
   
   useFrame(({ pointer, viewport }) => {
     ref.current?.setNextKinematicTranslation(vec.set((pointer.x * viewport.width) / 2, (pointer.y * viewport.height) / 2, 0));
@@ -94,7 +94,7 @@ function Pointer({ vec = new THREE.Vector3() }) {
 }
 
 function Model({ children, color = 'white', roughness = 0 }: any) {
-  const ref = useRef<any>();
+  const ref = useRef<any>(null);
   const { nodes, materials } = useGLTF('/c-transformed.glb');
   
   useFrame((_, delta) => {
@@ -111,7 +111,7 @@ function Model({ children, color = 'white', roughness = 0 }: any) {
 
 export const AnimatedBuilding: React.FC<{ className?: string }> = ({ className = '' }) => {
   return (
-    <div className={`absolute inset-0 w-full h-full pointer-events-none transform lg:translate-x-1/4 ${className}`}>
+    <div className={`absolute inset-0 w-full h-full pointer-events-none ${className}`}>
       <Scene />
     </div>
   );
