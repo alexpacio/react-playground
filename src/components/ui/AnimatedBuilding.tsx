@@ -57,16 +57,34 @@ function Scene() {
 
 function Connector({ position, children, index = 0, accent, ...props }: any) {
   const ref = useRef<any>(null);
-  const r = THREE.MathUtils.randFloatSpread;
-  const pos = useMemo(() => position || [r(4), r(4), r(4)], [position, r]);
+  const gridSize = 3;
+  const spacing = 3;
+  
+  const pos = useMemo(() => {
+    if (position) return position;
+    
+    // Create a grid-based positioning to avoid collisions
+    const gridX = (index % gridSize) - (gridSize - 1) / 2;
+    const gridY = Math.floor(index / gridSize) - 1;
+    const gridZ = Math.floor(index / (gridSize * 2)) - 0.5;
+    
+    return [
+      gridX * spacing + (Math.random() - 0.5) * 0.3,
+      gridY * spacing + (Math.random() - 0.5) * 0.3,
+      gridZ * spacing + (Math.random() - 0.5) * 0.3
+    ];
+  }, [position, index]);
   
   useFrame((state) => {
     if (!ref.current) return;
     const time = state.clock.elapsedTime;
+    const uniqueOffset = index * 1.2;
     
-    // Constrained floating animation
-    ref.current.position.y = pos[1] + Math.sin(time + index * 0.5) * 0.2;
-    ref.current.position.x = pos[0] + Math.cos(time * 0.7 + index * 0.3) * 0.15;
+    // Gentler floating animation with unique patterns per object
+    ref.current.position.y = pos[1] + Math.sin(time * 0.6 + uniqueOffset) * 0.15;
+    ref.current.position.x = pos[0] + Math.cos(time * 0.4 + uniqueOffset * 0.8) * 0.1;
+    ref.current.position.z = pos[2] + Math.sin(time * 0.3 + uniqueOffset * 0.6) * 0.08;
+    
     ref.current.rotation.x += 0.005;
     ref.current.rotation.y += 0.003;
   });

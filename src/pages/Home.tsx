@@ -60,7 +60,7 @@ export function Home() {
           </div>
 
           {/* Software Products */}
-          <div className="bg-muted/30 p-8 border border-border relative overflow-hidden">
+          <div className="bg-gray-900 p-8 border border-border relative overflow-hidden">
             <AnimatedCloudNative />
             <div className="relative z-10 backdrop-blur-sm bg-white/10 p-6 w-full lg:w-1/2 shadow-lg" style={{ mixBlendMode: 'difference', boxShadow: '0 10px 15px -3px rgba(107, 114, 128, 0.1), 0 4px 6px -2px rgba(107, 114, 128, 0.05)' }}>
               <Sparkles className="h-12 w-12 text-white mb-4" />

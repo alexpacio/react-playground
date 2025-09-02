@@ -40,8 +40,8 @@ function Scene() {
       dpr={[1, 1.5]} 
       gl={{ antialias: false, alpha: true }} 
       camera={{ position: [0, 0, 30], fov: 17.5, near: 10, far: 40 }}
+      style={{ background: 'transparent' }}
     >
-      <color attach="background" args={['transparent']} />
       {connectors.map((props, i) => (
         <Sphere key={i} index={i} {...props} />
       ))}
@@ -60,17 +60,36 @@ function Scene() {
 
 function Sphere({ position, children, index = 0, color = 'white', ...props }: any) {
   const ref = useRef<any>(null)
-  const r = THREE.MathUtils.randFloatSpread
-  const pos = useMemo(() => position || [r(6), r(6), r(6)], [position, r])
+  const gridSize = 3
+  const spacing = 4
+  
+  const pos = useMemo(() => {
+    if (position) return position
+    
+    // Create a grid-based positioning to avoid collisions
+    const gridX = (index % gridSize) - (gridSize - 1) / 2
+    const gridY = Math.floor(index / gridSize) - 1
+    const gridZ = Math.floor(index / (gridSize * 2)) - 0.5
+    
+    return [
+      gridX * spacing + (Math.random() - 0.5) * 0.5,
+      gridY * spacing + (Math.random() - 0.5) * 0.5,
+      gridZ * spacing + (Math.random() - 0.5) * 0.5
+    ]
+  }, [position, index])
   
   useFrame((state, delta) => {
     if (!ref.current) return
     delta = Math.min(0.1, delta)
     
-    // Constrained floating animation
+    // Gentler floating animation with unique patterns per sphere
     const time = state.clock.elapsedTime
-    ref.current.position.y = pos[1] + Math.sin(time + index * 0.5) * 0.3
-    ref.current.position.x = pos[0] + Math.cos(time * 0.7 + index * 0.3) * 0.2
+    const uniqueOffset = index * 1.3
+    
+    ref.current.position.y = pos[1] + Math.sin(time * 0.8 + uniqueOffset) * 0.2
+    ref.current.position.x = pos[0] + Math.cos(time * 0.6 + uniqueOffset * 0.7) * 0.15
+    ref.current.position.z = pos[2] + Math.sin(time * 0.4 + uniqueOffset * 0.5) * 0.1
+    
     ref.current.rotation.x += delta * 0.1
     ref.current.rotation.y += delta * 0.05
     
@@ -80,7 +99,7 @@ function Sphere({ position, children, index = 0, color = 'white', ...props }: an
   
   return (
     <mesh ref={ref} castShadow receiveShadow position={pos}>
-      <sphereGeometry args={[0.8, 32, 32]} />
+      <sphereGeometry args={[0.6, 32, 32]} />
       <meshStandardMaterial {...props} />
       {children}
     </mesh>
