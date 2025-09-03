@@ -3,7 +3,6 @@ import { Canvas, useFrame } from '@react-three/fiber';
 import { useGLTF, MeshTransmissionMaterial, Environment, Lightformer } from '@react-three/drei';
 import { EffectComposer, N8AO } from '@react-three/postprocessing';
 import { easing } from 'maath';
-import * as THREE from 'three';
 
 const accents = ['#4060ff', '#20ffa0', '#ff4060', '#ffcc00'];
 

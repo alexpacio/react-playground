@@ -1,9 +1,7 @@
-import * as THREE from 'three'
 import { useRef, useReducer, useMemo } from 'react'
 import { Canvas, useFrame } from '@react-three/fiber'
 import { Environment, Lightformer } from '@react-three/drei'
 import { easing } from 'maath'
-import { Effects } from './Effects'
 
 const accents = ['#ff4060', '#ffcc00', '#20ffa0', '#4060ff']
 
