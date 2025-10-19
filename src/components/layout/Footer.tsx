@@ -1,8 +1,11 @@
 import { Terminal } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { productsNav, servicesNav } from '@/config/navigation';
+import { useTranslation } from '@/contexts/TranslationContext';
 
 export function Footer() {
+  const { t } = useTranslation();
+
   return (
     <footer className="border-t border-border bg-background/50 backdrop-blur-sm">
       <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
@@ -10,14 +13,14 @@ export function Footer() {
           <div>
             <div className="text-2xl font-semibold text-foreground mb-4 flex items-center">
               <Terminal className="h-8 w-8 text-muted-foreground mr-3" />
-              Netter
+              Netter srl
             </div>
             <p className="text-muted-foreground text-sm max-w-md leading-relaxed">
-              Effective solutions for advanced companies.
+              {t('footer.tagline')}
             </p>
           </div>
           <div>
-            <h3 className="text-sm font-semibold text-foreground tracking-wide uppercase mb-4">{productsNav.title}</h3>
+            <h3 className="text-sm font-semibold text-foreground tracking-wide uppercase mb-4">{t(productsNav.titleKey)}</h3>
             <ul className="space-y-3">
               {productsNav.featured && (
                 <li>
@@ -26,7 +29,7 @@ export function Footer() {
                     className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-200 flex items-center"
                   >
                     <div className="w-1 h-1 bg-muted-foreground rounded-full mr-2"></div>
-                    {productsNav.featured.title}
+                    {t(productsNav.featured.titleKey)}
                   </Link>
                 </li>
               )}
@@ -37,14 +40,14 @@ export function Footer() {
                     className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-200 flex items-center"
                   >
                     <div className="w-1 h-1 bg-muted-foreground rounded-full mr-2"></div>
-                    {item.title}
+                    {t(item.titleKey)}
                   </Link>
                 </li>
               ))}
             </ul>
           </div>
           <div>
-            <h3 className="text-sm font-semibold text-foreground tracking-wide uppercase mb-4">{servicesNav.title}</h3>
+            <h3 className="text-sm font-semibold text-foreground tracking-wide uppercase mb-4">{t(servicesNav.titleKey)}</h3>
             <ul className="space-y-3">
               {servicesNav.featured && (
                 <li>
@@ -53,7 +56,7 @@ export function Footer() {
                     className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-200 flex items-center"
                   >
                     <div className="w-1 h-1 bg-muted-foreground rounded-full mr-2"></div>
-                    {servicesNav.featured.title}
+                    {t(servicesNav.featured.titleKey)}
                   </Link>
                 </li>
               )}
@@ -64,14 +67,14 @@ export function Footer() {
                     className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-200 flex items-center"
                   >
                     <div className="w-1 h-1 bg-muted-foreground rounded-full mr-2"></div>
-                    {item.title}
+                    {t(item.titleKey)}
                   </Link>
                 </li>
               ))}
             </ul>
           </div>
           <div>
-            <h3 className="text-sm font-semibold text-foreground tracking-wide uppercase mb-4">About</h3>
+            <h3 className="text-sm font-semibold text-foreground tracking-wide uppercase mb-4">{t('header.about')}</h3>
             <ul className="space-y-3">
               <li>
                 <Link
@@ -79,7 +82,7 @@ export function Footer() {
                   className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-200 flex items-center"
                 >
                   <div className="w-1 h-1 bg-muted-foreground rounded-full mr-2"></div>
-                  About Us
+                  {t('common.aboutUs')}
                 </Link>
               </li>
             </ul>
@@ -87,7 +90,7 @@ export function Footer() {
         </div>
         <div className="mt-8 border-t border-border pt-8">
           <p className="text-sm text-muted-foreground text-center">
-            &copy; 2025 Netter. All rights reserved.
+            &copy; 2025 Netter. {t('common.allRightsReserved')}.
           </p>
         </div>
       </div>

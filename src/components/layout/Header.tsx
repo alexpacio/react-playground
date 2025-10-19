@@ -2,9 +2,12 @@ import { Button } from '@/components/ui/button';
 import { Terminal, Sparkles, Menu, X, ChevronDown, Database, Activity } from 'lucide-react';
 import { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
-import { productsNav, servicesNav, mainNavLinks } from '@/config/navigation';
+import { productsNav, servicesNav } from '@/config/navigation';
+import { LanguageSelector } from '@/components/LanguageSelector';
+import { useTranslation } from '@/contexts/TranslationContext';
 
 export function Header() {
+  const { t } = useTranslation();
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -113,11 +116,11 @@ export function Header() {
             
             <div className="flex-1 flex justify-center">
               <nav className="hidden md:flex items-center space-x-1">
-                <Link 
-                  to="/" 
+                <Link
+                  to="/"
                   className="text-sm font-medium text-white hover:text-white/80 transition-colors duration-200 px-4 py-2 rounded-md hover:bg-white/10"
                 >
-                  Home
+                  {t('header.home')}
                 </Link>
                 
                 <div 
@@ -127,7 +130,7 @@ export function Header() {
                   ref={dropdownRef}
                 >
                   <button className="flex items-center text-sm font-medium text-white hover:text-white/80 transition-colors duration-200 px-4 py-2 rounded-md hover:bg-white/10">
-                    Products
+                    {t(productsNav.titleKey)}
                     <ChevronDown className={`ml-1 h-4 w-4 transition-transform duration-200 ${dropdownOpen ? 'rotate-180' : ''}`} />
                   </button>
                   
@@ -142,10 +145,10 @@ export function Header() {
                             >
                               <Database className="h-6 w-6" />
                               <div className="mb-2 mt-4 text-lg font-medium">
-                                {productsNav.featured.title}
+                                {t(productsNav.featured.titleKey)}
                               </div>
                               <p className="text-sm leading-tight text-muted-foreground">
-                                {productsNav.featured.description}
+                                {t(productsNav.featured.descriptionKey!)}
                               </p>
                             </Link>
                           </div>
@@ -157,9 +160,9 @@ export function Header() {
                               to={item.href}
                               className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
                             >
-                              <div className="text-sm font-medium leading-none">{item.title}</div>
+                              <div className="text-sm font-medium leading-none">{t(item.titleKey)}</div>
                               <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-                                {item.description}
+                                {t(item.descriptionKey!)}
                               </p>
                             </Link>
                           ))}
@@ -176,7 +179,7 @@ export function Header() {
                   ref={servicesDropdownRef}
                 >
                   <button className="flex items-center text-sm font-medium text-white hover:text-white/80 transition-colors duration-200 px-4 py-2 rounded-md hover:bg-white/10">
-                    Services
+                    {t(servicesNav.titleKey)}
                     <ChevronDown className={`ml-1 h-4 w-4 transition-transform duration-200 ${servicesDropdownOpen ? 'rotate-180' : ''}`} />
                   </button>
 
@@ -191,10 +194,10 @@ export function Header() {
                             >
                               <Activity className="h-6 w-6" />
                               <div className="mb-2 mt-4 text-lg font-medium">
-                                {servicesNav.featured.title}
+                                {t(servicesNav.featured.titleKey)}
                               </div>
                               <p className="text-sm leading-tight text-muted-foreground">
-                                {servicesNav.featured.description}
+                                {t(servicesNav.featured.descriptionKey!)}
                               </p>
                             </Link>
                           </div>
@@ -206,9 +209,9 @@ export function Header() {
                               to={item.href}
                               className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
                             >
-                              <div className="text-sm font-medium leading-none">{item.title}</div>
+                              <div className="text-sm font-medium leading-none">{t(item.titleKey)}</div>
                               <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-                                {item.description}
+                                {t(item.descriptionKey!)}
                               </p>
                             </Link>
                           ))}
@@ -222,12 +225,28 @@ export function Header() {
                   to="/about"
                   className="text-sm font-medium text-white hover:text-white/80 transition-colors duration-200 px-4 py-2 rounded-md hover:bg-white/10"
                 >
-                  About
+                  {t('header.about')}
+                </Link>
+
+                <Link
+                  to="/partnerships"
+                  className="text-sm font-medium text-white hover:text-white/80 transition-colors duration-200 px-4 py-2 rounded-md hover:bg-white/10"
+                >
+                  {t('header.partnerships')}
+                </Link>
+
+                <Link
+                  to="/careers"
+                  className="text-sm font-medium text-white hover:text-white/80 transition-colors duration-200 px-4 py-2 rounded-md hover:bg-white/10"
+                >
+                  {t('header.careers')}
                 </Link>
               </nav>
             </div>
             
-            <div className="flex items-center space-x-4">
+            <div className="flex items-center space-x-2 sm:space-x-4">
+              <LanguageSelector />
+
               <button
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                 className="md:hidden text-white hover:text-white/80 transition-colors duration-200"
@@ -235,9 +254,9 @@ export function Header() {
               >
                 {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
               </button>
-              
+
               <Button>
-                Get Started
+                {t('common.getStarted')}
                 <Sparkles className="ml-2 h-4 w-4" />
               </Button>
             </div>
@@ -250,16 +269,16 @@ export function Header() {
         <div className="fixed top-[88px] left-4 right-4 z-40 md:hidden">
           <nav className="bg-black/80 backdrop-blur-md border border-white/20 rounded-lg shadow-2xl transition-all duration-300">
             <div className="px-6 py-4 space-y-4">
-              <Link 
-                to="/" 
+              <Link
+                to="/"
                 className="block text-sm font-medium text-white hover:text-white/80 transition-colors duration-200 py-2"
                 onClick={() => setMobileMenuOpen(false)}
               >
-                Home
+                {t('header.home')}
               </Link>
-              
+
               <div className="space-y-2">
-                <div className="text-sm font-medium text-white py-2">{productsNav.title}</div>
+                <div className="text-sm font-medium text-white py-2">{t(productsNav.titleKey)}</div>
                 <div className="pl-4 space-y-2">
                   {productsNav.featured && (
                     <Link
@@ -267,7 +286,7 @@ export function Header() {
                       className="block text-sm text-white/80 hover:text-white transition-colors duration-200 py-1"
                       onClick={() => setMobileMenuOpen(false)}
                     >
-                      {productsNav.featured.title}
+                      {t(productsNav.featured.titleKey)}
                     </Link>
                   )}
                   {productsNav.items.map((item) => (
@@ -277,14 +296,14 @@ export function Header() {
                       className="block text-sm text-white/80 hover:text-white transition-colors duration-200 py-1"
                       onClick={() => setMobileMenuOpen(false)}
                     >
-                      {item.title}
+                      {t(item.titleKey)}
                     </Link>
                   ))}
                 </div>
               </div>
 
               <div className="space-y-2">
-                <div className="text-sm font-medium text-white py-2">{servicesNav.title}</div>
+                <div className="text-sm font-medium text-white py-2">{t(servicesNav.titleKey)}</div>
                 <div className="pl-4 space-y-2">
                   {servicesNav.items.map((item) => (
                     <Link
@@ -293,7 +312,7 @@ export function Header() {
                       className="block text-sm text-white/80 hover:text-white transition-colors duration-200 py-1"
                       onClick={() => setMobileMenuOpen(false)}
                     >
-                      {item.title}
+                      {t(item.titleKey)}
                     </Link>
                   ))}
                   {servicesNav.featured && (
@@ -302,7 +321,7 @@ export function Header() {
                       className="block text-sm text-white/80 hover:text-white transition-colors duration-200 py-1"
                       onClick={() => setMobileMenuOpen(false)}
                     >
-                      {servicesNav.featured.title}
+                      {t(servicesNav.featured.titleKey)}
                     </Link>
                   )}
                 </div>
@@ -313,7 +332,23 @@ export function Header() {
                 className="block text-sm font-medium text-white hover:text-white/80 transition-colors duration-200 py-2"
                 onClick={() => setMobileMenuOpen(false)}
               >
-                About
+                {t('header.about')}
+              </Link>
+
+              <Link
+                to="/partnerships"
+                className="block text-sm font-medium text-white hover:text-white/80 transition-colors duration-200 py-2"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                {t('header.partnerships')}
+              </Link>
+
+              <Link
+                to="/careers"
+                className="block text-sm font-medium text-white hover:text-white/80 transition-colors duration-200 py-2"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                {t('header.careers')}
               </Link>
             </div>
           </nav>

@@ -15,8 +15,46 @@ import {
   Lightbulb,
   BookOpen
 } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 export function BackendDevelopment() {
+  const { t } = useTranslation();
+
+  const technicalDebtItems = [
+    t('services.backend.servicesSection.technicalDebt.assessment.codebaseAnalysis'),
+    t('services.backend.servicesSection.technicalDebt.assessment.classification'),
+    t('services.backend.servicesSection.technicalDebt.assessment.roadmap'),
+    t('services.backend.servicesSection.technicalDebt.assessment.metrics')
+  ];
+
+  const trainingItems = [
+    t('services.backend.servicesSection.technicalDebt.training.curriculum'),
+    t('services.backend.servicesSection.technicalDebt.training.inHouseRemote'),
+    t('services.backend.servicesSection.technicalDebt.training.bestPractices'),
+    t('services.backend.servicesSection.technicalDebt.training.handsOn')
+  ];
+
+  const whyChooseUsItems = [
+    {
+      icon: GitBranch,
+      title: t('services.backend.whyChooseUs.modernPractices.title'),
+      description: t('services.backend.whyChooseUs.modernPractices.description'),
+      iconColor: 'text-blue-600'
+    },
+    {
+      icon: Lightbulb,
+      title: t('services.backend.whyChooseUs.innovation.title'),
+      description: t('services.backend.whyChooseUs.innovation.description'),
+      iconColor: 'text-purple-600'
+    },
+    {
+      icon: Shield,
+      title: t('services.backend.whyChooseUs.security.title'),
+      description: t('services.backend.whyChooseUs.security.description'),
+      iconColor: 'text-green-600'
+    }
+  ];
+
   return (
     <div className="relative pt-32 pb-24 md:pt-40 md:pb-32 lg:pt-48 lg:pb-40">
       <div className="container px-4 md:px-6 mx-auto">
@@ -24,23 +62,23 @@ export function BackendDevelopment() {
         <div className="flex flex-col items-center space-y-4 text-center mb-16">
           <div className="inline-flex items-center bg-muted px-3 py-1 text-sm font-medium">
             <Server className="mr-2 h-4 w-4" />
-            Backend Web Software Development
+            {t('services.backend.badge')}
           </div>
           <div className="space-y-2">
             <h1 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl lg:text-6xl">
-              Backend Development Services
+              {t('services.backend.title')}
             </h1>
             <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl">
-              Expert backend development services using Rust, Node.js, and Golang. From individual contributors to full project management and technical training.
+              {t('services.backend.subtitle')}
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-4 mt-8">
             <Button size="lg">
-              Get Started
+              {t('services.backend.buttons.getStarted')}
               <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
             <Button variant="outline" size="lg">
-              Contact Us
+              {t('services.backend.buttons.contactUs')}
               <Server className="ml-2 h-4 w-4" />
             </Button>
           </div>
@@ -48,36 +86,44 @@ export function BackendDevelopment() {
 
         {/* Technology Stack */}
         <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold tracking-tight mb-4">Our Technology Stack</h2>
+          <h2 className="text-3xl font-bold tracking-tight mb-4">
+            {t('services.backend.techStack.title')}
+          </h2>
           <p className="mx-auto max-w-[600px] text-muted-foreground mb-12">
-            We specialize in modern, high-performance backend technologies that power scalable web applications.
+            {t('services.backend.techStack.subtitle')}
           </p>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="p-6 border border-border bg-white hover:shadow-lg transition-shadow">
               <div className="h-12 w-12 mb-4 mx-auto flex items-center justify-center bg-orange-100 rounded-lg">
                 <Code2 className="h-6 w-6 text-orange-600" />
               </div>
-              <h3 className="text-xl font-semibold mb-3">Rust</h3>
+              <h3 className="text-xl font-semibold mb-3">
+                {t('services.backend.techStack.rust.title')}
+              </h3>
               <p className="text-muted-foreground leading-relaxed">
-                High-performance, memory-safe systems programming for mission-critical services and microservices architectures.
+                {t('services.backend.techStack.rust.description')}
               </p>
             </div>
             <div className="p-6 border border-border bg-white hover:shadow-lg transition-shadow">
               <div className="h-12 w-12 mb-4 mx-auto flex items-center justify-center bg-green-100 rounded-lg">
                 <Zap className="h-6 w-6 text-green-600" />
               </div>
-              <h3 className="text-xl font-semibold mb-3">Node.js</h3>
+              <h3 className="text-xl font-semibold mb-3">
+                {t('services.backend.techStack.nodejs.title')}
+              </h3>
               <p className="text-muted-foreground leading-relaxed">
-                Fast, event-driven JavaScript runtime ideal for real-time applications, APIs, and microservices with rich ecosystem support.
+                {t('services.backend.techStack.nodejs.description')}
               </p>
             </div>
             <div className="p-6 border border-border bg-white hover:shadow-lg transition-shadow">
               <div className="h-12 w-12 mb-4 mx-auto flex items-center justify-center bg-blue-100 rounded-lg">
                 <Shield className="h-6 w-6 text-blue-600" />
               </div>
-              <h3 className="text-xl font-semibold mb-3">Golang</h3>
+              <h3 className="text-xl font-semibold mb-3">
+                {t('services.backend.techStack.golang.title')}
+              </h3>
               <p className="text-muted-foreground leading-relaxed">
-                Efficient, concurrent programming language perfect for cloud-native applications, containerized services, and distributed systems.
+                {t('services.backend.techStack.golang.description')}
               </p>
             </div>
           </div>
@@ -86,9 +132,11 @@ export function BackendDevelopment() {
         {/* Services Overview */}
         <div className="mb-16">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold tracking-tight mb-4">Our Services</h2>
+            <h2 className="text-3xl font-bold tracking-tight mb-4">
+              {t('services.backend.servicesSection.title')}
+            </h2>
             <p className="mx-auto max-w-[700px] text-muted-foreground">
-              Comprehensive backend development services tailored to your needs, from augmenting your team to managing entire projects.
+              {t('services.backend.servicesSection.subtitle')}
             </p>
           </div>
 
@@ -101,10 +149,10 @@ export function BackendDevelopment() {
                 </div>
                 <div className="flex-1">
                   <h2 className="text-2xl font-bold tracking-tight mb-2">
-                    Individual Contributor (IC) Outsourcing
+                    {t('services.backend.servicesSection.ic.title')}
                   </h2>
                   <p className="text-muted-foreground mb-6 leading-relaxed">
-                    Augment your team with experienced backend engineers who seamlessly integrate into your workflow. Our ICs work directly within your development processes, providing immediate impact.
+                    {t('services.backend.servicesSection.ic.description')}
                   </p>
                 </div>
               </div>
@@ -113,15 +161,23 @@ export function BackendDevelopment() {
                   <div className="flex items-start gap-2">
                     <CheckCircle className="h-5 w-5 text-blue-600 mt-0.5 flex-shrink-0" />
                     <div>
-                      <div className="font-medium">Seamless Integration</div>
-                      <p className="text-sm text-muted-foreground">Work directly with your team using your tools and processes</p>
+                      <div className="font-medium">
+                        {t('services.backend.servicesSection.ic.seamlessIntegration.title')}
+                      </div>
+                      <p className="text-sm text-muted-foreground">
+                        {t('services.backend.servicesSection.ic.seamlessIntegration.description')}
+                      </p>
                     </div>
                   </div>
                   <div className="flex items-start gap-2">
                     <CheckCircle className="h-5 w-5 text-blue-600 mt-0.5 flex-shrink-0" />
                     <div>
-                      <div className="font-medium">Flexible Engagement</div>
-                      <p className="text-sm text-muted-foreground">Scale up or down based on project demands</p>
+                      <div className="font-medium">
+                        {t('services.backend.servicesSection.ic.flexibleEngagement.title')}
+                      </div>
+                      <p className="text-sm text-muted-foreground">
+                        {t('services.backend.servicesSection.ic.flexibleEngagement.description')}
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -129,15 +185,23 @@ export function BackendDevelopment() {
                   <div className="flex items-start gap-2">
                     <CheckCircle className="h-5 w-5 text-blue-600 mt-0.5 flex-shrink-0" />
                     <div>
-                      <div className="font-medium">Rapid Onboarding</div>
-                      <p className="text-sm text-muted-foreground">Quick ramp-up to maintain development velocity</p>
+                      <div className="font-medium">
+                        {t('services.backend.servicesSection.ic.rapidOnboarding.title')}
+                      </div>
+                      <p className="text-sm text-muted-foreground">
+                        {t('services.backend.servicesSection.ic.rapidOnboarding.description')}
+                      </p>
                     </div>
                   </div>
                   <div className="flex items-start gap-2">
                     <CheckCircle className="h-5 w-5 text-blue-600 mt-0.5 flex-shrink-0" />
                     <div>
-                      <div className="font-medium">Expertise on Demand</div>
-                      <p className="text-sm text-muted-foreground">Access specialized skills when you need them</p>
+                      <div className="font-medium">
+                        {t('services.backend.servicesSection.ic.expertiseOnDemand.title')}
+                      </div>
+                      <p className="text-sm text-muted-foreground">
+                        {t('services.backend.servicesSection.ic.expertiseOnDemand.description')}
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -152,10 +216,10 @@ export function BackendDevelopment() {
                 </div>
                 <div className="flex-1">
                   <h2 className="text-2xl font-bold tracking-tight mb-2">
-                    Project Management
+                    {t('services.backend.servicesSection.projectManagement.title')}
                   </h2>
                   <p className="text-muted-foreground mb-6 leading-relaxed">
-                    End-to-end project management for your backend initiatives. We handle everything from requirements gathering to deployment, ensuring successful delivery on time and within budget.
+                    {t('services.backend.servicesSection.projectManagement.description')}
                   </p>
                 </div>
               </div>
@@ -164,22 +228,46 @@ export function BackendDevelopment() {
                   <div className="flex items-start gap-2">
                     <Target className="h-5 w-5 text-purple-600 mt-0.5 flex-shrink-0" />
                     <div>
-                      <div className="font-medium">Complete Ownership</div>
-                      <p className="text-sm text-muted-foreground">Full responsibility from conception to deployment</p>
+                      <div className="font-medium">
+                        {t(
+                          'services.backend.servicesSection.projectManagement.completeOwnership.title'
+                        )}
+                      </div>
+                      <p className="text-sm text-muted-foreground">
+                        {t(
+                          'services.backend.servicesSection.projectManagement.completeOwnership.description'
+                        )}
+                      </p>
                     </div>
                   </div>
                   <div className="flex items-start gap-2">
                     <Target className="h-5 w-5 text-purple-600 mt-0.5 flex-shrink-0" />
                     <div>
-                      <div className="font-medium">Architecture Design</div>
-                      <p className="text-sm text-muted-foreground">Scalable system design and technology selection</p>
+                      <div className="font-medium">
+                        {t(
+                          'services.backend.servicesSection.projectManagement.architectureDesign.title'
+                        )}
+                      </div>
+                      <p className="text-sm text-muted-foreground">
+                        {t(
+                          'services.backend.servicesSection.projectManagement.architectureDesign.description'
+                        )}
+                      </p>
                     </div>
                   </div>
                   <div className="flex items-start gap-2">
                     <Target className="h-5 w-5 text-purple-600 mt-0.5 flex-shrink-0" />
                     <div>
-                      <div className="font-medium">Team Coordination</div>
-                      <p className="text-sm text-muted-foreground">Manage timelines, resources, and stakeholder communication</p>
+                      <div className="font-medium">
+                        {t(
+                          'services.backend.servicesSection.projectManagement.teamCoordination.title'
+                        )}
+                      </div>
+                      <p className="text-sm text-muted-foreground">
+                        {t(
+                          'services.backend.servicesSection.projectManagement.teamCoordination.description'
+                        )}
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -187,22 +275,46 @@ export function BackendDevelopment() {
                   <div className="flex items-start gap-2">
                     <Target className="h-5 w-5 text-purple-600 mt-0.5 flex-shrink-0" />
                     <div>
-                      <div className="font-medium">Quality Assurance</div>
-                      <p className="text-sm text-muted-foreground">Comprehensive testing and code review processes</p>
+                      <div className="font-medium">
+                        {t(
+                          'services.backend.servicesSection.projectManagement.qualityAssurance.title'
+                        )}
+                      </div>
+                      <p className="text-sm text-muted-foreground">
+                        {t(
+                          'services.backend.servicesSection.projectManagement.qualityAssurance.description'
+                        )}
+                      </p>
                     </div>
                   </div>
                   <div className="flex items-start gap-2">
                     <Target className="h-5 w-5 text-purple-600 mt-0.5 flex-shrink-0" />
                     <div>
-                      <div className="font-medium">DevOps Integration</div>
-                      <p className="text-sm text-muted-foreground">CI/CD pipelines and infrastructure automation</p>
+                      <div className="font-medium">
+                        {t(
+                          'services.backend.servicesSection.projectManagement.devopsIntegration.title'
+                        )}
+                      </div>
+                      <p className="text-sm text-muted-foreground">
+                        {t(
+                          'services.backend.servicesSection.projectManagement.devopsIntegration.description'
+                        )}
+                      </p>
                     </div>
                   </div>
                   <div className="flex items-start gap-2">
                     <Target className="h-5 w-5 text-purple-600 mt-0.5 flex-shrink-0" />
                     <div>
-                      <div className="font-medium">Risk Management</div>
-                      <p className="text-sm text-muted-foreground">Proactive identification and mitigation of project risks</p>
+                      <div className="font-medium">
+                        {t(
+                          'services.backend.servicesSection.projectManagement.riskManagement.title'
+                        )}
+                      </div>
+                      <p className="text-sm text-muted-foreground">
+                        {t(
+                          'services.backend.servicesSection.projectManagement.riskManagement.description'
+                        )}
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -217,10 +329,10 @@ export function BackendDevelopment() {
                 </div>
                 <div className="flex-1">
                   <h2 className="text-2xl font-bold tracking-tight mb-2">
-                    Technical Debt Classification & Technical Classes
+                    {t('services.backend.servicesSection.technicalDebt.title')}
                   </h2>
                   <p className="text-muted-foreground mb-6 leading-relaxed">
-                    Comprehensive technical debt assessment and customized training programs. We help your team understand, prioritize, and eliminate technical debt while building internal expertise.
+                    {t('services.backend.servicesSection.technicalDebt.description')}
                   </p>
                 </div>
               </div>
@@ -229,25 +341,17 @@ export function BackendDevelopment() {
                   <div className="bg-white p-4 rounded-lg border border-green-200">
                     <div className="flex items-start gap-2 mb-2">
                       <FileCode className="h-5 w-5 text-green-600 mt-0.5 flex-shrink-0" />
-                      <div className="font-semibold">Technical Debt Assessment</div>
+                      <div className="font-semibold">
+                        {t('services.backend.servicesSection.technicalDebt.assessment.title')}
+                      </div>
                     </div>
                     <ul className="space-y-2 text-sm text-muted-foreground ml-7">
-                      <li className="flex items-start gap-2">
-                        <span className="text-green-600">•</span>
-                        <span>Comprehensive codebase analysis and documentation</span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <span className="text-green-600">•</span>
-                        <span>Classification by impact and remediation effort</span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <span className="text-green-600">•</span>
-                        <span>Prioritized roadmap for debt reduction</span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <span className="text-green-600">•</span>
-                        <span>Metrics and KPIs for tracking progress</span>
-                      </li>
+                      {technicalDebtItems.map((item, index) => (
+                        <li key={index} className="flex items-start gap-2">
+                          <span className="text-green-600">•</span>
+                          <span>{item}</span>
+                        </li>
+                      ))}
                     </ul>
                   </div>
                 </div>
@@ -255,25 +359,17 @@ export function BackendDevelopment() {
                   <div className="bg-white p-4 rounded-lg border border-green-200">
                     <div className="flex items-start gap-2 mb-2">
                       <BookOpen className="h-5 w-5 text-green-600 mt-0.5 flex-shrink-0" />
-                      <div className="font-semibold">Technical Training Programs</div>
+                      <div className="font-semibold">
+                        {t('services.backend.servicesSection.technicalDebt.training.title')}
+                      </div>
                     </div>
                     <ul className="space-y-2 text-sm text-muted-foreground ml-7">
-                      <li className="flex items-start gap-2">
-                        <span className="text-green-600">•</span>
-                        <span>Customized curriculum for Rust, Node.js, and Go</span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <span className="text-green-600">•</span>
-                        <span>In-house or remote training sessions</span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <span className="text-green-600">•</span>
-                        <span>Best practices and design patterns workshops</span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <span className="text-green-600">•</span>
-                        <span>Hands-on coding exercises and code reviews</span>
-                      </li>
+                      {trainingItems.map((item, index) => (
+                        <li key={index} className="flex items-start gap-2">
+                          <span className="text-green-600">•</span>
+                          <span>{item}</span>
+                        </li>
+                      ))}
                     </ul>
                   </div>
                 </div>
@@ -285,49 +381,41 @@ export function BackendDevelopment() {
         {/* Why Choose Us */}
         <div className="bg-gray-50 p-8 border border-border mb-16">
           <div className="text-center mb-8">
-            <h2 className="text-3xl font-bold tracking-tight mb-4">Why Choose Our Backend Services</h2>
+            <h2 className="text-3xl font-bold tracking-tight mb-4">
+              {t('services.backend.whyChooseUs.title')}
+            </h2>
             <p className="mx-auto max-w-[700px] text-muted-foreground">
-              We bring deep expertise, proven methodologies, and a commitment to excellence in every engagement.
+              {t('services.backend.whyChooseUs.subtitle')}
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-6">
-            <div className="bg-white p-6 rounded-lg">
-              <GitBranch className="h-8 w-8 mb-3 text-blue-600" />
-              <h3 className="font-semibold mb-2">Modern Practices</h3>
-              <p className="text-sm text-muted-foreground">
-                Test-driven development, continuous integration, and agile methodologies baked into every project.
-              </p>
-            </div>
-            <div className="bg-white p-6 rounded-lg">
-              <Lightbulb className="h-8 w-8 mb-3 text-purple-600" />
-              <h3 className="font-semibold mb-2">Innovation Focus</h3>
-              <p className="text-sm text-muted-foreground">
-                Stay ahead with cutting-edge technologies and architectural patterns that drive competitive advantage.
-              </p>
-            </div>
-            <div className="bg-white p-6 rounded-lg">
-              <Shield className="h-8 w-8 mb-3 text-green-600" />
-              <h3 className="font-semibold mb-2">Security First</h3>
-              <p className="text-sm text-muted-foreground">
-                Security best practices integrated from day one, ensuring robust and secure backend systems.
-              </p>
-            </div>
+            {whyChooseUsItems.map((item, index) => (
+              <div key={index} className="bg-white p-6 rounded-lg">
+                <item.icon className={`h-8 w-8 mb-3 ${item.iconColor}`} />
+                <h3 className="font-semibold mb-2">{item.title}</h3>
+                <p className="text-sm text-muted-foreground">{item.description}</p>
+              </div>
+            ))}
           </div>
         </div>
 
         {/* CTA Section */}
         <div className="bg-gradient-to-r from-blue-600 to-purple-600 p-12 text-center text-white">
-          <h2 className="text-3xl font-bold mb-4">Ready to Build Something Great?</h2>
+          <h2 className="text-3xl font-bold mb-4">{t('services.backend.cta.title')}</h2>
           <p className="text-lg mb-8 opacity-90 max-w-2xl mx-auto">
-            Whether you need a dedicated developer, full project management, or technical training, we're here to help your team succeed.
+            {t('services.backend.cta.description')}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" variant="secondary">
-              Schedule a Consultation
+              {t('services.backend.cta.primaryButton')}
               <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
-            <Button size="lg" variant="outline" className="bg-transparent text-white border-white hover:bg-white/10">
-              View Case Studies
+            <Button
+              size="lg"
+              variant="outline"
+              className="bg-transparent text-white border-white hover:bg-white/10"
+            >
+              {t('services.backend.cta.secondaryButton')}
               <FileCode className="ml-2 h-4 w-4" />
             </Button>
           </div>

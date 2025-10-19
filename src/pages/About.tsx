@@ -1,44 +1,47 @@
 import { Button } from '@/components/ui/button';
-import { 
-  Terminal, 
-  Users, 
-  Target, 
-  Zap, 
-  Shield, 
+import {
+  Terminal,
+  Users,
+  Target,
+  Zap,
+  Shield,
   Globe,
   ArrowRight,
   CheckCircle
 } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 export function About() {
+  const { t } = useTranslation();
+
   const values = [
     {
       icon: Target,
-      title: "Precision",
-      description: "We deliver exactly what advanced companies need, when they need it."
+      title: t('about.values.precision.title'),
+      description: t('about.values.precision.description')
     },
     {
       icon: Zap,
-      title: "Efficiency",
-      description: "Our solutions streamline operations and maximize productivity for our clients."
+      title: t('about.values.efficiency.title'),
+      description: t('about.values.efficiency.description')
     },
     {
       icon: Shield,
-      title: "Reliability",
-      description: "Built on robust foundations that advanced companies can depend on."
+      title: t('about.values.reliability.title'),
+      description: t('about.values.reliability.description')
     },
     {
       icon: Globe,
-      title: "Scale",
-      description: "Solutions designed to grow with your company's expanding needs."
+      title: t('about.values.scale.title'),
+      description: t('about.values.scale.description')
     }
   ];
 
   const achievements = [
-    "50+ Advanced Companies Served",
-    "99.9% System Uptime Maintained",
-    "200+ Successful Projects Delivered",
-    "24/7 Dedicated Support Team"
+    t('about.achievements.companiesServed'),
+    t('about.achievements.uptime'),
+    t('about.achievements.projectsDelivered'),
+    t('about.achievements.support')
   ];
 
   return (
@@ -48,15 +51,15 @@ export function About() {
         <div className="flex flex-col items-center space-y-4 text-center mb-16">
           <div className="inline-flex items-center bg-muted px-3 py-1 text-sm font-medium">
             <Users className="mr-2 h-4 w-4" />
-            About Netter
+            {t('about.badge')}
           </div>
           <div className="space-y-2">
             <h1 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl lg:text-6xl">
-              Effective Solutions for <br />
-              <span className="text-muted-foreground">Advanced Companies</span>
+              {t('about.title')} <br />
+              <span className="text-muted-foreground">{t('about.titleHighlight')}</span>
             </h1>
             <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl">
-              We specialize in delivering technology solutions that meet the sophisticated needs of forward-thinking organizations.
+              {t('about.subtitle')}
             </p>
           </div>
         </div>
@@ -65,26 +68,23 @@ export function About() {
         <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 mb-16">
           <div className="flex flex-col justify-center space-y-4">
             <h2 className="text-2xl font-bold tracking-tight sm:text-3xl">
-              Our Mission
+              {t('about.mission.heading')}
             </h2>
             <p className="text-muted-foreground md:text-lg leading-relaxed">
-              At Netter, we understand that advanced companies require more than standard solutions. 
-              They need partners who can navigate complex technical challenges and deliver results 
-              that drive meaningful business impact.
+              {t('about.mission.paragraph1')}
             </p>
             <p className="text-muted-foreground md:text-lg leading-relaxed">
-              Our team combines deep technical expertise with business acumen to create solutions 
-              that don't just work—they excel in demanding enterprise environments.
+              {t('about.mission.paragraph2')}
             </p>
             <div className="pt-4">
               <Button>
-                Work With Us
+                {t('about.mission.cta')}
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
             </div>
           </div>
           <div className="bg-muted/30 p-8 border border-border">
-            <h3 className="text-xl font-semibold mb-6">What Sets Us Apart</h3>
+            <h3 className="text-xl font-semibold mb-6">{t('about.achievements.heading')}</h3>
             <ul className="space-y-4">
               {achievements.map((achievement, index) => (
                 <li key={index} className="flex items-center space-x-3">
@@ -100,16 +100,16 @@ export function About() {
         <div className="mb-16">
           <div className="text-center mb-12">
             <h2 className="text-2xl font-bold tracking-tight sm:text-3xl mb-4">
-              Our Core Values
+              {t('about.values.heading')}
             </h2>
             <p className="mx-auto max-w-[600px] text-muted-foreground">
-              These principles guide every solution we create and every relationship we build.
+              {t('about.values.subtitle')}
             </p>
           </div>
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
             {values.map((value, index) => (
-              <div 
-                key={index} 
+              <div
+                key={index}
                 className="bg-muted/30 p-6 border border-border hover:border-border/60 transition-colors duration-200"
               >
                 <value.icon className="h-8 w-8 text-muted-foreground mb-4" />
@@ -126,18 +126,18 @@ export function About() {
         <div className="bg-muted/30 p-8 border border-border text-center">
           <Terminal className="h-12 w-12 text-muted-foreground mx-auto mb-4" />
           <h2 className="text-2xl font-bold tracking-tight mb-4">
-            Ready to Transform Your Technology?
+            {t('about.cta.heading')}
           </h2>
           <p className="text-muted-foreground mb-6 max-w-[500px] mx-auto">
-            Let's discuss how Netter can deliver effective solutions tailored to your advanced company's unique needs.
+            {t('about.cta.description')}
           </p>
           <div className="space-x-4">
             <Button size="lg">
-              Start Your Project
+              {t('about.cta.primaryButton')}
               <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
             <Button variant="outline" size="lg">
-              Schedule Consultation
+              {t('about.cta.secondaryButton')}
             </Button>
           </div>
         </div>

@@ -1,0 +1,1589 @@
+{
+  "common": {
+    "getStarted": "Comenzar",
+    "learnMore": "Saber Más",
+    "contactUs": "Contáctanos",
+    "readMore": "Leer Más",
+    "viewDetails": "Ver Detalles",
+    "allRightsReserved": "Todos los derechos reservados",
+    "aboutUs": "Sobre Nosotros",
+    "scheduleConsultation": "Agendar una Consulta",
+    "scheduleAConsultation": "Agendar una Consulta",
+    "viewCaseStudies": "Ver Casos de Estudio",
+    "viewPortfolio": "Ver Nuestro Portafolio",
+    "downloadGuide": "Descargar Guía de Migración",
+    "viewArchitectureDiagrams": "Ver Diagramas de Arquitectura",
+    "viewNetworkDiagrams": "Ver Diagramas de Red",
+    "viewSuccessStories": "Ver Historias de Éxito",
+    "download": "Descargar",
+    "contactSales": "Contactar a Ventas",
+    "tryCloud": "Probar la Nube",
+    "viewDocumentation": "Ver Documentación",
+    "workWithUs": "Trabaja con Nosotros",
+    "startYourProject": "Comienza tu Proyecto",
+    "scheduleConsultationAlt": "Agendar Consulta"
+  },
+  "header": {
+    "home": "Inicio",
+    "products": "Productos",
+    "services": "Servicios",
+    "about": "Acerca de"
+  },
+  "footer": {
+    "tagline": "Soluciones efectivas para empresas avanzadas."
+  },
+  "home": {
+    "badge": "Ingeniería de Sistemas y Software",
+    "title": "Soluciones Efectivas para Empresas Avanzadas",
+    "subtitle": "Proporcionamos soluciones efectivas adaptadas para empresas avanzadas que buscan optimizar su infraestructura tecnológica e impulsar el crecimiento empresarial.",
+    "consultancy": {
+      "title": "Servicios de Consultoría IT",
+      "description": "Orientación experta para ingeniería de software y sistemas. Ayudamos a empresas avanzadas a optimizar su infraestructura tecnológica e implementar las mejores prácticas para un crecimiento escalable.",
+      "features": {
+        "architecture": "Arquitectura y Diseño de Software",
+        "systemEngineering": "Ingeniería e Integración de Sistemas",
+        "technologyStrategy": "Estrategia y Planificación Tecnológica"
+      },
+      "cta": "Explorar Consultoría"
+    },
+    "products": {
+      "title": "Productos Cloud Native",
+      "description": "Productos de software de vanguardia para aplicaciones distribuidas cloud native. Construidos para empresas modernas que exigen confiabilidad, escalabilidad y rendimiento.",
+      "features": {
+        "distributedSystems": "Soluciones de Sistemas Distribuidos",
+        "cloudNative": "Aplicaciones Nativas de la Nube",
+        "microservices": "Microservicios y Plataformas de Contenedores"
+      },
+      "cta": "Ver Productos"
+    }
+  },
+  "about": {
+    "badge": "Acerca de Netter",
+    "title": "Soluciones Efectivas para",
+    "titleHighlight": "Empresas Avanzadas",
+    "subtitle": "Nos especializamos en ofrecer soluciones tecnológicas que satisfacen las necesidades sofisticadas de organizaciones con visión de futuro.",
+    "mission": {
+      "heading": "Nuestra Misión",
+      "paragraph1": "En Netter, entendemos que las empresas avanzadas requieren más que soluciones estándar. Necesitan socios que puedan navegar desafíos técnicos complejos y entregar resultados que impulsen un impacto empresarial significativo.",
+      "paragraph2": "Nuestro equipo combina una profunda experiencia técnica con visión para los negocios para crear soluciones que no solo funcionan, sino que sobresalen en entornos empresariales exigentes.",
+      "cta": "Trabaja con Nosotros"
+    },
+    "achievements": {
+      "heading": "Lo que Nos Distingue",
+      "companiesServed": "Más de 50 Empresas Avanzadas Atendidas",
+      "uptime": "99.9% de Tiempo de Actividad del Sistema Mantenido",
+      "projectsDelivered": "Más de 200 Proyectos Exitosos Entregados",
+      "support": "Equipo de Soporte Dedicado 24/7"
+    },
+    "values": {
+      "heading": "Nuestros Valores Fundamentales",
+      "subtitle": "Estos principios guían cada solución que creamos y cada relación que construimos.",
+      "precision": {
+        "title": "Precisión",
+        "description": "Entregamos exactamente lo que las empresas avanzadas necesitan, cuando lo necesitan."
+      },
+      "efficiency": {
+        "title": "Eficiencia",
+        "description": "Nuestras soluciones optimizan las operaciones y maximizan la productividad de nuestros clientes."
+      },
+      "reliability": {
+        "title": "Confiabilidad",
+        "description": "Construidas sobre cimientos robustos en los que las empresas avanzadas pueden confiar."
+      },
+      "scale": {
+        "title": "Escala",
+        "description": "Soluciones diseñadas para crecer con las necesidades en expansión de su empresa."
+      }
+    },
+    "cta": {
+      "heading": "¿Listo para Transformar su Tecnología?",
+      "description": "Discutamos cómo Netter puede ofrecer soluciones efectivas adaptadas a las necesidades únicas de su empresa avanzada.",
+      "primaryButton": "Comienza tu Proyecto",
+      "secondaryButton": "Agendar Consulta"
+    }
+  },
+  "products": {
+    "netterDSQL": {
+      "name": "Netter DSQL",
+      "description": "Más Allá de la Base de Datos SQL Distribuida"
+    },
+    "webApps": {
+      "name": "Aplicaciones Web",
+      "description": "Aplicaciones web modernas y herramientas."
+    },
+    "mobile": {
+      "name": "Móvil",
+      "description": "Soluciones móviles multiplataforma."
+    }
+  },
+  "services": {
+    "observabilitySRE": {
+      "name": "Observabilidad & SRE",
+      "description": "Construye sistemas confiables a escala",
+      "badge": "Observabilidad e Ingeniería de Confiabilidad del Sitio",
+      "title": "Servicios de Observabilidad & SRE",
+      "subtitle": "Construye sistemas confiables y observables con monitoreo integral, cultura SRE, gestión de incidentes y herramientas operativas distribuidas para escala global.",
+      "buttons": {
+        "getStarted": "Comenzar",
+        "contactUs": "Contáctanos"
+      },
+      "threePillars": {
+        "title": "Los Tres Pilares de la Observabilidad",
+        "subtitle": "Visibilidad completa de sus sistemas a través de logs, métricas y trazas: la base de operaciones confiables.",
+        "logs": {
+          "title": "Logs",
+          "description": "Datos de log estructurados y no estructurados que proporcionan registros detallados de eventos y contexto de depuración en toda su infraestructura."
+        },
+        "metrics": {
+          "title": "Métricas",
+          "description": "Datos de series temporales que revelan el rendimiento del sistema, la utilización de recursos y los KPIs de negocio de un vistazo."
+        },
+        "traces": {
+          "title": "Trazas",
+          "description": "Rastreo de solicitudes distribuidas que muestra el viaje completo de las transacciones a través de arquitecturas de microservicios."
+        }
+      },
+      "servicesSection": {
+        "title": "Nuestros Servicios",
+        "subtitle": "Servicios integrales de observabilidad y SRE, desde la configuración de la infraestructura hasta la transformación cultural.",
+        "logMetricsInfra": {
+          "title": "Ingesta y Retención de Datos de Alta Frecuencia (Logs, Trazas, Métricas)",
+          "description": "Infraestructura de observabilidad rentable capaz de ingerir grandes volúmenes de logs, trazas y métricas. Visualización basada en Grafana, integración con OpenTelemetry y políticas de retención de datos listas para cumplimiento. Implementación experta de soluciones de código abierto y comerciales, incluido Datadog.",
+          "openSourceStack": {
+            "title": "Stack de Código Abierto",
+            "grafana": "Grafana para dashboards y visualización unificados",
+            "loki": "Loki para agregación y consulta de logs",
+            "prometheus": "Prometheus y Thanos para almacenamiento de métricas",
+            "tempo": "Tempo para rastreo distribuido",
+            "opentelemetry": "OpenTelemetry para instrumentación estandarizada"
+          },
+          "enterpriseSolutions": {
+            "title": "Soluciones Empresariales",
+            "datadog": "Experiencia y optimización de Datadog",
+            "retention": "Estrategias rentables de retención de datos",
+            "compliance": "Archivo y purga listos para cumplimiento",
+            "ingestion": "Pipelines de ingesta de alto volumen",
+            "multitenancy": "Multitenencia y aislamiento de datos"
+          }
+        },
+        "srePrinciples": {
+          "title": "Capacitación en Principios SRE y Difusión Cultural",
+          "description": "Transforme su organización con los principios de Ingeniería de Confiabilidad del Sitio (SRE). Ofrecemos capacitación integral en soporte de guardia (on-call), estructuras de soporte por niveles, excelencia en soporte al cliente y cooperación interna del equipo para construir una cultura de confiabilidad.",
+          "trainingPrograms": {
+            "title": "Programas de Capacitación SRE",
+            "description": "Talleres sobre presupuestos de error, SLIs, SLOs y SLAs"
+          },
+          "onCallBestPractices": {
+            "title": "Mejores Prácticas de Guardia (On-Call)",
+            "description": "Horarios de rotación, políticas de escalado y prevención del agotamiento"
+          },
+          "tieredSupport": {
+            "title": "Estructura de Soporte por Niveles",
+            "description": "Organización y responsabilidades de soporte L1, L2, L3"
+          },
+          "customerFacing": {
+            "title": "Soporte al Cliente",
+            "description": "Capacitación en habilidades de comunicación y empatía con el cliente"
+          },
+          "internalCooperation": {
+            "title": "Cooperación Interna del Equipo",
+            "description": "Colaboración Dev y Ops, responsabilidad compartida"
+          },
+          "continuousImprovement": {
+            "title": "Mejora Continua",
+            "description": "Cultura sin culpa (blameless) y aprendizaje de los fracasos"
+          }
+        },
+        "incidentManagement": {
+          "title": "Salas de Incidentes, Post Mortems, RCA e Incorporación del Equipo SRE",
+          "description": "Establezca procesos robustos de gestión de incidentes, incluyendo salas de guerra (war rooms), revisiones post-incidente y análisis de causa raíz. Programas integrales de incorporación de equipos SRE para garantizar que sus equipos estén preparados para manejar incidentes de producción de manera efectiva.",
+          "incidentResponse": {
+            "title": "Respuesta a Incidentes",
+            "warRoom": "Configuración y herramientas de sala de guerra virtual",
+            "commanderRole": "Definición del rol de comandante de incidentes",
+            "communication": "Plantillas de comunicación y manuales de procedimientos (runbooks)",
+            "severityClassification": "Clasificación de gravedad y triaje",
+            "statusPage": "Página de estado y actualizaciones a interesados"
+          },
+          "postIncident": {
+            "title": "Proceso Post-Incidente",
+            "blameless": "Cultura de post-mortem sin culpa (blameless)",
+            "rca": "Metodologías de análisis de causa raíz (RCA)",
+            "actionTracking": "Seguimiento y remediación de acciones",
+            "knowledgeBase": "Documentación de la base de conocimientos",
+            "onboarding": "Incorporación y mentoría del equipo SRE"
+          }
+        },
+        "distributedOps": {
+          "title": "Herramientas Operativas Distribuidas para Infraestructura Global",
+          "description": "Implemente y gestione herramientas operativas en infraestructuras distribuidas globalmente. Planos de control unificados, observabilidad multiregional y marcos de automatización diseñados para sistemas a escala planetaria.",
+          "multiRegion": {
+            "title": "Observabilidad Multiregional",
+            "description": "Vista global de sistemas y servicios distribuidos"
+          },
+          "controlPlane": {
+            "title": "Plano de Control Unificado",
+            "description": "Gestión centralizada entre regiones y nubes"
+          },
+          "gitops": {
+            "title": "GitOps a Escala",
+            "description": "Infraestructura como código para implementaciones globales"
+          },
+          "crossRegion": {
+            "title": "Automatización Interregional",
+            "description": "Marcos de orquestación para operaciones distribuidas"
+          },
+          "edge": {
+            "title": "Soporte para Edge Computing",
+            "description": "Observabilidad para implementaciones de borde (edge) e IoT"
+          },
+          "dr": {
+            "title": "Recuperación ante Desastres",
+            "description": "Automatización de conmutación por error y orquestación de recuperación"
+          }
+        }
+      },
+      "corePrinciples": {
+        "title": "Principios Fundamentales de SRE",
+        "subtitle": "Implementamos estos principios fundamentales de SRE para garantizar sistemas confiables y escalables.",
+        "errorBudgets": {
+          "title": "Presupuestos de Error",
+          "description": "Equilibrar la velocidad con la confiabilidad a través de la tolerancia al riesgo cuantificada"
+        },
+        "slo": {
+          "title": "Objetivos de Nivel de Servicio (SLO)",
+          "description": "Definir y medir objetivos de confiabilidad centrados en el usuario"
+        },
+        "toilReduction": {
+          "title": "Reducción de Tareas Repetitivas (Toil)",
+          "description": "Automatizar tareas repetitivas para centrarse en el trabajo que agrega valor"
+        },
+        "blamelessCulture": {
+          "title": "Cultura Sin Culpa (Blameless)",
+          "description": "Aprender de los fracasos sin asignar culpas personales"
+        }
+      },
+      "cta": {
+        "title": "Construya Sistemas Confiables y Observables",
+        "description": "Transforme sus operaciones con observabilidad integral, mejores prácticas de SRE y procesos de gestión de incidentes probados en batalla.",
+        "primaryButton": "Agendar una Consulta",
+        "secondaryButton": "Descargar Guía SRE"
+      }
+    },
+    "backend": {
+      "name": "Desarrollo Backend",
+      "description": "Servicios Rust, Node.js y Golang",
+      "badge": "Desarrollo de Software Web Backend",
+      "title": "Servicios de Desarrollo Backend",
+      "subtitle": "Servicios expertos de desarrollo backend usando Rust, Node.js y Golang. Desde colaboradores individuales hasta gestión completa de proyectos y capacitación técnica.",
+      "buttons": {
+        "getStarted": "Comenzar",
+        "contactUs": "Contáctanos"
+      },
+      "techStack": {
+        "title": "Nuestro Stack Tecnológico",
+        "subtitle": "Nos especializamos en tecnologías backend modernas y de alto rendimiento que impulsan aplicaciones web escalables.",
+        "rust": {
+          "title": "Rust",
+          "description": "Programación de sistemas de alto rendimiento y segura en memoria para servicios de misión crítica y arquitecturas de microservicios."
+        },
+        "nodejs": {
+          "title": "Node.js",
+          "description": "Entorno de ejecución de JavaScript rápido y orientado a eventos, ideal para aplicaciones en tiempo real, APIs y microservicios con un rico soporte de ecosistema."
+        },
+        "golang": {
+          "title": "Golang",
+          "description": "Lenguaje de programación eficiente y concurrente, perfecto para aplicaciones nativas de la nube, servicios en contenedores y sistemas distribuidos."
+        }
+      },
+      "servicesSection": {
+        "title": "Nuestros Servicios",
+        "subtitle": "Servicios integrales de desarrollo backend adaptados a sus necesidades, desde aumentar su equipo hasta gestionar proyectos completos.",
+        "ic": {
+          "title": "Externalización de Colaborador Individual (IC)",
+          "description": "Aumente su equipo con ingenieros backend experimentados que se integran perfectamente en su flujo de trabajo. Nuestros ICs trabajan directamente dentro de sus procesos de desarrollo, proporcionando un impacto inmediato.",
+          "seamlessIntegration": {
+            "title": "Integración Perfecta",
+            "description": "Trabaje directamente con su equipo usando sus herramientas y procesos"
+          },
+          "flexibleEngagement": {
+            "title": "Colaboración Flexible",
+            "description": "Escale hacia arriba o hacia abajo según las demandas del proyecto"
+          },
+          "rapidOnboarding": {
+            "title": "Incorporación Rápida",
+            "description": "Rápida puesta en marcha para mantener la velocidad de desarrollo"
+          },
+          "expertiseOnDemand": {
+            "title": "Experiencia bajo Demanda",
+            "description": "Acceda a habilidades especializadas cuando las necesite"
+          }
+        },
+        "projectManagement": {
+          "title": "Gestión de Proyectos",
+          "description": "Gestión de proyectos de extremo a extremo para sus iniciativas backend. Nos encargamos de todo, desde la recopilación de requisitos hasta la implementación, asegurando una entrega exitosa a tiempo y dentro del presupuesto.",
+          "completeOwnership": {
+            "title": "Propiedad Completa",
+            "description": "Responsabilidad total desde la concepción hasta la implementación"
+          },
+          "architectureDesign": {
+            "title": "Diseño de Arquitectura",
+            "description": "Diseño de sistemas escalables y selección de tecnología"
+          },
+          "teamCoordination": {
+            "title": "Coordinación de Equipo",
+            "description": "Gestionar cronogramas, recursos y comunicación con interesados"
+          },
+          "qualityAssurance": {
+            "title": "Aseguramiento de Calidad",
+            "description": "Pruebas exhaustivas y procesos de revisión de código"
+          },
+          "devopsIntegration": {
+            "title": "Integración DevOps",
+            "description": "Pipelines de CI/CD y automatización de infraestructura"
+          },
+          "riskManagement": {
+            "title": "Gestión de Riesgos",
+            "description": "Identificación proactiva y mitigación de riesgos del proyecto"
+          }
+        },
+        "technicalDebt": {
+          "title": "Clasificación de Deuda Técnica y Clases Técnicas",
+          "description": "Evaluación integral de la deuda técnica y programas de capacitación personalizados. Ayudamos a su equipo a comprender, priorizar y eliminar la deuda técnica mientras construimos experiencia interna.",
+          "assessment": {
+            "title": "Evaluación de Deuda Técnica",
+            "codebaseAnalysis": "Análisis y documentación exhaustiva del código base",
+            "classification": "Clasificación por impacto y esfuerzo de remediación",
+            "roadmap": "Hoja de ruta priorizada para la reducción de deuda",
+            "metrics": "Métricas y KPIs para el seguimiento del progreso"
+          },
+          "training": {
+            "title": "Programas de Capacitación Técnica",
+            "curriculum": "Currículo personalizado para Rust, Node.js y Go",
+            "inHouseRemote": "Sesiones de capacitación presenciales o remotas",
+            "bestPractices": "Talleres de mejores prácticas y patrones de diseño",
+            "handsOn": "Ejercicios prácticos de codificación y revisiones de código"
+          }
+        }
+      },
+      "whyChooseUs": {
+        "title": "Por qué Elegir Nuestros Servicios Backend",
+        "subtitle": "Aportamos una profunda experiencia, metodologías probadas y un compromiso con la excelencia en cada colaboración.",
+        "modernPractices": {
+          "title": "Prácticas Modernas",
+          "description": "Desarrollo basado en pruebas (TDD), integración continua y metodologías ágiles incorporadas en cada proyecto."
+        },
+        "innovation": {
+          "title": "Enfoque en la Innovación",
+          "description": "Manténgase a la vanguardia con tecnologías y patrones arquitectónicos de última generación que impulsan la ventaja competitiva."
+        },
+        "security": {
+          "title": "Seguridad Primero",
+          "description": "Mejores prácticas de seguridad integradas desde el primer día, asegurando sistemas backend robustos y seguros."
+        }
+      },
+      "cta": {
+        "title": "¿Listo para Construir Algo Genial?",
+        "description": "Ya sea que necesite un desarrollador dedicado, gestión completa de proyectos o capacitación técnica, estamos aquí para ayudar a su equipo a tener éxito.",
+        "primaryButton": "Agendar una Consulta",
+        "secondaryButton": "Ver Casos de Estudio"
+      }
+    },
+    "frontend": {
+      "name": "Desarrollo Frontend",
+      "description": "Aplicaciones Angular y React",
+      "badge": "Desarrollo de Software Web Frontend",
+      "title": "Servicios de Desarrollo Frontend",
+      "subtitle": "Desarrollo frontend experto con Angular y React. Desde colaboradores individuales y diseño UX/UI hasta componentes WASM de vanguardia y comunicaciones seguras en tiempo real.",
+      "buttons": {
+        "getStarted": "Comenzar",
+        "contactUs": "Contáctanos"
+      },
+      "techStack": {
+        "title": "Nuestras Tecnologías Frontend",
+        "subtitle": "Construimos aplicaciones web modernas y responsivas utilizando frameworks líderes en la industria y tecnologías de vanguardia.",
+        "angular": {
+          "title": "Angular",
+          "description": "Framework de grado empresarial para construir aplicaciones escalables y mantenibles con TypeScript, herramientas integrales y patrones de arquitectura robustos."
+        },
+        "react": {
+          "title": "React",
+          "description": "Biblioteca moderna basada en componentes para construir interfaces de usuario dinámicas con excelente rendimiento, un rico ecosistema y arquitectura flexible."
+        }
+      },
+      "servicesSection": {
+        "title": "Nuestros Servicios",
+        "subtitle": "Servicios integrales de desarrollo frontend, desde aumento de equipo hasta experiencia especializada en diseño, rendimiento y seguridad.",
+        "ic": {
+          "title": "Colaborador Individual (IC)",
+          "description": "Desarrolladores frontend experimentados que se integran perfectamente con su equipo. Nuestros ICs aportan una profunda experiencia en Angular y React, contribuyendo a sus proyectos con impacto inmediato y manteniendo su ritmo de desarrollo.",
+          "frameworkExpertise": {
+            "title": "Experiencia en Frameworks",
+            "description": "Profundo conocimiento de las mejores prácticas de Angular y React"
+          },
+          "modernTooling": {
+            "title": "Herramientas Modernas",
+            "description": "Competente con las últimas herramientas y flujos de trabajo de desarrollo"
+          },
+          "componentDevelopment": {
+            "title": "Desarrollo de Componentes",
+            "description": "Bibliotecas de componentes reutilizables y bien probadas"
+          },
+          "performanceFocus": {
+            "title": "Enfoque en el Rendimiento",
+            "description": "Optimización y mejores prácticas para aplicaciones rápidas"
+          }
+        },
+        "uxui": {
+          "title": "Diseñador UX/UI",
+          "description": "Creando experiencias de usuario excepcionales a través de un diseño reflexivo. Nuestros diseñadores combinan la excelencia estética con principios de usabilidad para ofrecer interfaces que los usuarios aman y entienden intuitivamente.",
+          "userResearch": {
+            "title": "Investigación de Usuarios",
+            "description": "Perspectivas basadas en datos para informar decisiones de diseño"
+          },
+          "wireframing": {
+            "title": "Wireframing y Prototipado",
+            "description": "Prototipos interactivos para validación y pruebas"
+          },
+          "visualDesign": {
+            "title": "Diseño Visual",
+            "description": "Sistemas de diseño e interfaces hermosos y cohesivos"
+          },
+          "designSystems": {
+            "title": "Sistemas de Diseño",
+            "description": "Bibliotecas de componentes y guías de estilo escalables"
+          },
+          "accessibility": {
+            "title": "Accesibilidad",
+            "description": "Diseños compatibles con WCAG para experiencias inclusivas"
+          },
+          "usabilityTesting": {
+            "title": "Pruebas de Usabilidad",
+            "description": "Pruebas iterativas para asegurar una experiencia de usuario óptima"
+          }
+        },
+        "wasm": {
+          "title": "Componentes Respaldados por WASM",
+          "description": "Aproveche el poder de WebAssembly para componentes críticos de rendimiento. Construimos componentes de UI de alto rendimiento que se ejecutan a velocidades casi nativas, perfectos para tareas de cálculo intensivo, visualización de datos e interacciones complejas.",
+          "performanceBenefits": {
+            "title": "Beneficios de Rendimiento",
+            "nativeSpeed": "Velocidades de ejecución casi nativas para cálculos complejos",
+            "memoryManagement": "Gestión eficiente de memoria y tamaños de paquete más pequeños",
+            "smooth60fps": "Experiencias fluidas a 60fps incluso con cargas pesadas",
+            "reducedBlocking": "Reducción del bloqueo del hilo principal para una mejor capacidad de respuesta"
+          },
+          "useCases": {
+            "title": "Casos de Uso",
+            "dataVisualization": "Visualización y gráficos de datos complejos",
+            "imageVideo": "Procesamiento de imagen y video en el navegador",
+            "scientific": "Computación científica y simulación",
+            "cryptography": "Criptografía y compresión de datos"
+          }
+        },
+        "networking": {
+          "title": "Redes a Medida para Comunicaciones Seguras en Tiempo Real",
+          "description": "Soluciones de red personalizadas construidas para el intercambio seguro de datos en tiempo real. Implementamos WebSockets, WebRTC y otros protocolos con seguridad de grado empresarial para aplicaciones que requieren comunicación instantánea y confiable.",
+          "realTimeTech": {
+            "title": "Tecnologías en Tiempo Real",
+            "websocket": "Conexiones WebSocket para comunicación bidireccional",
+            "webrtc": "WebRTC para audio, video y datos peer-to-peer",
+            "sse": "Eventos Enviados por Servidor (SSE) para actualizaciones push eficientes",
+            "custom": "Protocolos personalizados para requisitos especializados"
+          },
+          "security": {
+            "title": "Seguridad y Confiabilidad",
+            "e2e": "Cifrado de extremo a extremo para datos sensibles",
+            "auth": "Mecanismos de autenticación y autorización",
+            "reconnection": "Reconexión automática y gestión de estado",
+            "rateLimit": "Limitación de velocidad y protección DDoS"
+          }
+        }
+      },
+      "whyChooseUs": {
+        "title": "Por qué Elegir Nuestros Servicios Frontend",
+        "subtitle": "Combinamos la excelencia técnica con el pensamiento de diseño para ofrecer experiencias de usuario excepcionales.",
+        "responsiveDesign": {
+          "title": "Diseño Responsivo",
+          "description": "Enfoque 'mobile-first' que garantiza experiencias impecables en todos los dispositivos y tamaños de pantalla."
+        },
+        "innovationDriven": {
+          "title": "Impulsados por la Innovación",
+          "description": "Aprovechando tecnologías de vanguardia como WASM para ampliar los límites de las capacidades web."
+        },
+        "securityMinded": {
+          "title": "Con Mentalidad de Seguridad",
+          "description": "Prácticas de seguridad integradas para el código frontend y protocolos de comunicación seguros."
+        }
+      },
+      "cta": {
+        "title": "Construyamos Experiencias de Usuario Increíbles",
+        "description": "Desde diseños hermosos hasta componentes de alto rendimiento y funciones seguras en tiempo real, ofrecemos soluciones frontend que superan las expectativas.",
+        "primaryButton": "Agendar una Consulta",
+        "secondaryButton": "Ver Nuestro Portafolio"
+      }
+    },
+    "dba": {
+      "name": "Administración de Bases de Datos",
+      "description": "MySQL, PostgreSQL, MongoDB, Redis",
+      "badge": "Servicios de Administración de Bases de Datos",
+      "title": "Servicios DBA Expertos",
+      "subtitle": "Administración integral de bases de datos para MySQL, PostgreSQL, MongoDB y Redis. Desde ingeniería de diseño hasta optimización de rendimiento y capacitación técnica.",
+      "buttons": {
+        "getStarted": "Comenzar",
+        "contactUs": "Contáctanos"
+      },
+      "expertise": {
+        "title": "Experiencia en Bases de Datos",
+        "subtitle": "Profunda experiencia en los sistemas de bases de datos relacionales, basados en documentos y en memoria más populares.",
+        "mysql": {
+          "title": "MySQL",
+          "description": "La base de datos relacional de código abierto más popular del mundo. Optimización experta, replicación y configuraciones de alta disponibilidad."
+        },
+        "postgresql": {
+          "title": "PostgreSQL",
+          "description": "Base de datos relacional de código abierto avanzada con potentes características. Experiencia en consultas complejas, extensiones y escalabilidad."
+        },
+        "mongodb": {
+          "title": "MongoDB",
+          "description": "Base de datos de documentos NoSQL líder. Especializados en diseño de esquemas, sharding, conjuntos de réplicas y optimización del rendimiento."
+        },
+        "redis": {
+          "title": "Redis",
+          "description": "Almacén de datos en memoria de alto rendimiento. Expertos en estrategias de caché, pub/sub, estructuras de datos y configuraciones de clúster."
+        }
+      },
+      "servicesSection": {
+        "title": "Nuestros Servicios",
+        "subtitle": "Servicios integrales de administración de bases de datos, desde el diseño inicial hasta la optimización continua y la capacitación.",
+        "design": {
+          "title": "Ingeniería de Diseño de Bases de Datos Relacionales y Basadas en Documentos",
+          "description": "Arquitectura y diseño experto de bases de datos tanto para sistemas relacionales (MySQL, PostgreSQL) como basados en documentos (MongoDB). Creamos esquemas de bases de datos escalables y eficientes optimizados para su caso de uso y patrones de acceso específicos.",
+          "schemaNormalization": {
+            "title": "Diseño y Normalización de Esquemas",
+            "description": "Estructura de datos óptima para bases de datos relacionales"
+          },
+          "documentModeling": {
+            "title": "Modelado de Documentos",
+            "description": "Estructuras de documentos eficientes para bases de datos NoSQL"
+          },
+          "relationships": {
+            "title": "Relaciones de Datos",
+            "description": "Claves foráneas, restricciones e integridad referencial"
+          },
+          "scalability": {
+            "title": "Planificación de Escalabilidad",
+            "description": "Diseño para crecimiento futuro y rendimiento"
+          },
+          "migration": {
+            "title": "Estrategias de Migración",
+            "description": "Evolución segura de esquemas y migración de datos"
+          },
+          "bestPractices": {
+            "title": "Mejores Prácticas",
+            "description": "Estándares de la industria y patrones probados"
+          }
+        },
+        "maintenance": {
+          "title": "Mantenimiento de Bases de Datos y Herramientas Administrativas",
+          "description": "Utilidades personalizadas y soluciones automatizadas para un mantenimiento perfecto de la base de datos. Construimos herramientas especializadas para sus necesidades específicas, incluidas soluciones de copia de seguridad rápidas diseñadas para bases de datos a gran escala.",
+          "customUtilities": {
+            "title": "Utilidades de Mantenimiento Personalizadas",
+            "monitoring": "Sistemas automatizados de monitoreo y alertas",
+            "healthCheck": "Herramientas inteligentes de chequeo de salud y diagnóstico",
+            "cleanup": "Scripts automatizados de limpieza y mantenimiento",
+            "configManagement": "Automatización de la gestión de configuración"
+          },
+          "backup": {
+            "title": "Soluciones de Copia de Seguridad Rápidas",
+            "highSpeed": "Sistemas de copia de seguridad de alta velocidad para grandes bases de datos",
+            "incremental": "Estrategias de copia de seguridad incremental y diferencial",
+            "pointInTime": "Capacidades de recuperación en un punto específico del tiempo",
+            "validation": "Validación de copias de seguridad y pruebas de restauración"
+          }
+        },
+        "tuning": {
+          "title": "Optimización del Rendimiento de Bases de Datos",
+          "description": "Servicios integrales de optimización del rendimiento para maximizar la eficiencia y velocidad de la base de datos. Desde parámetros del motor hasta soluciones de clúster, optimizamos cada aspecto de su infraestructura de base de datos.",
+          "engineParams": {
+            "title": "Optimización de Parámetros del Motor de BD",
+            "description": "Ajuste fino de memoria, caché, búferes y configuraciones específicas del motor"
+          },
+          "indexing": {
+            "title": "Optimización de Índices de Base de Datos",
+            "description": "Creación y optimización estratégica de índices para consultas más rápidas"
+          },
+          "clustering": {
+            "title": "Soluciones de Clúster de BD",
+            "description": "Replicación síncrona/asíncrona para alta disponibilidad y distribución de carga"
+          },
+          "geoReplication": {
+            "title": "Geo-Replicación",
+            "description": "Distribución de datos multiregional para aplicaciones globales"
+          },
+          "autoScaling": {
+            "title": "Soluciones de Escalado Automatizado",
+            "description": "Escalado horizontal y vertical basado en la demanda"
+          },
+          "reverseProxies": {
+            "title": "Proxies Inversos",
+            "description": "Capas de balanceo de carga y gestión de conexiones"
+          },
+          "connectionPooling": {
+            "title": "Pooling de Conexiones",
+            "description": "Gestión eficiente de conexiones para reducir la sobrecarga"
+          },
+          "caching": {
+            "title": "Capas de Caché de Consultas Inteligentes",
+            "description": "Caché transparente para datos accedidos frecuentemente"
+          },
+          "hardwareGaps": {
+            "title": "Brechas de Hardware y Benchmarks",
+            "description": "Identificar cuellos de botella y pruebas de rendimiento"
+          },
+          "queryOptimization": {
+            "title": "Optimización de Consultas",
+            "description": "Analizar y reescribir consultas lentas para un mejor rendimiento"
+          }
+        },
+        "training": {
+          "title": "Capacitación para la Reducción de Deuda Técnica",
+          "description": "Programas de capacitación especializados enfocados en identificar, comprender y eliminar la deuda técnica de la base de datos. Empoderamos a su equipo con el conocimiento y las habilidades para mantener sistemas de bases de datos saludables y eficientes.",
+          "antiPatterns": {
+            "title": "Antipatrones de Bases de Datos",
+            "description": "Identificar y corregir errores comunes de diseño de bases de datos"
+          },
+          "performanceAnalysis": {
+            "title": "Análisis de Rendimiento",
+            "description": "Herramientas y técnicas para perfilar consultas"
+          },
+          "migrationBestPractices": {
+            "title": "Mejores Prácticas de Migración",
+            "description": "Cambios de esquema y migraciones de datos seguras"
+          },
+          "monitoring": {
+            "title": "Monitoreo y Alertas",
+            "description": "Configurar monitoreo proactivo de la salud de la base de datos"
+          },
+          "handsOnWorkshops": {
+            "title": "Talleres Prácticos",
+            "description": "Ejercicios prácticos con escenarios del mundo real"
+          },
+          "customCurriculum": {
+            "title": "Currículo Personalizado",
+            "description": "Adaptado a su stack de base de datos y desafíos específicos"
+          }
+        }
+      },
+      "whyChooseUs": {
+        "title": "Por qué Elegir Nuestros Servicios DBA",
+        "subtitle": "Décadas de experiencia combinada gestionando sistemas de bases de datos de misión crítica a escala.",
+        "dataIntegrity": {
+          "title": "Integridad de Datos Primero",
+          "description": "Cada optimización y cambio prioriza la seguridad y consistencia de los datos por encima de todo."
+        },
+        "performanceObsessed": {
+          "title": "Obsesionados con el Rendimiento",
+          "description": "Enfoque implacable en exprimir cada gramo de rendimiento de su infraestructura de base de datos."
+        },
+        "knowledgeTransfer": {
+          "title": "Transferencia de Conocimiento",
+          "description": "No solo solucionamos problemas, enseñamos a su equipo a prevenirlos en el futuro."
+        }
+      },
+      "cta": {
+        "title": "Optimice la Infraestructura de su Base de Datos",
+        "description": "Desde el diseño inicial hasta la optimización continua del rendimiento y la capacitación del equipo, ofrecemos servicios DBA integrales que mantienen sus bases de datos funcionando con la máxima eficiencia.",
+        "primaryButton": "Agendar una Auditoría de Base de Datos",
+        "secondaryButton": "Ver Historias de Éxito"
+      }
+    },
+    "virtualization": {
+      "name": "Infraestructura de Virtualización",
+      "description": "Experiencia en KVM, Hyper-V y VMware",
+      "badge": "Consultoría de Infraestructura de Virtualización",
+      "title": "Servicios de Infraestructura de Virtualización",
+      "subtitle": "Soluciones de virtualización de grado carrier para proveedores y empresas. Consultoría experta en KVM, Hyper-V y VMware con gestión completa de infraestructura.",
+      "buttons": {
+        "getStarted": "Comenzar",
+        "contactUs": "Contáctanos"
+      },
+      "targetAudience": {
+        "title": "Construido para Escala y Confiabilidad",
+        "subtitle": "Nuestras soluciones de virtualización sirven tanto a proveedores de servicios que ofrecen infraestructura como servicio como a empresas que requieren plataformas de virtualización de misión crítica.",
+        "serviceProviders": {
+          "title": "Proveedores de Servicios",
+          "description": "Construya infraestructura de grado carrier para ofrecer VPS, servidores dedicados y servicios en la nube a sus clientes con automatización completa de facturación y gestión."
+        },
+        "enterprise": {
+          "title": "Organizaciones Empresariales",
+          "description": "Implemente una infraestructura de nube privada robusta con alta disponibilidad, recuperación ante desastres y gestión centralizada para las cargas de trabajo de su organización."
+        }
+      },
+      "hypervisors": {
+        "title": "Experiencia en Hipervisores",
+        "subtitle": "Profunda experiencia en todas las principales plataformas de virtualización con las mejores prácticas para cada tecnología.",
+        "kvm": {
+          "title": "KVM",
+          "description": "Virtualización basada en el kernel de Linux con excelente rendimiento y flexibilidad. Ideal para implementaciones a gran escala y proveedores de servicios."
+        },
+        "hyperv": {
+          "title": "Hyper-V",
+          "description": "Hipervisor empresarial de Microsoft con integración perfecta de Windows. Perfecto para organizaciones con infraestructura centrada en Windows."
+        },
+        "vmware": {
+          "title": "VMware",
+          "description": "Virtualización líder en la industria con características avanzadas. El estándar de oro para la virtualización empresarial y la infraestructura de nube."
+        }
+      },
+      "servicesSection": {
+        "title": "Nuestros Servicios",
+        "subtitle": "Servicios integrales de infraestructura de virtualización, desde el diseño hasta la implementación y la gestión continua.",
+        "carrierGrade": {
+          "title": "Soluciones de Infraestructura de Grado Carrier",
+          "description": "Diseñe e implemente infraestructura de virtualización de grado carrier tanto para proveedores de servicios como para empresas. Construimos plataformas resilientes y escalables que cumplen con los más altos estándares de confiabilidad y rendimiento.",
+          "serviceProviderSolutions": {
+            "title": "Soluciones para Proveedores de Servicios",
+            "description": "Infraestructura multi-tenant para VPS y alojamiento en la nube"
+          },
+          "enterprisePrivateCloud": {
+            "title": "Nube Privada Empresarial",
+            "description": "Infraestructura dedicada con características empresariales"
+          },
+          "capacityPlanning": {
+            "title": "Planificación de Capacidad",
+            "description": "Infraestructura dimensionada correctamente para necesidades actuales y futuras"
+          },
+          "redundancyResilience": {
+            "title": "Redundancia y Resiliencia",
+            "description": "Sin puntos únicos de falla, diseño tolerante a fallos"
+          },
+          "networkArchitecture": {
+            "title": "Arquitectura de Red",
+            "description": "Redes optimizadas para entornos virtualizados"
+          },
+          "storageSolutions": {
+            "title": "Soluciones de Almacenamiento",
+            "description": "Sistemas de almacenamiento SAN, NAS y distribuidos"
+          }
+        },
+        "virtualMachines": {
+          "title": "Máquinas Virtuales y MicroVM",
+          "description": "Implemente máquinas virtuales tradicionales para aislamiento completo del SO o microVMs ligeras para cargas de trabajo en contenedores. Optimizamos las configuraciones de VM para rendimiento, seguridad y eficiencia de recursos.",
+          "traditional": {
+            "title": "Máquinas Virtuales Tradicionales",
+            "fullOS": "Virtualización completa del SO con aislamiento total",
+            "anyOS": "Soporte para cualquier sistema operativo y carga de trabajo",
+            "hardwareIsolation": "Aislamiento a nivel de hardware para seguridad",
+            "snapshots": "Instantáneas, clonación y migración en vivo"
+          },
+          "microvm": {
+            "title": "Tecnología MicroVM",
+            "lightweight": "VMs ligeras con sobrecarga mínima",
+            "fastBoot": "Tiempos de arranque de sub-segundo para escalado rápido",
+            "serverless": "Ideal para serverless y edge computing",
+            "density": "Mejor densidad y utilización de recursos"
+          }
+        },
+        "highAvailability": {
+          "title": "Alta Disponibilidad, Automatización y Escalado Horizontal",
+          "description": "Construya infraestructura resiliente que nunca falle. Conmutación por error automatizada, balanceo de carga y escalado horizontal aseguran que sus servicios permanezcan disponibles y con rendimiento bajo cualquier condición.",
+          "haClusters": {
+            "title": "Clústeres de Alta Disponibilidad",
+            "description": "Conmutación por error automática de VM sin interrupción del servicio"
+          },
+          "automation": {
+            "title": "Automatización de Infraestructura",
+            "description": "Terraform, Ansible y orquestación personalizada"
+          },
+          "autoScaling": {
+            "title": "Autoescalado",
+            "description": "Asignación dinámica de recursos basada en la demanda"
+          },
+          "loadBalancing": {
+            "title": "Balanceo de Carga",
+            "description": "Distribuir cargas de trabajo entre múltiples hosts"
+          },
+          "performanceMonitoring": {
+            "title": "Monitoreo de Rendimiento",
+            "description": "Métricas en tiempo real y sistemas de alerta"
+          },
+          "disasterRecovery": {
+            "title": "Recuperación ante Desastres",
+            "description": "Copia de seguridad, replicación y automatización de recuperación"
+          }
+        },
+        "billing": {
+          "title": "Soluciones de Facturación",
+          "description": "Sistemas de facturación integrados para proveedores de servicios que ofrecen servicios de virtualización. Rastree el uso de recursos, genere facturas y automatice el procesamiento de pagos con modelos de precios flexibles.",
+          "usageBased": {
+            "title": "Facturación Basada en el Uso",
+            "description": "Precios por hora, mensuales o basados en recursos"
+          },
+          "automatedInvoicing": {
+            "title": "Facturación Automatizada",
+            "description": "Genere y envíe facturas automáticamente"
+          },
+          "paymentGateway": {
+            "title": "Integración de Pasarela de Pago",
+            "description": "Acepte tarjetas de crédito, PayPal y criptomonedas"
+          },
+          "resourceMetering": {
+            "title": "Medición de Recursos",
+            "description": "Seguimiento preciso de CPU, RAM, almacenamiento, ancho de banda"
+          },
+          "pricingTiers": {
+            "title": "Niveles de Precios Personalizados",
+            "description": "Planes flexibles y precios promocionales"
+          },
+          "financialReports": {
+            "title": "Informes Financieros",
+            "description": "Análisis de ingresos y perspectivas del cliente"
+          }
+        },
+        "selfManagement": {
+          "title": "Paneles de Autogestión",
+          "description": "Paneles de control personalizados para clientes y administradores. Capacite a los usuarios para gestionar sus máquinas virtuales mientras mantiene el control centralizado y la automatización.",
+          "customerPortal": {
+            "title": "Portal del Cliente",
+            "provisioning": "Aprovisionamiento de VM, controles de inicio/parada/reinicio",
+            "consoleAccess": "Acceso a consola y conexiones VNC/SPICE",
+            "resourceMonitoring": "Monitoreo de recursos y gráficos de uso",
+            "isoMounting": "Montaje de ISO y reinstalación del SO"
+          },
+          "adminDashboard": {
+            "title": "Panel de Administración",
+            "centralized": "Gestión centralizada de toda la infraestructura",
+            "userManagement": "Sistema de gestión de usuarios y permisos",
+            "healthCapacity": "Salud de la infraestructura y planificación de capacidad",
+            "auditLogs": "Registros de auditoría y monitoreo de seguridad"
+          }
+        }
+      },
+      "whyChooseUs": {
+        "title": "Por qué Elegir Nuestros Servicios de Virtualización",
+        "subtitle": "Años de experiencia construyendo y gestionando infraestructura de virtualización a gran escala para entornos exigentes.",
+        "carrierGradeQuality": {
+          "title": "Calidad de Grado Carrier",
+          "description": "Infraestructura construida según estándares de telecomunicaciones con redundancia, monitoreo y garantías de tiempo de actividad del 99.9%+"
+        },
+        "performanceOptimized": {
+          "title": "Optimizado para el Rendimiento",
+          "description": "Configuraciones ajustadas para máxima densidad y rendimiento de VM en sus inversiones de hardware."
+        },
+        "fullyAutomated": {
+          "title": "Totalmente Automatizado",
+          "description": "Reduzca la sobrecarga operativa con automatización integral y capacidades de autoservicio."
+        }
+      },
+      "cta": {
+        "title": "Construya su Infraestructura de Virtualización",
+        "description": "Ya sea que sea un proveedor de servicios lanzando una nueva plataforma en la nube o una empresa modernizando su centro de datos, ofrecemos soluciones de virtualización que escalan.",
+        "primaryButton": "Agendar una Consulta",
+        "secondaryButton": "Ver Diagramas de Arquitectura"
+      }
+    },
+    "networking": {
+      "name": "Infraestructura de Red",
+      "description": "TCP/IP, OpenWRT, VyOS, OPNSense",
+      "badge": "Consultoría de Infraestructura de Red",
+      "title": "Servicios de Infraestructura de Red",
+      "subtitle": "Soluciones de red de grado carrier para proveedores y empresas. Consultoría experta en TCP/IP, OpenWRT, VyOS, OPNSense con desarrollo personalizado y seguridad avanzada.",
+      "buttons": {
+        "getStarted": "Comenzar",
+        "contactUs": "Contáctanos"
+      },
+      "targetAudience": {
+        "title": "Construido para Escala y Seguridad",
+        "subtitle": "Nuestras soluciones de infraestructura de red sirven tanto a proveedores de servicios que ofrecen servicios de red como a empresas que requieren arquitecturas de red robustas y seguras.",
+        "serviceProviders": {
+          "title": "Proveedores de Servicios",
+          "description": "Construya infraestructura de red de grado carrier para ofrecer conectividad, servicios VPN, soluciones de seguridad y redes gestionadas a sus clientes."
+        },
+        "enterprise": {
+          "title": "Organizaciones Empresariales",
+          "description": "Implemente infraestructura de red segura y de alto rendimiento con enrutamiento avanzado, políticas de seguridad y redundancia para operaciones de misión crítica."
+        }
+      },
+      "platforms": {
+        "title": "Experiencia en Plataformas",
+        "subtitle": "Profunda experiencia en plataformas de red de código abierto y empresariales con experiencia probada en implementación.",
+        "openwrt": {
+          "title": "OpenWRT",
+          "description": "SO flexible basado en Linux para routers y dispositivos embebidos. Perfecto para soluciones de red personalizadas e implementaciones de IoT."
+        },
+        "vyos": {
+          "title": "VyOS",
+          "description": "SO de red de grado empresarial con capacidades avanzadas de enrutamiento. Ideal para redes definidas por software y entornos de nube."
+        },
+        "opnsense": {
+          "title": "OPNSense",
+          "description": "Plataforma de firewall y enrutamiento de código abierto con características de seguridad avanzadas. La solución de referencia para perímetros de red seguros."
+        }
+      },
+      "servicesSection": {
+        "title": "Nuestros Servicios",
+        "subtitle": "Servicios integrales de infraestructura de red, desde el diseño y la implementación hasta la optimización continua y la seguridad.",
+        "carrierGrade": {
+          "title": "Soluciones de Infraestructura de Grado Carrier",
+          "description": "Diseñe e implemente infraestructura de red de grado carrier tanto para proveedores de servicios como para empresas. Construimos redes resilientes y de alto rendimiento que cumplen con los más altos estándares de confiabilidad y rendimiento.",
+          "serviceProviderNetworks": {
+            "title": "Redes de Proveedores de Servicios",
+            "description": "BGP, MPLS e infraestructura de enrutamiento de grado carrier"
+          },
+          "enterpriseCampus": {
+            "title": "Redes de Campus Empresariales",
+            "description": "Conectividad multisitio con gestión centralizada"
+          },
+          "architecture": {
+            "title": "Diseño de Arquitectura de Red",
+            "description": "Topologías escalables para crecimiento actual y futuro"
+          },
+          "haDesign": {
+            "title": "Diseño de Alta Disponibilidad",
+            "description": "Rutas redundantes, conmutación por error y cero tiempo de inactividad"
+          },
+          "performance": {
+            "title": "Optimización del Rendimiento",
+            "description": "Ingeniería de tráfico e implementación de QoS"
+          },
+          "capacity": {
+            "title": "Planificación de Capacidad",
+            "description": "Infraestructura dimensionada correctamente para las demandas de ancho de banda"
+          }
+        },
+        "tcpipExpertise": {
+          "title": "Fuerte Experiencia en TCP/IP, OpenWRT, VyOS, OPNSense",
+          "description": "Profundo conocimiento de los fundamentos de redes y competencia a nivel experto con las principales plataformas de red de código abierto. Implementamos, configuramos y optimizamos la infraestructura de red utilizando las mejores herramientas de su clase.",
+          "tcpip": {
+            "title": "Dominio de TCP/IP",
+            "routing": "Protocolos de enrutamiento avanzados (BGP, OSPF, IS-IS)",
+            "dualStack": "Implementaciones de doble pila IPv4 e IPv6",
+            "troubleshooting": "Resolución de problemas de red y análisis de paquetes",
+            "tuning": "Ajuste y optimización del rendimiento"
+          },
+          "platformConfig": {
+            "title": "Configuración de Plataforma",
+            "openwrt": "Personalización de OpenWRT y desarrollo de paquetes",
+            "vyos": "Implementación de VyOS y características de enrutamiento avanzadas",
+            "opnsense": "Reglas de firewall y políticas de seguridad de OPNSense",
+            "integration": "Integración con herramientas de automatización y monitoreo"
+          }
+        },
+        "customSolutions": {
+          "title": "Desarrollo de Soluciones Personalizadas",
+          "description": "Soluciones de red a medida construidas según sus especificaciones exactas. Desarrollamos software de red personalizado, plugins e integraciones que amplían las capacidades de la plataforma y resuelven desafíos únicos.",
+          "customProtocol": {
+            "title": "Implementación de Protocolos Personalizados",
+            "description": "Desarrollar protocolos y manejadores de red especializados"
+          },
+          "networkAutomation": {
+            "title": "Automatización de Red",
+            "description": "Scripts y herramientas para la gestión de configuración"
+          },
+          "apiDevelopment": {
+            "title": "Desarrollo de API",
+            "description": "APIs RESTful para la gestión de dispositivos de red"
+          },
+          "pluginExtensions": {
+            "title": "Extensiones de Plugin",
+            "description": "Módulos personalizados para OpenWRT, VyOS, OPNSense"
+          },
+          "integrations": {
+            "title": "Soluciones de Integración",
+            "description": "Conectar redes con sistemas y flujos de trabajo existentes"
+          },
+          "managementInterfaces": {
+            "title": "Interfaces de Gestión",
+            "description": "Dashboards y paneles de control personalizados"
+          }
+        },
+        "meshVpn": {
+          "title": "Redes Mesh y Protocolos VPN",
+          "description": "Implemente redes mesh resilientes y soluciones VPN seguras para organizaciones distribuidas. Implementamos protocolos modernos para conectividad cifrada y de alto rendimiento entre sitios y usuarios remotos.",
+          "mesh": {
+            "title": "Redes Mesh",
+            "selfHealing": "Topologías de red autorreparables",
+            "dynamicRouting": "Enrutamiento dinámico y conmutación por error automática",
+            "batman": "Implementaciones BATMAN, B.A.T.M.A.N.-adv",
+            "wireless": "Redes mesh inalámbricas y cableadas"
+          },
+          "vpn": {
+            "title": "Soluciones VPN",
+            "wireguard": "WireGuard: VPN moderna, rápida y segura",
+            "ipsec": "IPsec/IKEv2: VPN sitio a sitio de grado empresarial",
+            "openvpn": "OpenVPN: Soluciones VPN flexibles basadas en SSL",
+            "ztna": "Acceso a la red de confianza cero (ZTNA)"
+          }
+        },
+        "deepInspection": {
+          "title": "Inspección Profunda (L7) y Soluciones WAF",
+          "description": "Seguridad avanzada con inspección profunda de paquetes de Capa 7 y protección de Firewall de Aplicaciones Web. Detecte y bloquee ataques sofisticados a nivel de aplicación con inteligencia de amenazas en tiempo real.",
+          "dpi": {
+            "title": "Inspección Profunda de Paquetes (DPI)",
+            "description": "Analizar el tráfico de capa de aplicación en busca de amenazas y violaciones de políticas"
+          },
+          "idsIps": {
+            "title": "Detección/Prevención de Intrusiones",
+            "description": "IDS/IPS con Suricata y desarrollo de reglas personalizadas"
+          },
+          "sslInspection": {
+            "title": "Inspección SSL/TLS",
+            "description": "Descifrar e inspeccionar tráfico cifrado en busca de amenazas ocultas"
+          },
+          "waf": {
+            "title": "Firewall de Aplicaciones Web",
+            "description": "Proteger aplicaciones web de las vulnerabilidades del OWASP Top 10"
+          },
+          "ddosMitigation": {
+            "title": "Mitigación de DDoS",
+            "description": "Limitación de velocidad y detección de patrones de ataque"
+          },
+          "threatIntel": {
+            "title": "Inteligencia de Amenazas",
+            "description": "Fuentes en tiempo real y bloqueo automatizado"
+          }
+        }
+      },
+      "whyChooseUs": {
+        "title": "Por qué Elegir Nuestros Servicios de Red",
+        "subtitle": "Décadas de experiencia combinada diseñando y gestionando infraestructura de red compleja para entornos exigentes.",
+        "securityFirst": {
+          "title": "Seguridad Primero",
+          "description": "Cada diseño de red incorpora principios de seguridad de defensa en profundidad desde el principio."
+        },
+        "highPerformance": {
+          "title": "Alto Rendimiento",
+          "description": "Configuraciones optimizadas para máximo rendimiento y mínima latencia en cada implementación."
+        },
+        "openStandards": {
+          "title": "Estándares Abiertos",
+          "description": "Construido sobre plataformas de código abierto y estándares de la industria para evitar la dependencia de proveedores."
+        }
+      },
+      "cta": {
+        "title": "Construya su Infraestructura de Red",
+        "description": "Ya sea que sea un proveedor de servicios construyendo redes de grado carrier o una empresa asegurando su infraestructura, ofrecemos soluciones que rinden y protegen.",
+        "primaryButton": "Agendar una Consulta",
+        "secondaryButton": "Ver Diagramas de Red"
+      }
+    },
+    "vdi": {
+      "name": "Migración VDI",
+      "description": "Infraestructura de Escritorio Virtual",
+      "badge": "Migración de Infraestructura de Escritorio Virtual",
+      "title": "Servicios de Migración VDI",
+      "subtitle": "Migra grandes flotas de estaciones de trabajo a entornos de escritorio virtual con aceleración GPU, soporte multiprotocolo y soluciones rentables.",
+      "buttons": {
+        "getStarted": "Comenzar",
+        "contactUs": "Contáctanos"
+      },
+      "valueProposition": {
+        "title": "¿Por qué Migrar a VDI?",
+        "subtitle": "La Infraestructura de Escritorio Virtual ofrece gestión centralizada, seguridad mejorada y flexibilidad para las fuerzas laborales modernas.",
+        "security": {
+          "title": "Seguridad Mejorada",
+          "description": "Los datos permanecen en el centro de datos, no en los dispositivos finales. Políticas de seguridad centralizadas y gestión de cumplimiento más fácil."
+        },
+        "flexibility": {
+          "title": "Trabajo Flexible",
+          "description": "Acceda a las estaciones de trabajo desde cualquier lugar, en cualquier dispositivo. Perfecto para trabajo remoto y políticas BYOD."
+        },
+        "management": {
+          "title": "Gestión Simplificada",
+          "description": "Actualizaciones, aprovisionamiento y resolución de problemas centralizados. Reduzca la sobrecarga de TI y mejore la eficiencia."
+        }
+      },
+      "servicesSection": {
+        "title": "Nuestros Servicios de Migración VDI",
+        "subtitle": "Servicios integrales de migración, desde la evaluación y planificación hasta la implementación y optimización.",
+        "largeFleet": {
+          "title": "Migraciones de Grandes Flotas de Estaciones de Trabajo a Entornos de Escritorio Virtual",
+          "description": "Migre sin problemas cientos o miles de estaciones de trabajo físicas a infraestructura de escritorio virtual. Gestionamos todo el proceso con una interrupción mínima de sus operaciones, asegurando una transición fluida para todos los usuarios.",
+          "assessmentPlanning": {
+            "title": "Evaluación y Planificación",
+            "description": "Analizar cargas de trabajo, perfiles de usuario y necesidades de infraestructura"
+          },
+          "phasedMigration": {
+            "title": "Migración por Fases",
+            "description": "Despliegue gradual para minimizar riesgos e interrupciones"
+          },
+          "userTraining": {
+            "title": "Capacitación de Usuarios",
+            "description": "Capacitación integral para usuarios finales y personal de TI"
+          },
+          "appCompatibility": {
+            "title": "Compatibilidad de Aplicaciones",
+            "description": "Asegurar que todas las aplicaciones empresariales funcionen en VDI"
+          },
+          "performanceOptimization": {
+            "title": "Optimización del Rendimiento",
+            "description": "Ajustar para una experiencia de usuario óptima y uso de recursos"
+          },
+          "support": {
+            "title": "Soporte 24/7",
+            "description": "Soporte post-migración para asegurar el éxito"
+          }
+        },
+        "gpuAccelerated": {
+          "title": "Experiencia en VMs Aceleradas por GPU",
+          "description": "Implemente escritorios virtuales acelerados por GPU para cargas de trabajo exigentes. Perfecto para CAD, modelado 3D, edición de video, aprendizaje automático y otras aplicaciones intensivas en gráficos que requieren recursos de GPU dedicados.",
+          "gpuTech": {
+            "title": "Tecnologías GPU",
+            "nvidia": "NVIDIA vGPU y paso directo de GPU (passthrough)",
+            "amd": "Virtualización AMD MxGPU",
+            "intel": "Virtualización de gráficos Intel GVT-g",
+            "sharing": "Estrategias de compartición y particionamiento de GPU"
+          },
+          "useCases": {
+            "title": "Casos de Uso",
+            "cad": "Estaciones de trabajo de CAD/CAM e ingeniería",
+            "video": "Edición de video y producción de medios",
+            "rendering": "Renderizado 3D y animación",
+            "ai": "Desarrollo de IA/ML y ciencia de datos"
+          }
+        },
+        "protocols": {
+          "title": "Protocolos de Escritorio Remoto para SO Linux y Windows",
+          "description": "Implementación experta de protocolos de escritorio remoto para entornos Linux y Windows. Optimizamos las configuraciones de protocolo para el mejor equilibrio entre rendimiento, seguridad y experiencia del usuario.",
+          "windows": {
+            "title": "Protocolos de Windows",
+            "rdp": "Optimización de RDP (Protocolo de Escritorio Remoto)",
+            "citrix": "Protocolos Citrix HDX e ICA",
+            "vmware": "VMware Blast Extreme y PCoIP",
+            "remotefx": "RemoteFX para gráficos mejorados"
+          },
+          "linux": {
+            "title": "Protocolos de Linux",
+            "x2go": "X2Go para sesiones X11 remotas",
+            "spice": "Protocolo SPICE para VMs KVM/QEMU",
+            "nomachine": "NoMachine NX para acceso de alto rendimiento",
+            "vnc": "Variantes de VNC (TigerVNC, TurboVNC)"
+          }
+        },
+        "reliableFastCheap": {
+          "title": "Soluciones Confiables, Rápidas y Económicas",
+          "description": "Ofrecemos soluciones VDI que sobresalen en las tres áreas críticas: confiabilidad para la continuidad del negocio, velocidad para la productividad del usuario y rentabilidad para su presupuesto. Sin necesidad de compromisos.",
+          "reliable": {
+            "title": "Confiable",
+            "uptime": "SLA de tiempo de actividad del 99.9%+",
+            "redundant": "Infraestructura redundante",
+            "failover": "Conmutación por error automatizada",
+            "backups": "Copias de seguridad regulares",
+            "monitoring": "Monitoreo 24/7"
+          },
+          "fast": {
+            "title": "Rápido",
+            "storage": "Almacenamiento SSD/NVMe",
+            "protocols": "Protocolos optimizados",
+            "network": "Redes de baja latencia",
+            "gpu": "Aceleración GPU",
+            "tuning": "Ajuste de rendimiento"
+          },
+          "costEffective": {
+            "title": "Rentable",
+            "hardware": "Menores costos de hardware",
+            "energy": "Reducción del consumo de energía",
+            "management": "Gestión simplificada",
+            "lifespan": "Extender la vida útil del dispositivo",
+            "licensing": "Licenciamiento flexible"
+          }
+        }
+      },
+      "platforms": {
+        "title": "Experiencia en Plataformas VDI",
+        "subtitle": "Trabajamos con todas las principales plataformas VDI para encontrar la mejor opción para sus necesidades.",
+        "vmwareHorizon": {
+          "title": "VMware Horizon",
+          "description": "VDI empresarial con características avanzadas"
+        },
+        "citrix": {
+          "title": "Citrix Virtual Apps",
+          "description": "Entrega de aplicaciones y escritorios"
+        },
+        "avd": {
+          "title": "Microsoft AVD",
+          "description": "Solución Azure Virtual Desktop"
+        },
+        "openSource": {
+          "title": "VDI de Código Abierto",
+          "description": "KVM, Proxmox, Apache Guacamole"
+        }
+      },
+      "cta": {
+        "title": "¿Listo para Migrar a VDI?",
+        "description": "Transforme su infraestructura de escritorio con soluciones VDI confiables, rápidas y rentables. Discutamos su plan de migración.",
+        "primaryButton": "Agendar una Consulta",
+        "secondaryButton": "Descargar Guía de Migración"
+      }
+    },
+    "desktopFleet": {
+      "name": "Gestión de Flota de Escritorio",
+      "description": "RMM para flotas Windows y Linux",
+      "badge": "Soluciones de Gestión de Flota de Escritorio",
+      "title": "Gestión de Flota de Escritorio",
+      "subtitle": "Gestión integral de flota de escritorio con RMM, monitoreo de seguridad, aplicación de políticas y consultoría SOC/NOC para entornos Windows y Linux.",
+      "buttons": {
+        "getStarted": "Comenzar",
+        "contactUs": "Contáctanos"
+      },
+      "platformSupport": {
+        "title": "Soporte Multiplataforma",
+        "subtitle": "Soluciones de gestión unificada para entornos de escritorio diversos, incluyendo estaciones de trabajo Windows, escritorios Linux, thin clients y laptops.",
+        "windows": {
+          "title": "Flotas de Windows",
+          "description": "Gestión completa para entornos empresariales de Windows 11 con integración de Active Directory, Política de Grupo y monitoreo de seguridad avanzado."
+        },
+        "linux": {
+          "title": "Flotas de Linux",
+          "description": "Gestión centralizada para escritorios Linux, thin clients y estaciones de trabajo con gestión de configuración y endurecimiento de seguridad."
+        }
+      },
+      "servicesSection": {
+        "title": "Nuestros Servicios",
+        "subtitle": "Soluciones integrales de gestión de flota de escritorio, desde monitoreo y aplicación de políticas hasta operaciones de seguridad.",
+        "rmm": {
+          "title": "Soluciones RMM",
+          "description": "Soluciones de Monitoreo y Gestión Remota (RMM) para una visibilidad y control integrales sobre toda su flota de escritorios. Monitoree la salud, implemente actualizaciones y resuelva problemas de forma remota desde un panel centralizado.",
+          "realTimeMonitoring": {
+            "title": "Monitoreo en Tiempo Real",
+            "description": "Métricas de CPU, memoria, disco, red con alertas"
+          },
+          "patchManagement": {
+            "title": "Gestión de Parches",
+            "description": "Actualizaciones automatizadas de SO y aplicaciones"
+          },
+          "remoteAccess": {
+            "title": "Acceso Remoto",
+            "description": "Escritorio remoto seguro y ejecución de comandos"
+          },
+          "assetInventory": {
+            "title": "Inventario de Activos",
+            "description": "Seguimiento de inventario de hardware y software"
+          },
+          "automationScripts": {
+            "title": "Scripts de Automatización",
+            "description": "Scripts personalizados para tareas rutinarias"
+          },
+          "reporting": {
+            "title": "Informes y Análisis",
+            "description": "Dashboards e informes completos"
+          }
+        },
+        "adPolicy": {
+          "title": "Restricciones de Políticas de Active Directory",
+          "description": "Implementación experta de Objetos de Política de Grupo (GPO) y políticas de Active Directory para hacer cumplir estándares de seguridad, controlar permisos de usuario y mantener el cumplimiento en todo su entorno Windows.",
+          "policyConfig": {
+            "title": "Configuración de Políticas",
+            "userComputer": "Políticas de configuración de usuario y equipo",
+            "whiteBlacklist": "Listas blancas y negras de aplicaciones",
+            "usb": "Restricciones de USB y medios extraíbles",
+            "password": "Políticas de contraseñas y bloqueo de cuentas"
+          },
+          "securityHardening": {
+            "title": "Endurecimiento de Seguridad",
+            "firewall": "Configuración de Windows Firewall a través de GPO",
+            "bitlocker": "Aplicación de cifrado BitLocker",
+            "softwareRestriction": "Políticas de restricción de software",
+            "audit": "Informes de auditoría y cumplimiento"
+          }
+        },
+        "cyberSecurity": {
+          "title": "Soluciones de Monitoreo de Ciberseguridad en Tiempo Real",
+          "description": "Monitoreo de seguridad avanzado usando OSQuery y plataformas centralizadas de seguridad contra amenazas. Detecte, analice y responda a amenazas de seguridad en tiempo real en toda su flota de escritorios.",
+          "osquery": {
+            "title": "Implementación de OSQuery",
+            "sql": "Visibilidad y monitoreo de endpoints con SQL",
+            "realtime": "Ejecución de consultas en tiempo real en toda la flota",
+            "customRules": "Reglas y consultas de detección personalizadas",
+            "siem": "Integración con plataformas SIEM"
+          },
+          "threatSecurity": {
+            "title": "Seguridad Centralizada contra Amenazas",
+            "edr": "EDR (Detección y Respuesta en Endpoints)",
+            "behavioral": "Análisis de comportamiento y detección de anomalías",
+            "threatIntel": "Integración de fuentes de inteligencia de amenazas",
+            "automated": "Flujos de trabajo automatizados de respuesta a incidentes"
+          }
+        },
+        "socNoc": {
+          "title": "Consultoría para Creación de NOC o SOC Interno",
+          "description": "Construya su propio Centro de Operaciones de Red (NOC) o Centro de Operaciones de Seguridad (SOC). Ofrecemos consultoría, diseño de arquitectura, selección de herramientas y capacitación para establecer equipos de seguridad y operaciones efectivos.",
+          "nocSetup": {
+            "title": "Configuración de NOC",
+            "description": "Monitoreo de infraestructura, alertas y gestión de incidentes"
+          },
+          "socSetup": {
+            "title": "Configuración de SOC",
+            "description": "Monitoreo de seguridad, detección de amenazas y respuesta"
+          },
+          "toolSelection": {
+            "title": "Selección de Herramientas",
+            "description": "Evaluación de plataformas SIEM, de tickets y de monitoreo"
+          },
+          "processDesign": {
+            "title": "Diseño de Procesos",
+            "description": "Manuales de procedimientos (runbooks), rutas de escalado, definiciones de SLA"
+          },
+          "teamTraining": {
+            "title": "Capacitación de Equipo",
+            "description": "Programas de capacitación y desarrollo de habilidades para analistas"
+          },
+          "metricsKPIs": {
+            "title": "Métricas y KPIs",
+            "description": "Marcos de medición de rendimiento e informes"
+          }
+        },
+        "offlineVMs": {
+          "title": "Agentes RMM para VMs Offline",
+          "description": "Agentes RMM especializados diseñados para máquinas virtuales y sistemas con conectividad intermitente o limitada. Mantenga la visibilidad y el control incluso cuando los endpoints están fuera de línea o en entornos aislados (air-gapped).",
+          "queueBased": {
+            "title": "Comunicación Basada en Colas",
+            "description": "Almacenar y reenviar datos cuando se restaura la conectividad"
+          },
+          "localData": {
+            "title": "Recolección de Datos Local",
+            "description": "Monitoreo continuo incluso sin acceso a la red"
+          },
+          "scheduledSync": {
+            "title": "Sincronización Programada",
+            "description": "Sincronización automática durante ventanas de conexión"
+          },
+          "airGapped": {
+            "title": "Soporte para Air-Gapped",
+            "description": "Transferencia manual de datos para sistemas aislados"
+          },
+          "vmLifecycle": {
+            "title": "Seguimiento del Ciclo de Vida de VM",
+            "description": "Monitorear eventos de instantánea, clonación y migración"
+          },
+          "bandwidth": {
+            "title": "Optimización de Ancho de Banda",
+            "description": "Transmisión eficiente de datos para conexiones limitadas"
+          }
+        },
+        "thinClients": {
+          "title": "Thin Clients con Sistemas Operativos Linux/KDE Personalizados",
+          "description": "Implemente soluciones de thin client con sistemas operativos personalizados basados en Linux con entornos de escritorio KDE. Totalmente gestionados de forma remota, ligeros y optimizados para sus casos de uso específicos con control centralizado.",
+          "customOS": {
+            "title": "Desarrollo de SO Personalizado",
+            "description": "Distribuciones de Linux a medida con KDE Plasma"
+          },
+          "remoteManagement": {
+            "title": "Gestión Remota",
+            "description": "Configuración centralizada e implementación de actualizaciones"
+          },
+          "lightweight": {
+            "title": "Rendimiento Ligero",
+            "description": "Optimizado para hardware de bajos recursos"
+          },
+          "kioskMode": {
+            "title": "Soporte de Modo Kiosco",
+            "description": "Configuraciones bloqueadas para tareas específicas"
+          },
+          "rapidProvisioning": {
+            "title": "Aprovisionamiento Rápido",
+            "description": "Implementación y configuración rápidas"
+          },
+          "energyEfficient": {
+            "title": "Eficiente en Energía",
+            "description": "Reducción del consumo de energía y TCO"
+          }
+        },
+        "linuxEnterprise": {
+          "title": "Flotas de Laptops y Estaciones de Trabajo Empresariales con Linux",
+          "description": "Sistemas Linux de grado empresarial para desarrolladores web y cargas de trabajo de IA. Sistemas operativos personalizados que cumplen con los requisitos de cumplimiento mientras proporcionan a los desarrolladores herramientas potentes para el desarrollo moderno y la ejecución local de modelos de IA.",
+          "developer": {
+            "title": "Estaciones de Trabajo para Desarrolladores",
+            "preConfigured": "Entornos de desarrollo preconfigurados",
+            "ides": "IDEs y cadenas de herramientas modernas (VS Code, Docker, etc.)",
+            "git": "Gestión segura de claves Git y SSH",
+            "kubernetes": "Flujos de trabajo de contenedores y Kubernetes"
+          },
+          "ai": {
+            "title": "Cargas de Trabajo de IA/ML",
+            "cuda": "Optimización de drivers GPU CUDA y ROCm",
+            "llm": "Ejecución local de LLM y modelos de IA",
+            "frameworks": "Herramientas PyTorch, TensorFlow y MLOps",
+            "compliance": "Cumplimiento empresarial con controles de seguridad"
+          }
+        },
+        "centralizedRemote": {
+          "title": "Control Remoto Centralizado Interno para Prevenir Pérdida de Datos",
+          "description": "Implemente soluciones de control remoto on-premises que mantienen todos los datos dentro de su infraestructura. Prevenga la pérdida de datos mediante grabación centralizada de sesiones, monitoreo de transferencia de archivos y auditoría de acceso sin depender de servicios en la nube de terceros.",
+          "onPremises": {
+            "title": "Implementación On-Premises",
+            "description": "Infraestructura de acceso remoto autohospedada"
+          },
+          "sessionRecording": {
+            "title": "Grabación de Sesiones",
+            "description": "Pista de auditoría completa de sesiones remotas"
+          },
+          "fileTransfer": {
+            "title": "Monitoreo de Transferencia de Archivos",
+            "description": "Rastrear y controlar el movimiento de datos"
+          },
+          "accessControl": {
+            "title": "Control de Acceso",
+            "description": "Permisos granulares y autenticación"
+          },
+          "encrypted": {
+            "title": "Comunicaciones Cifradas",
+            "description": "Cifrado de extremo a extremo para todas las sesiones"
+          },
+          "compliance": {
+            "title": "Listo para Cumplimiento",
+            "description": "Cumple con los requisitos regulatorios de soberanía de datos"
+          }
+        },
+        "dlp": {
+          "title": "Soluciones de Prevención de Fuga de Datos (DLP)",
+          "description": "Soluciones integrales de prevención de pérdida de datos (DLP) utilizando tanto software de código abierto como desarrollado a medida. Detecte, monitoree y prevenga la exfiltración no autorizada de datos en endpoints, red y aplicaciones en la nube.",
+          "contentInspection": {
+            "title": "Inspección de Contenido",
+            "patternMatching": "Coincidencia de patrones y clasificación",
+            "dataDiscovery": "Descubrimiento y etiquetado de datos sensibles",
+            "piiPhiPci": "Detección de datos PII, PHI y PCI",
+            "customRules": "Reglas y políticas personalizadas"
+          },
+          "preventionResponse": {
+            "title": "Prevención y Respuesta",
+            "blockQuarantine": "Bloquear, poner en cuarentena o cifrar datos sensibles",
+            "egress": "Controles de salida de correo electrónico, USB y red",
+            "cloudApp": "DLP de aplicaciones en la nube (SaaS/IaaS)",
+            "incident": "Informes de incidentes y análisis forense"
+          }
+        }
+      },
+      "whyChooseUs": {
+        "title": "Por qué Elegir Nuestras Soluciones de Flota de Escritorio",
+        "subtitle": "Gestión integral de flotas con un enfoque de seguridad primero y experiencia probada.",
+        "securityFocused": {
+          "title": "Enfocado en la Seguridad",
+          "description": "Cada solución prioriza la seguridad con estrategias de defensa en profundidad y monitoreo de amenazas en tiempo real."
+        },
+        "unifiedManagement": {
+          "title": "Gestión Unificada",
+          "description": "Panel único para gestionar flotas de Windows y Linux con políticas coherentes."
+        },
+        "proactiveMonitoring": {
+          "title": "Monitoreo Proactivo",
+          "description": "Visibilidad en tiempo real y respuestas automatizadas a problemas antes de que afecten a los usuarios."
+        }
+      },
+      "cta": {
+        "title": "Asegure y Gestione su Flota de Escritorios",
+        "description": "Desde RMM y aplicación de políticas hasta monitoreo de seguridad y configuración de SOC, ofrecemos soluciones completas de gestión de flota de escritorios.",
+        "primaryButton": "Agendar una Consulta",
+        "secondaryButton": "Ver Soluciones de Seguridad"
+      }
+    }
+  },
+  "netterDSQL": {
+    "badge": "Más Allá de la Base de Datos SQL Distribuida",
+    "title": "Netter DSQL",
+    "subtitle": "Unifique múltiples cargas de trabajo de bases de datos en una única plataforma con transacciones ACID, tolerancia a fallos y escalabilidad ilimitada para OLTP, OLAP y streaming.",
+    "buttons": {
+      "getStarted": "Comenzar",
+      "viewDocumentation": "Ver Documentación"
+    },
+    "targetAudience": {
+      "title": "Construido para Organizaciones Modernas",
+      "subtitle": "Netter DSQL está diseñado para satisfacer las diversas necesidades de los proveedores de nube y empresas de cualquier tamaño, desde startups hasta organizaciones empresariales.",
+      "cloudProviders": {
+        "title": "Proveedores de Nube",
+        "description": "Ofrezca a sus clientes una plataforma unificada de base de datos como servicio que maneja cargas de trabajo OLTP, OLAP y streaming con confiabilidad de grado empresarial y escalabilidad infinita."
+      },
+      "anySizeBusiness": {
+        "title": "Empresas de Cualquier Tamaño",
+        "description": "Desde startups ágiles que necesitan escalado rápido hasta grandes empresas que requieren confiabilidad de misión crítica, Netter DSQL se adapta a sus requisitos comerciales y trayectoria de crecimiento."
+      }
+    },
+    "keyFeatures": {
+      "aiPowered": {
+        "title": "Inteligencia Potenciada por IA",
+        "description": "La búsqueda nativa de similitud vectorial y las consultas SQL listas para LLM permiten la búsqueda semántica y recomendaciones inteligentes con rendimiento de grado empresarial.",
+        "vectorSearch": "Búsqueda Nativa de Similitud Vectorial",
+        "llmReady": "Consultas SQL Listas para LLM",
+        "semanticSearch": "Búsqueda Semántica y Recomendaciones"
+      },
+      "acidTransactions": {
+        "title": "Transacciones ACID Globales",
+        "description": "Garantice la consistencia de los datos en sistemas distribuidos con fuertes garantías ACID, escalabilidad en línea y captura de datos de cambio (CDC) en tiempo real.",
+        "consistency": "Fuertes Garantías de Consistencia",
+        "onlineScalability": "Escalabilidad en Línea",
+        "cdc": "Captura de Datos de Cambio (CDC)"
+      },
+      "analytics": {
+        "title": "Analíticas Masivamente Paralelas",
+        "description": "El almacenamiento columnar con motor de consulta MPP vectorizado ofrece un rendimiento de primer nivel para cargas de trabajo analíticas con soporte de consulta federada.",
+        "columnar": "Motor de Almacenamiento Columnar",
+        "vectorized": "Procesamiento de Consultas Vectorizado",
+        "federated": "Soporte de Consulta Federada"
+      }
+    },
+    "oltpOlap": {
+      "title": "Motor Unificado OLTP y OLAP",
+      "description": "Plataforma única que maneja tanto el Procesamiento de Transacciones en Línea (OLTP) para operaciones en tiempo real como el Procesamiento Analítico en Línea (OLAP) para consultas complejas de inteligencia de negocios.",
+      "oltpFeatures": {
+        "title": "Características OLTP",
+        "highFrequency": "Transacciones de alta frecuencia",
+        "lowLatency": "Latencia por debajo del milisegundo",
+        "acid": "Cumplimiento ACID"
+      },
+      "olapFeatures": {
+        "title": "Características OLAP",
+        "complexQueries": "Consultas analíticas complejas",
+        "columnar": "Procesamiento de datos columnar",
+        "petabyte": "Analíticas a escala de petabytes"
+      }
+    },
+    "eventQueue": {
+      "title": "Cola de Eventos y Procesamiento de Flujos",
+      "description": "Netter DSQL sirve tanto como base de datos como sistema de cola de eventos persistente y distribuido. A diferencia de las implementaciones tradicionales de Kafka, nuestros eventos se almacenan con garantías completas de durabilidad y consistencia de base de datos.",
+      "persistent": {
+        "title": "Persistente y Distribuido",
+        "description": "Los eventos se almacenan de forma persistente en múltiples nodos con replicación automática y tolerancia a fallos, asegurando cero pérdida de datos."
+      },
+      "databaseNative": {
+        "title": "Streaming Nativo de Base de Datos",
+        "description": "Las capacidades de procesamiento de flujos están integradas en el motor de la base de datos, eliminando la necesidad de infraestructura de streaming separada."
+      },
+      "kafkaCompatibility": {
+        "title": "Compatibilidad con API de Kafka",
+        "description": "Compatibilidad total con la API de Kafka 3.4.0 significa que sus aplicaciones existentes funcionan sin modificaciones."
+      }
+    },
+    "streaming": {
+      "title": "Streaming en Tiempo Real",
+      "description": "Compatibilidad con la API de Kafka 3.4.0 con entrega exactamente una vez (exactly-once) e integración transaccional fluida de tema a tabla para aplicaciones de streaming modernas.",
+      "kafkaCompatible": "Compatible con API de Kafka",
+      "exactlyOnce": "Entrega Exactamente Una Vez",
+      "transactional": "Integración Transaccional"
+    },
+    "deployment": {
+      "title": "Opciones de Implementación",
+      "openSource": {
+        "title": "Código Abierto",
+        "description": "Licencia Apache 2.0, implemente en cualquier lugar con soporte completo de la comunidad.",
+        "cta": "Descargar"
+      },
+      "enterprise": {
+        "title": "Edición Empresarial",
+        "description": "Seguridad mejorada, soporte y características de grado empresarial.",
+        "cta": "Contactar a Ventas"
+      },
+      "cloudManaged": {
+        "title": "Gestionado en la Nube",
+        "description": "Servicio totalmente gestionado con garantía de disponibilidad del 99.99%.",
+        "cta": "Probar la Nube"
+      }
+    },
+    "performanceStats": {
+      "title": "Rendimiento de Grado Empresarial",
+      "availability": "Disponibilidad",
+      "scalability": "Escalabilidad",
+      "transactions": "Transacciones",
+      "workloads": "Cargas de Trabajo"
+    }
+  }
+}

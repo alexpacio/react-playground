@@ -1,83 +1,83 @@
 export interface NavLink {
-  title: string;
+  titleKey: string;
   href: string;
-  description?: string;
+  descriptionKey?: string;
 }
 
 export interface NavSection {
-  title: string;
+  titleKey: string;
   items: NavLink[];
   featured?: NavLink;
 }
 
 export const productsNav: NavSection = {
-  title: 'Products',
+  titleKey: 'header.products',
   featured: {
-    title: 'Netter DSQL',
+    titleKey: 'products.netterDSQL.name',
     href: '/netter-dsql',
-    description: 'Beyond Distributed SQL Database',
+    descriptionKey: 'products.netterDSQL.description',
   },
   items: [
     {
-      title: 'Web Apps',
+      titleKey: 'products.webApps.name',
       href: '/products/web',
-      description: 'Modern web applications and tools.',
+      descriptionKey: 'products.webApps.description',
     },
     {
-      title: 'Mobile',
+      titleKey: 'products.mobile.name',
       href: '/products/mobile',
-      description: 'Cross-platform mobile solutions.',
+      descriptionKey: 'products.mobile.description',
     },
   ],
 };
 
 export const servicesNav: NavSection = {
-  title: 'Services',
+  titleKey: 'header.services',
   featured: {
-    title: 'Observability & SRE',
+    titleKey: 'services.observabilitySRE.name',
     href: '/services/observability-sre',
-    description: 'Build reliable systems at scale',
+    descriptionKey: 'services.observabilitySRE.description',
   },
   items: [
     {
-      title: 'Backend Development',
+      titleKey: 'services.backend.name',
       href: '/services/backend',
-      description: 'Rust, Node.js, and Golang services',
+      descriptionKey: 'services.backend.description',
     },
     {
-      title: 'Frontend Development',
+      titleKey: 'services.frontend.name',
       href: '/services/frontend',
-      description: 'Angular and React applications',
+      descriptionKey: 'services.frontend.description',
     },
     {
-      title: 'Database Administration',
+      titleKey: 'services.dba.name',
       href: '/services/dba',
-      description: 'MySQL, PostgreSQL, MongoDB, Redis',
+      descriptionKey: 'services.dba.description',
     },
     {
-      title: 'Virtualization Infrastructure',
+      titleKey: 'services.virtualization.name',
       href: '/services/virtualization',
-      description: 'KVM, Hyper-V, and VMware expertise',
+      descriptionKey: 'services.virtualization.description',
     },
     {
-      title: 'Network Infrastructure',
+      titleKey: 'services.networking.name',
       href: '/services/networking',
-      description: 'TCP/IP, OpenWRT, VyOS, OPNSense',
+      descriptionKey: 'services.networking.description',
     },
     {
-      title: 'VDI Migration',
+      titleKey: 'services.vdi.name',
       href: '/services/vdi',
-      description: 'Virtual Desktop Infrastructure',
+      descriptionKey: 'services.vdi.description',
     },
     {
-      title: 'Desktop Fleet Management',
+      titleKey: 'services.desktopFleet.name',
       href: '/services/desktop-fleet',
-      description: 'RMM for Windows and Linux fleets',
+      descriptionKey: 'services.desktopFleet.description',
     },
   ],
 };
 
 export const mainNavLinks: NavLink[] = [
-  { title: 'Home', href: '/' },
-  { title: 'About', href: '/about' },
+  { titleKey: 'header.home', href: '/' },
+  { titleKey: 'header.about', href: '/about' },
 ];
