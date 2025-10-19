@@ -1,11 +1,13 @@
 import { Terminal } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { productsNav, servicesNav } from '@/config/navigation';
 
 export function Footer() {
   return (
     <footer className="border-t border-border bg-background/50 backdrop-blur-sm">
       <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          <div className="col-span-1 md:col-span-2">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[1.5fr_1fr_1fr_1fr] gap-8 lg:gap-12">
+          <div>
             <div className="text-2xl font-semibold text-foreground mb-4 flex items-center">
               <Terminal className="h-8 w-8 text-muted-foreground mr-3" />
               Netter
@@ -15,39 +17,71 @@ export function Footer() {
             </p>
           </div>
           <div>
-            <h3 className="text-sm font-semibold text-foreground tracking-wide uppercase mb-4">Services</h3>
+            <h3 className="text-sm font-semibold text-foreground tracking-wide uppercase mb-4">{productsNav.title}</h3>
             <ul className="space-y-3">
-              <li>
-                <div className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-200 flex items-center cursor-pointer">
-                  <div className="w-1 h-1 bg-muted-foreground rounded-full mr-2"></div>
-                  Cloud Architecture
-                </div>
-              </li>
-              <li>
-                <div className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-200 flex items-center cursor-pointer">
-                  <div className="w-1 h-1 bg-muted-foreground rounded-full mr-2"></div>
-                  Software Development
-                </div>
-              </li>
-              <li>
-                <div className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-200 flex items-center cursor-pointer">
-                  <div className="w-1 h-1 bg-muted-foreground rounded-full mr-2"></div>
-                  System Engineering
-                </div>
-              </li>
-              <li>
-                <div className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-200 flex items-center cursor-pointer">
-                  <div className="w-1 h-1 bg-muted-foreground rounded-full mr-2"></div>
-                  DevOps & CI/CD
-                </div>
-              </li>
+              {productsNav.featured && (
+                <li>
+                  <Link
+                    to={productsNav.featured.href}
+                    className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-200 flex items-center"
+                  >
+                    <div className="w-1 h-1 bg-muted-foreground rounded-full mr-2"></div>
+                    {productsNav.featured.title}
+                  </Link>
+                </li>
+              )}
+              {productsNav.items.map((item) => (
+                <li key={item.href}>
+                  <Link
+                    to={item.href}
+                    className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-200 flex items-center"
+                  >
+                    <div className="w-1 h-1 bg-muted-foreground rounded-full mr-2"></div>
+                    {item.title}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
           <div>
-            <h3 className="text-sm font-semibold text-foreground tracking-wide uppercase mb-4">Contact</h3>
+            <h3 className="text-sm font-semibold text-foreground tracking-wide uppercase mb-4">{servicesNav.title}</h3>
             <ul className="space-y-3">
-              <li className="text-sm text-muted-foreground">info@netter.com</li>
-              <li className="text-sm text-muted-foreground">+1 (555) 123-4567</li>
+              {servicesNav.featured && (
+                <li>
+                  <Link
+                    to={servicesNav.featured.href}
+                    className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-200 flex items-center"
+                  >
+                    <div className="w-1 h-1 bg-muted-foreground rounded-full mr-2"></div>
+                    {servicesNav.featured.title}
+                  </Link>
+                </li>
+              )}
+              {servicesNav.items.slice(0, 4).map((item) => (
+                <li key={item.href}>
+                  <Link
+                    to={item.href}
+                    className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-200 flex items-center"
+                  >
+                    <div className="w-1 h-1 bg-muted-foreground rounded-full mr-2"></div>
+                    {item.title}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div>
+            <h3 className="text-sm font-semibold text-foreground tracking-wide uppercase mb-4">About</h3>
+            <ul className="space-y-3">
+              <li>
+                <Link
+                  to="/about"
+                  className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-200 flex items-center"
+                >
+                  <div className="w-1 h-1 bg-muted-foreground rounded-full mr-2"></div>
+                  About Us
+                </Link>
+              </li>
             </ul>
           </div>
         </div>

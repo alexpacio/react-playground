@@ -1,7 +1,8 @@
 import { Button } from '@/components/ui/button';
-import { Terminal, Sparkles, Menu, X, ChevronDown, Database, Server, Code, MonitorSmartphone, Network, HardDrive, Activity } from 'lucide-react';
+import { Terminal, Sparkles, Menu, X, ChevronDown, Database, Activity } from 'lucide-react';
 import { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
+import { productsNav, servicesNav, mainNavLinks } from '@/config/navigation';
 
 export function Header() {
   const [scrolled, setScrolled] = useState(false);
@@ -26,13 +27,18 @@ export function Header() {
       clearTimeout(timeoutRef.current);
       timeoutRef.current = null;
     }
+    if (servicesTimeoutRef.current) {
+      clearTimeout(servicesTimeoutRef.current);
+      servicesTimeoutRef.current = null;
+    }
+    setServicesDropdownOpen(false);
     setDropdownOpen(true);
   };
 
   const handleMouseLeave = () => {
     timeoutRef.current = setTimeout(() => {
       setDropdownOpen(false);
-    }, 500);
+    }, 300);
   };
 
   const handleServicesMouseEnter = () => {
@@ -40,13 +46,18 @@ export function Header() {
       clearTimeout(servicesTimeoutRef.current);
       servicesTimeoutRef.current = null;
     }
+    if (timeoutRef.current) {
+      clearTimeout(timeoutRef.current);
+      timeoutRef.current = null;
+    }
+    setDropdownOpen(false);
     setServicesDropdownOpen(true);
   };
 
   const handleServicesMouseLeave = () => {
     servicesTimeoutRef.current = setTimeout(() => {
       setServicesDropdownOpen(false);
-    }, 500);
+    }, 300);
   };
 
   // Close dropdown when clicking outside
@@ -123,39 +134,35 @@ export function Header() {
                   {dropdownOpen && (
                     <div className="absolute top-full left-0 mt-5 w-[500px] bg-popover text-popover-foreground rounded-md border shadow-lg animate-in fade-in-0 zoom-in-95">
                       <div className="grid gap-3 p-6 lg:grid-cols-[.75fr_1fr]">
-                        <div className="row-span-3">
-                          <Link
-                            to="/netter-dsql"
-                            className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none transition-colors hover:bg-accent focus:shadow-md"
-                          >
-                            <Database className="h-6 w-6" />
-                            <div className="mb-2 mt-4 text-lg font-medium">
-                              Netter DSQL
-                            </div>
-                            <p className="text-sm leading-tight text-muted-foreground">
-                              Beyond Distributed SQL Database
-                            </p>
-                          </Link>
-                        </div>
+                        {productsNav.featured && (
+                          <div className="row-span-3">
+                            <Link
+                              to={productsNav.featured.href}
+                              className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none transition-colors hover:bg-accent focus:shadow-md"
+                            >
+                              <Database className="h-6 w-6" />
+                              <div className="mb-2 mt-4 text-lg font-medium">
+                                {productsNav.featured.title}
+                              </div>
+                              <p className="text-sm leading-tight text-muted-foreground">
+                                {productsNav.featured.description}
+                              </p>
+                            </Link>
+                          </div>
+                        )}
                         <div className="space-y-2">
-                          <Link 
-                            to="/products/web" 
-                            className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
-                          >
-                            <div className="text-sm font-medium leading-none">Web Apps</div>
-                            <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-                              Modern web applications and tools.
-                            </p>
-                          </Link>
-                          <Link 
-                            to="/products/mobile" 
-                            className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
-                          >
-                            <div className="text-sm font-medium leading-none">Mobile</div>
-                            <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-                              Cross-platform mobile solutions.
-                            </p>
-                          </Link>
+                          {productsNav.items.map((item) => (
+                            <Link
+                              key={item.href}
+                              to={item.href}
+                              className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                            >
+                              <div className="text-sm font-medium leading-none">{item.title}</div>
+                              <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                                {item.description}
+                              </p>
+                            </Link>
+                          ))}
                         </div>
                       </div>
                     </div>
@@ -174,107 +181,37 @@ export function Header() {
                   </button>
 
                   {servicesDropdownOpen && (
-                    <div className="absolute top-full left-0 mt-5 w-[600px] bg-popover text-popover-foreground rounded-md border shadow-lg animate-in fade-in-0 zoom-in-95">
-                      <div className="grid gap-3 p-6 lg:grid-cols-2">
+                    <div className="absolute top-full left-0 mt-5 w-[650px] bg-popover text-popover-foreground rounded-md border shadow-lg animate-in fade-in-0 zoom-in-95">
+                      <div className="grid gap-3 p-6 lg:grid-cols-[.75fr_1fr]">
+                        {servicesNav.featured && (
+                          <div className="row-span-4">
+                            <Link
+                              to={servicesNav.featured.href}
+                              className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none transition-colors hover:bg-accent focus:shadow-md"
+                            >
+                              <Activity className="h-6 w-6" />
+                              <div className="mb-2 mt-4 text-lg font-medium">
+                                {servicesNav.featured.title}
+                              </div>
+                              <p className="text-sm leading-tight text-muted-foreground">
+                                {servicesNav.featured.description}
+                              </p>
+                            </Link>
+                          </div>
+                        )}
                         <div className="space-y-2">
-                          <Link
-                            to="/services/backend"
-                            className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
-                          >
-                            <div className="flex items-center gap-2">
-                              <Server className="h-4 w-4" />
-                              <div className="text-sm font-medium leading-none">Backend Development</div>
-                            </div>
-                            <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-                              Rust, Node.js, and Golang web services
-                            </p>
-                          </Link>
-                          <Link
-                            to="/services/frontend"
-                            className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
-                          >
-                            <div className="flex items-center gap-2">
-                              <Code className="h-4 w-4" />
-                              <div className="text-sm font-medium leading-none">Frontend Development</div>
-                            </div>
-                            <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-                              Angular and React applications
-                            </p>
-                          </Link>
-                          <Link
-                            to="/services/dba"
-                            className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
-                          >
-                            <div className="flex items-center gap-2">
-                              <Database className="h-4 w-4" />
-                              <div className="text-sm font-medium leading-none">Database Administration</div>
-                            </div>
-                            <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-                              MySQL, PostgreSQL, MongoDB, and Redis
-                            </p>
-                          </Link>
-                          <Link
-                            to="/services/virtualization"
-                            className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
-                          >
-                            <div className="flex items-center gap-2">
-                              <HardDrive className="h-4 w-4" />
-                              <div className="text-sm font-medium leading-none">Virtualization Infrastructure</div>
-                            </div>
-                            <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-                              Large-scale virtualization consultancy
-                            </p>
-                          </Link>
-                        </div>
-                        <div className="space-y-2">
-                          <Link
-                            to="/services/networking"
-                            className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
-                          >
-                            <div className="flex items-center gap-2">
-                              <Network className="h-4 w-4" />
-                              <div className="text-sm font-medium leading-none">Network Infrastructure</div>
-                            </div>
-                            <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-                              Large networking infrastructure consultancy
-                            </p>
-                          </Link>
-                          <Link
-                            to="/services/vdi"
-                            className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
-                          >
-                            <div className="flex items-center gap-2">
-                              <MonitorSmartphone className="h-4 w-4" />
-                              <div className="text-sm font-medium leading-none">VDI Migration</div>
-                            </div>
-                            <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-                              Virtual Desktop Infrastructure migration services
-                            </p>
-                          </Link>
-                          <Link
-                            to="/services/desktop-fleet"
-                            className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
-                          >
-                            <div className="flex items-center gap-2">
-                              <Terminal className="h-4 w-4" />
-                              <div className="text-sm font-medium leading-none">Desktop Fleet Management</div>
-                            </div>
-                            <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-                              Custom RMM and management for Windows and Linux fleets
-                            </p>
-                          </Link>
-                          <Link
-                            to="/services/observability-sre"
-                            className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
-                          >
-                            <div className="flex items-center gap-2">
-                              <Activity className="h-4 w-4" />
-                              <div className="text-sm font-medium leading-none">Observability & SRE</div>
-                            </div>
-                            <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-                              Monitoring, logging, and site reliability engineering
-                            </p>
-                          </Link>
+                          {servicesNav.items.map((item) => (
+                            <Link
+                              key={item.href}
+                              to={item.href}
+                              className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                            >
+                              <div className="text-sm font-medium leading-none">{item.title}</div>
+                              <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                                {item.description}
+                              </p>
+                            </Link>
+                          ))}
                         </div>
                       </div>
                     </div>
@@ -322,91 +259,52 @@ export function Header() {
               </Link>
               
               <div className="space-y-2">
-                <div className="text-sm font-medium text-white py-2">Products</div>
+                <div className="text-sm font-medium text-white py-2">{productsNav.title}</div>
                 <div className="pl-4 space-y-2">
-                  <Link
-                    to="/netter-dsql"
-                    className="block text-sm text-white/80 hover:text-white transition-colors duration-200 py-1"
-                    onClick={() => setMobileMenuOpen(false)}
-                  >
-                    Netter DSQL
-                  </Link>
-                  <Link
-                    to="/products/web"
-                    className="block text-sm text-white/80 hover:text-white transition-colors duration-200 py-1"
-                    onClick={() => setMobileMenuOpen(false)}
-                  >
-                    Web Apps
-                  </Link>
-                  <Link
-                    to="/products/mobile"
-                    className="block text-sm text-white/80 hover:text-white transition-colors duration-200 py-1"
-                    onClick={() => setMobileMenuOpen(false)}
-                  >
-                    Mobile
-                  </Link>
+                  {productsNav.featured && (
+                    <Link
+                      to={productsNav.featured.href}
+                      className="block text-sm text-white/80 hover:text-white transition-colors duration-200 py-1"
+                      onClick={() => setMobileMenuOpen(false)}
+                    >
+                      {productsNav.featured.title}
+                    </Link>
+                  )}
+                  {productsNav.items.map((item) => (
+                    <Link
+                      key={item.href}
+                      to={item.href}
+                      className="block text-sm text-white/80 hover:text-white transition-colors duration-200 py-1"
+                      onClick={() => setMobileMenuOpen(false)}
+                    >
+                      {item.title}
+                    </Link>
+                  ))}
                 </div>
               </div>
 
               <div className="space-y-2">
-                <div className="text-sm font-medium text-white py-2">Services</div>
+                <div className="text-sm font-medium text-white py-2">{servicesNav.title}</div>
                 <div className="pl-4 space-y-2">
-                  <Link
-                    to="/services/backend"
-                    className="block text-sm text-white/80 hover:text-white transition-colors duration-200 py-1"
-                    onClick={() => setMobileMenuOpen(false)}
-                  >
-                    Backend Development
-                  </Link>
-                  <Link
-                    to="/services/frontend"
-                    className="block text-sm text-white/80 hover:text-white transition-colors duration-200 py-1"
-                    onClick={() => setMobileMenuOpen(false)}
-                  >
-                    Frontend Development
-                  </Link>
-                  <Link
-                    to="/services/dba"
-                    className="block text-sm text-white/80 hover:text-white transition-colors duration-200 py-1"
-                    onClick={() => setMobileMenuOpen(false)}
-                  >
-                    Database Administration
-                  </Link>
-                  <Link
-                    to="/services/virtualization"
-                    className="block text-sm text-white/80 hover:text-white transition-colors duration-200 py-1"
-                    onClick={() => setMobileMenuOpen(false)}
-                  >
-                    Virtualization Infrastructure
-                  </Link>
-                  <Link
-                    to="/services/networking"
-                    className="block text-sm text-white/80 hover:text-white transition-colors duration-200 py-1"
-                    onClick={() => setMobileMenuOpen(false)}
-                  >
-                    Network Infrastructure
-                  </Link>
-                  <Link
-                    to="/services/vdi"
-                    className="block text-sm text-white/80 hover:text-white transition-colors duration-200 py-1"
-                    onClick={() => setMobileMenuOpen(false)}
-                  >
-                    VDI Migration
-                  </Link>
-                  <Link
-                    to="/services/desktop-fleet"
-                    className="block text-sm text-white/80 hover:text-white transition-colors duration-200 py-1"
-                    onClick={() => setMobileMenuOpen(false)}
-                  >
-                    Desktop Fleet Management
-                  </Link>
-                  <Link
-                    to="/services/observability-sre"
-                    className="block text-sm text-white/80 hover:text-white transition-colors duration-200 py-1"
-                    onClick={() => setMobileMenuOpen(false)}
-                  >
-                    Observability & SRE
-                  </Link>
+                  {servicesNav.items.map((item) => (
+                    <Link
+                      key={item.href}
+                      to={item.href}
+                      className="block text-sm text-white/80 hover:text-white transition-colors duration-200 py-1"
+                      onClick={() => setMobileMenuOpen(false)}
+                    >
+                      {item.title}
+                    </Link>
+                  ))}
+                  {servicesNav.featured && (
+                    <Link
+                      to={servicesNav.featured.href}
+                      className="block text-sm text-white/80 hover:text-white transition-colors duration-200 py-1"
+                      onClick={() => setMobileMenuOpen(false)}
+                    >
+                      {servicesNav.featured.title}
+                    </Link>
+                  )}
                 </div>
               </div>
 
