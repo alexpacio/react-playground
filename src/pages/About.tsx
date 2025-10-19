@@ -51,7 +51,7 @@ export function About() {
             About Netter
           </div>
           <div className="space-y-2">
-            <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl">
+            <h1 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl lg:text-6xl">
               Effective Solutions for <br />
               <span className="text-muted-foreground">Advanced Companies</span>
             </h1>
@@ -64,7 +64,7 @@ export function About() {
         {/* Mission Section */}
         <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 mb-16">
           <div className="flex flex-col justify-center space-y-4">
-            <h2 className="text-2xl font-bold tracking-tighter sm:text-3xl">
+            <h2 className="text-2xl font-bold tracking-tight sm:text-3xl">
               Our Mission
             </h2>
             <p className="text-muted-foreground md:text-lg leading-relaxed">
@@ -99,7 +99,7 @@ export function About() {
         {/* Values Section */}
         <div className="mb-16">
           <div className="text-center mb-12">
-            <h2 className="text-2xl font-bold tracking-tighter sm:text-3xl mb-4">
+            <h2 className="text-2xl font-bold tracking-tight sm:text-3xl mb-4">
               Our Core Values
             </h2>
             <p className="mx-auto max-w-[600px] text-muted-foreground">
@@ -125,7 +125,7 @@ export function About() {
         {/* CTA Section */}
         <div className="bg-muted/30 p-8 border border-border text-center">
           <Terminal className="h-12 w-12 text-muted-foreground mx-auto mb-4" />
-          <h2 className="text-2xl font-bold tracking-tighter mb-4">
+          <h2 className="text-2xl font-bold tracking-tight mb-4">
             Ready to Transform Your Technology?
           </h2>
           <p className="text-muted-foreground mb-6 max-w-[500px] mx-auto">

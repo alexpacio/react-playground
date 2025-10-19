@@ -27,7 +27,7 @@ export function BackendDevelopment() {
             Backend Web Software Development
           </div>
           <div className="space-y-2">
-            <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl">
+            <h1 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl lg:text-6xl">
               Backend Development Services
             </h1>
             <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl">
@@ -48,7 +48,7 @@ export function BackendDevelopment() {
 
         {/* Technology Stack */}
         <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold tracking-tighter mb-4">Our Technology Stack</h2>
+          <h2 className="text-3xl font-bold tracking-tight mb-4">Our Technology Stack</h2>
           <p className="mx-auto max-w-[600px] text-muted-foreground mb-12">
             We specialize in modern, high-performance backend technologies that power scalable web applications.
           </p>
@@ -86,7 +86,7 @@ export function BackendDevelopment() {
         {/* Services Overview */}
         <div className="mb-16">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold tracking-tighter mb-4">Our Services</h2>
+            <h2 className="text-3xl font-bold tracking-tight mb-4">Our Services</h2>
             <p className="mx-auto max-w-[700px] text-muted-foreground">
               Comprehensive backend development services tailored to your needs, from augmenting your team to managing entire projects.
             </p>
@@ -100,7 +100,7 @@ export function BackendDevelopment() {
                   <Users className="h-6 w-6 text-white" />
                 </div>
                 <div className="flex-1">
-                  <h2 className="text-2xl font-bold tracking-tighter mb-2">
+                  <h2 className="text-2xl font-bold tracking-tight mb-2">
                     Individual Contributor (IC) Outsourcing
                   </h2>
                   <p className="text-muted-foreground mb-6 leading-relaxed">
@@ -151,7 +151,7 @@ export function BackendDevelopment() {
                   <Briefcase className="h-6 w-6 text-white" />
                 </div>
                 <div className="flex-1">
-                  <h2 className="text-2xl font-bold tracking-tighter mb-2">
+                  <h2 className="text-2xl font-bold tracking-tight mb-2">
                     Project Management
                   </h2>
                   <p className="text-muted-foreground mb-6 leading-relaxed">
@@ -216,7 +216,7 @@ export function BackendDevelopment() {
                   <GraduationCap className="h-6 w-6 text-white" />
                 </div>
                 <div className="flex-1">
-                  <h2 className="text-2xl font-bold tracking-tighter mb-2">
+                  <h2 className="text-2xl font-bold tracking-tight mb-2">
                     Technical Debt Classification & Technical Classes
                   </h2>
                   <p className="text-muted-foreground mb-6 leading-relaxed">
@@ -285,7 +285,7 @@ export function BackendDevelopment() {
         {/* Why Choose Us */}
         <div className="bg-gray-50 p-8 border border-border mb-16">
           <div className="text-center mb-8">
-            <h2 className="text-3xl font-bold tracking-tighter mb-4">Why Choose Our Backend Services</h2>
+            <h2 className="text-3xl font-bold tracking-tight mb-4">Why Choose Our Backend Services</h2>
             <p className="mx-auto max-w-[700px] text-muted-foreground">
               We bring deep expertise, proven methodologies, and a commitment to excellence in every engagement.
             </p>

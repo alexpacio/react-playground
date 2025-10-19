@@ -29,7 +29,7 @@ export function FrontendDevelopment() {
             Frontend Web Software Development
           </div>
           <div className="space-y-2">
-            <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl">
+            <h1 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl lg:text-6xl">
               Frontend Development Services
             </h1>
             <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl">
@@ -50,7 +50,7 @@ export function FrontendDevelopment() {
 
         {/* Technology Stack */}
         <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold tracking-tighter mb-4">Our Frontend Technologies</h2>
+          <h2 className="text-3xl font-bold tracking-tight mb-4">Our Frontend Technologies</h2>
           <p className="mx-auto max-w-[600px] text-muted-foreground mb-12">
             We build modern, responsive web applications using industry-leading frameworks and cutting-edge technologies.
           </p>
@@ -79,7 +79,7 @@ export function FrontendDevelopment() {
         {/* Services Overview */}
         <div className="mb-16">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold tracking-tighter mb-4">Our Services</h2>
+            <h2 className="text-3xl font-bold tracking-tight mb-4">Our Services</h2>
             <p className="mx-auto max-w-[700px] text-muted-foreground">
               Comprehensive frontend development services from team augmentation to specialized expertise in design, performance, and security.
             </p>
@@ -93,7 +93,7 @@ export function FrontendDevelopment() {
                   <Users className="h-6 w-6 text-white" />
                 </div>
                 <div className="flex-1">
-                  <h2 className="text-2xl font-bold tracking-tighter mb-2">
+                  <h2 className="text-2xl font-bold tracking-tight mb-2">
                     Individual Contributor (IC)
                   </h2>
                   <p className="text-muted-foreground mb-6 leading-relaxed">
@@ -144,7 +144,7 @@ export function FrontendDevelopment() {
                   <Palette className="h-6 w-6 text-white" />
                 </div>
                 <div className="flex-1">
-                  <h2 className="text-2xl font-bold tracking-tighter mb-2">
+                  <h2 className="text-2xl font-bold tracking-tight mb-2">
                     UX/UI Designer
                   </h2>
                   <p className="text-muted-foreground mb-6 leading-relaxed">
@@ -209,7 +209,7 @@ export function FrontendDevelopment() {
                   <Cpu className="h-6 w-6 text-white" />
                 </div>
                 <div className="flex-1">
-                  <h2 className="text-2xl font-bold tracking-tighter mb-2">
+                  <h2 className="text-2xl font-bold tracking-tight mb-2">
                     WASM-Backed Components
                   </h2>
                   <p className="text-muted-foreground mb-6 leading-relaxed">
@@ -280,7 +280,7 @@ export function FrontendDevelopment() {
                   <Network className="h-6 w-6 text-white" />
                 </div>
                 <div className="flex-1">
-                  <h2 className="text-2xl font-bold tracking-tighter mb-2">
+                  <h2 className="text-2xl font-bold tracking-tight mb-2">
                     Tailor-Made Networking for Secure Real-Time Communications
                   </h2>
                   <p className="text-muted-foreground mb-6 leading-relaxed">
@@ -349,7 +349,7 @@ export function FrontendDevelopment() {
         {/* Why Choose Us */}
         <div className="bg-gray-50 p-8 border border-border mb-16">
           <div className="text-center mb-8">
-            <h2 className="text-3xl font-bold tracking-tighter mb-4">Why Choose Our Frontend Services</h2>
+            <h2 className="text-3xl font-bold tracking-tight mb-4">Why Choose Our Frontend Services</h2>
             <p className="mx-auto max-w-[700px] text-muted-foreground">
               We combine technical excellence with design thinking to deliver exceptional user experiences.
             </p>

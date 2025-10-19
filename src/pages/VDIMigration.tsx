@@ -31,7 +31,7 @@ export function VDIMigration() {
             Virtual Desktop Infrastructure Migration
           </div>
           <div className="space-y-2">
-            <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl">
+            <h1 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl lg:text-6xl">
               VDI Migration Services
             </h1>
             <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl">
@@ -52,7 +52,7 @@ export function VDIMigration() {
 
         {/* Value Proposition */}
         <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold tracking-tighter mb-4">Why Migrate to VDI?</h2>
+          <h2 className="text-3xl font-bold tracking-tight mb-4">Why Migrate to VDI?</h2>
           <p className="mx-auto max-w-[600px] text-muted-foreground mb-12">
             Virtual Desktop Infrastructure offers centralized management, enhanced security, and flexibility for modern workforces.
           </p>
@@ -84,7 +84,7 @@ export function VDIMigration() {
         {/* Services Overview */}
         <div className="mb-16">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold tracking-tighter mb-4">Our VDI Migration Services</h2>
+            <h2 className="text-3xl font-bold tracking-tight mb-4">Our VDI Migration Services</h2>
             <p className="mx-auto max-w-[700px] text-muted-foreground">
               Comprehensive migration services from assessment and planning to deployment and optimization.
             </p>
@@ -98,7 +98,7 @@ export function VDIMigration() {
                   <Users className="h-6 w-6 text-white" />
                 </div>
                 <div className="flex-1">
-                  <h2 className="text-2xl font-bold tracking-tighter mb-2">
+                  <h2 className="text-2xl font-bold tracking-tight mb-2">
                     Large Fleet Workstation Migrations to Virtual Desktop Environments
                   </h2>
                   <p className="text-muted-foreground mb-6 leading-relaxed">
@@ -163,7 +163,7 @@ export function VDIMigration() {
                   <Cpu className="h-6 w-6 text-white" />
                 </div>
                 <div className="flex-1">
-                  <h2 className="text-2xl font-bold tracking-tighter mb-2">
+                  <h2 className="text-2xl font-bold tracking-tight mb-2">
                     GPU Accelerated VMs Expertise
                   </h2>
                   <p className="text-muted-foreground mb-6 leading-relaxed">
@@ -234,7 +234,7 @@ export function VDIMigration() {
                   <Monitor className="h-6 w-6 text-white" />
                 </div>
                 <div className="flex-1">
-                  <h2 className="text-2xl font-bold tracking-tighter mb-2">
+                  <h2 className="text-2xl font-bold tracking-tight mb-2">
                     Linux and Windows OS Remote Desktop Protocols
                   </h2>
                   <p className="text-muted-foreground mb-6 leading-relaxed">
@@ -305,7 +305,7 @@ export function VDIMigration() {
                   <TrendingUp className="h-6 w-6 text-white" />
                 </div>
                 <div className="flex-1">
-                  <h2 className="text-2xl font-bold tracking-tighter mb-2">
+                  <h2 className="text-2xl font-bold tracking-tight mb-2">
                     Reliable, Fast, and Cheap Solutions
                   </h2>
                   <p className="text-muted-foreground mb-6 leading-relaxed">
@@ -412,7 +412,7 @@ export function VDIMigration() {
         {/* VDI Platforms */}
         <div className="bg-gray-50 p-8 border border-border mb-16">
           <div className="text-center mb-8">
-            <h2 className="text-3xl font-bold tracking-tighter mb-4">VDI Platform Expertise</h2>
+            <h2 className="text-3xl font-bold tracking-tight mb-4">VDI Platform Expertise</h2>
             <p className="mx-auto max-w-[700px] text-muted-foreground">
               We work with all major VDI platforms to find the best fit for your needs.
             </p>

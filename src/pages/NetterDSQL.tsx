@@ -38,7 +38,7 @@ export function NetterDSQL() {
             Beyond Distributed SQL Database
           </div>
           <div className="space-y-2">
-            <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl">
+            <h1 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl lg:text-6xl">
               Netter DSQL
             </h1>
             <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl">
@@ -59,7 +59,7 @@ export function NetterDSQL() {
 
         {/* Target Audience */}
         <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold tracking-tighter mb-4">Built for Modern Organizations</h2>
+          <h2 className="text-3xl font-bold tracking-tight mb-4">Built for Modern Organizations</h2>
           <p className="mx-auto max-w-[600px] text-muted-foreground mb-12">
             Netter DSQL is designed to serve the diverse needs of cloud providers and businesses of any size, from startups to enterprise organizations.
           </p>
@@ -87,7 +87,7 @@ export function NetterDSQL() {
           <div className="bg-gradient-to-br from-purple-50 to-blue-50 p-8 border border-border relative overflow-hidden" style={{backgroundImage: `url(${aiImage})`, backgroundSize: 'cover', backgroundPosition: 'center'}}>
             <div className="relative z-20 backdrop-blur-sm bg-black/60 p-6 w-full lg:w-2/3 shadow-lg" style={{ boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -2px rgba(0, 0, 0, 0.2)' }}>
               <Sparkles className="h-12 w-12 text-white mb-4" />
-              <h2 className="text-2xl font-bold tracking-tighter mb-4 text-white drop-shadow-lg" style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.8)' }}>
+              <h2 className="text-2xl font-bold tracking-tight mb-4 text-white drop-shadow-lg" style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.8)' }}>
                 AI-Powered Intelligence
               </h2>
               <p className="text-white mb-6 leading-relaxed drop-shadow-md" style={{ textShadow: '1px 1px 3px rgba(0, 0, 0, 0.8)' }}>
@@ -114,7 +114,7 @@ export function NetterDSQL() {
           <div className="bg-gradient-to-br from-green-50 to-emerald-50 p-8 border border-border relative overflow-hidden" style={{backgroundImage: `url(${transactionImage})`, backgroundSize: 'cover', backgroundPosition: 'center'}}>
             <div className="relative z-20 backdrop-blur-sm bg-black/60 p-6 w-full lg:w-2/3 shadow-lg ml-auto" style={{ boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -2px rgba(0, 0, 0, 0.2)' }}>
               <Shield className="h-12 w-12 text-white mb-4" />
-              <h2 className="text-2xl font-bold tracking-tighter mb-4 text-white drop-shadow-lg" style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.8)' }}>
+              <h2 className="text-2xl font-bold tracking-tight mb-4 text-white drop-shadow-lg" style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.8)' }}>
                 Global ACID Transactions
               </h2>
               <p className="text-white mb-6 leading-relaxed drop-shadow-md" style={{ textShadow: '1px 1px 3px rgba(0, 0, 0, 0.8)' }}>
@@ -141,7 +141,7 @@ export function NetterDSQL() {
           <div className="bg-gradient-to-br from-orange-50 to-red-50 p-8 border border-border relative overflow-hidden" style={{backgroundImage: `url(${analyticsImage})`, backgroundSize: 'cover', backgroundPosition: 'center'}}>
             <div className="relative z-20 backdrop-blur-sm bg-black/60 p-6 w-full lg:w-2/3 shadow-lg" style={{ boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -2px rgba(0, 0, 0, 0.2)' }}>
               <BarChart3 className="h-12 w-12 text-white mb-4" />
-              <h2 className="text-2xl font-bold tracking-tighter mb-4 text-white drop-shadow-lg" style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.8)' }}>
+              <h2 className="text-2xl font-bold tracking-tight mb-4 text-white drop-shadow-lg" style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.8)' }}>
                 Massively Parallel Analytics
               </h2>
               <p className="text-white mb-6 leading-relaxed drop-shadow-md" style={{ textShadow: '1px 1px 3px rgba(0, 0, 0, 0.8)' }}>
@@ -169,7 +169,7 @@ export function NetterDSQL() {
         <div className="bg-gradient-to-br from-indigo-50 to-cyan-50 p-8 border border-border relative overflow-hidden mb-16" style={{backgroundImage: `url(${ollapImage})`, backgroundSize: 'cover', backgroundPosition: 'center'}}>
           <div className="relative z-20 backdrop-blur-sm bg-black/60 p-6 w-full lg:w-2/3 shadow-lg ml-auto" style={{ boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -2px rgba(0, 0, 0, 0.2)' }}>
             <Users className="h-12 w-12 text-white mb-4" />
-            <h2 className="text-2xl font-bold tracking-tighter mb-4 text-white">
+            <h2 className="text-2xl font-bold tracking-tight mb-4 text-white">
               Unified OLTP & OLAP Engine
             </h2>
             <p className="text-white mb-6 leading-relaxed drop-shadow-md" style={{ textShadow: '1px 1px 3px rgba(0, 0, 0, 0.8)' }}>
@@ -214,7 +214,7 @@ export function NetterDSQL() {
         <div className="bg-gradient-to-br from-yellow-50 to-orange-50 p-8 border border-border relative overflow-hidden mb-16" style={{backgroundImage: `url(${streamingImage})`, backgroundSize: 'cover', backgroundPosition: 'center'}}>
           <div className="relative z-20 backdrop-blur-sm bg-black/60 p-6 w-full lg:w-2/3 shadow-lg" style={{ boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -2px rgba(0, 0, 0, 0.2)' }}>
             <MessageSquare className="h-12 w-12 text-white mb-4" />
-            <h2 className="text-2xl font-bold tracking-tighter mb-4 text-white">
+            <h2 className="text-2xl font-bold tracking-tight mb-4 text-white">
               Event Queue & Stream Processing
             </h2>
             <p className="text-white mb-6 leading-relaxed drop-shadow-md" style={{ textShadow: '1px 1px 3px rgba(0, 0, 0, 0.8)' }}>
@@ -256,7 +256,7 @@ export function NetterDSQL() {
         <div className="bg-gray-900 p-8 border border-border relative overflow-hidden mb-16" style={{backgroundImage: `url(${streamingImage})`, backgroundSize: 'cover', backgroundPosition: 'center'}}>
           <div className="relative z-20 backdrop-blur-sm bg-black/60 p-6 w-full lg:w-1/2 shadow-lg ml-auto" style={{ boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -2px rgba(0, 0, 0, 0.2)' }}>
             <Workflow className="h-12 w-12 text-white mb-4" />
-            <h2 className="text-2xl font-bold tracking-tighter mb-4 text-white">
+            <h2 className="text-2xl font-bold tracking-tight mb-4 text-white">
               Real-time Streaming
             </h2>
             <p className="text-white mb-6 leading-relaxed drop-shadow-md" style={{ textShadow: '1px 1px 3px rgba(0, 0, 0, 0.8)' }}>
@@ -281,7 +281,7 @@ export function NetterDSQL() {
 
         {/* Deployment Options */}
         <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold tracking-tighter mb-8">Deployment Options</h2>
+          <h2 className="text-3xl font-bold tracking-tight mb-8">Deployment Options</h2>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="p-6 border border-border bg-white hover:shadow-lg transition-shadow">
               <Globe className="h-8 w-8 mb-4 mx-auto text-blue-600" />
@@ -312,7 +312,7 @@ export function NetterDSQL() {
 
         {/* Performance Stats */}
         <div className="bg-gray-50 p-8 border border-border text-center">
-          <h2 className="text-3xl font-bold tracking-tighter mb-8">Enterprise-Grade Performance</h2>
+          <h2 className="text-3xl font-bold tracking-tight mb-8">Enterprise-Grade Performance</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             <div>
               <div className="text-3xl font-bold text-blue-600 mb-2">99.99%</div>

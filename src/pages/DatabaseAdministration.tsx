@@ -33,7 +33,7 @@ export function DatabaseAdministration() {
             Database Administration Services
           </div>
           <div className="space-y-2">
-            <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl">
+            <h1 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl lg:text-6xl">
               Expert DBA Services
             </h1>
             <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl">
@@ -54,7 +54,7 @@ export function DatabaseAdministration() {
 
         {/* Database Technologies */}
         <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold tracking-tighter mb-4">Database Expertise</h2>
+          <h2 className="text-3xl font-bold tracking-tight mb-4">Database Expertise</h2>
           <p className="mx-auto max-w-[600px] text-muted-foreground mb-12">
             Deep expertise across the most popular relational, document-based, and in-memory database systems.
           </p>
@@ -101,7 +101,7 @@ export function DatabaseAdministration() {
         {/* Services Overview */}
         <div className="mb-16">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold tracking-tighter mb-4">Our Services</h2>
+            <h2 className="text-3xl font-bold tracking-tight mb-4">Our Services</h2>
             <p className="mx-auto max-w-[700px] text-muted-foreground">
               End-to-end database administration services from initial design to ongoing optimization and training.
             </p>
@@ -115,7 +115,7 @@ export function DatabaseAdministration() {
                   <GitBranch className="h-6 w-6 text-white" />
                 </div>
                 <div className="flex-1">
-                  <h2 className="text-2xl font-bold tracking-tighter mb-2">
+                  <h2 className="text-2xl font-bold tracking-tight mb-2">
                     Relational and Document-Based Database Design Engineering
                   </h2>
                   <p className="text-muted-foreground mb-6 leading-relaxed">
@@ -180,7 +180,7 @@ export function DatabaseAdministration() {
                   <Wrench className="h-6 w-6 text-white" />
                 </div>
                 <div className="flex-1">
-                  <h2 className="text-2xl font-bold tracking-tighter mb-2">
+                  <h2 className="text-2xl font-bold tracking-tight mb-2">
                     Database Maintenance and Administrative Tooling
                   </h2>
                   <p className="text-muted-foreground mb-6 leading-relaxed">
@@ -251,7 +251,7 @@ export function DatabaseAdministration() {
                   <Gauge className="h-6 w-6 text-white" />
                 </div>
                 <div className="flex-1">
-                  <h2 className="text-2xl font-bold tracking-tighter mb-2">
+                  <h2 className="text-2xl font-bold tracking-tight mb-2">
                     Database Performance Tuning
                   </h2>
                   <p className="text-muted-foreground mb-6 leading-relaxed">
@@ -364,7 +364,7 @@ export function DatabaseAdministration() {
                   <GraduationCap className="h-6 w-6 text-white" />
                 </div>
                 <div className="flex-1">
-                  <h2 className="text-2xl font-bold tracking-tighter mb-2">
+                  <h2 className="text-2xl font-bold tracking-tight mb-2">
                     Classrooms for Technical Debt Reduction
                   </h2>
                   <p className="text-muted-foreground mb-6 leading-relaxed">
@@ -427,7 +427,7 @@ export function DatabaseAdministration() {
         {/* Why Choose Us */}
         <div className="bg-gray-50 p-8 border border-border mb-16">
           <div className="text-center mb-8">
-            <h2 className="text-3xl font-bold tracking-tighter mb-4">Why Choose Our DBA Services</h2>
+            <h2 className="text-3xl font-bold tracking-tight mb-4">Why Choose Our DBA Services</h2>
             <p className="mx-auto max-w-[700px] text-muted-foreground">
               Decades of combined experience managing mission-critical database systems at scale.
             </p>

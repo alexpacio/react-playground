@@ -32,7 +32,7 @@ export function VirtualizationInfrastructure() {
             Virtualization Infrastructure Consultancy
           </div>
           <div className="space-y-2">
-            <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl">
+            <h1 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl lg:text-6xl">
               Virtualization Infrastructure Services
             </h1>
             <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl">
@@ -53,7 +53,7 @@ export function VirtualizationInfrastructure() {
 
         {/* Target Audience */}
         <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold tracking-tighter mb-4">Built for Scale and Reliability</h2>
+          <h2 className="text-3xl font-bold tracking-tight mb-4">Built for Scale and Reliability</h2>
           <p className="mx-auto max-w-[600px] text-muted-foreground mb-12">
             Our virtualization solutions serve both service providers offering infrastructure-as-a-service and enterprises requiring mission-critical virtualization platforms.
           </p>
@@ -77,7 +77,7 @@ export function VirtualizationInfrastructure() {
 
         {/* Hypervisor Technologies */}
         <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold tracking-tighter mb-4">Hypervisor Expertise</h2>
+          <h2 className="text-3xl font-bold tracking-tight mb-4">Hypervisor Expertise</h2>
           <p className="mx-auto max-w-[600px] text-muted-foreground mb-12">
             Deep expertise across all major virtualization platforms with best practices for each technology.
           </p>
@@ -115,7 +115,7 @@ export function VirtualizationInfrastructure() {
         {/* Services Overview */}
         <div className="mb-16">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold tracking-tighter mb-4">Our Services</h2>
+            <h2 className="text-3xl font-bold tracking-tight mb-4">Our Services</h2>
             <p className="mx-auto max-w-[700px] text-muted-foreground">
               Comprehensive virtualization infrastructure services from design to deployment and ongoing management.
             </p>
@@ -129,7 +129,7 @@ export function VirtualizationInfrastructure() {
                   <Building2 className="h-6 w-6 text-white" />
                 </div>
                 <div className="flex-1">
-                  <h2 className="text-2xl font-bold tracking-tighter mb-2">
+                  <h2 className="text-2xl font-bold tracking-tight mb-2">
                     Carrier-Grade Infrastructure Solutioning
                   </h2>
                   <p className="text-muted-foreground mb-6 leading-relaxed">
@@ -194,7 +194,7 @@ export function VirtualizationInfrastructure() {
                   <Cpu className="h-6 w-6 text-white" />
                 </div>
                 <div className="flex-1">
-                  <h2 className="text-2xl font-bold tracking-tighter mb-2">
+                  <h2 className="text-2xl font-bold tracking-tight mb-2">
                     Virtual Machines and MicroVM
                   </h2>
                   <p className="text-muted-foreground mb-6 leading-relaxed">
@@ -265,7 +265,7 @@ export function VirtualizationInfrastructure() {
                   <Workflow className="h-6 w-6 text-white" />
                 </div>
                 <div className="flex-1">
-                  <h2 className="text-2xl font-bold tracking-tighter mb-2">
+                  <h2 className="text-2xl font-bold tracking-tight mb-2">
                     High Availability, Automation & Horizontal Scaling
                   </h2>
                   <p className="text-muted-foreground mb-6 leading-relaxed">
@@ -342,7 +342,7 @@ export function VirtualizationInfrastructure() {
                   <CreditCard className="h-6 w-6 text-white" />
                 </div>
                 <div className="flex-1">
-                  <h2 className="text-2xl font-bold tracking-tighter mb-2">
+                  <h2 className="text-2xl font-bold tracking-tight mb-2">
                     Billing Solutions
                   </h2>
                   <p className="text-muted-foreground mb-6 leading-relaxed">
@@ -407,7 +407,7 @@ export function VirtualizationInfrastructure() {
                   <Settings className="h-6 w-6 text-white" />
                 </div>
                 <div className="flex-1">
-                  <h2 className="text-2xl font-bold tracking-tighter mb-2">
+                  <h2 className="text-2xl font-bold tracking-tight mb-2">
                     Self-Management Panels
                   </h2>
                   <p className="text-muted-foreground mb-6 leading-relaxed">
@@ -476,7 +476,7 @@ export function VirtualizationInfrastructure() {
         {/* Why Choose Us */}
         <div className="bg-gray-50 p-8 border border-border mb-16">
           <div className="text-center mb-8">
-            <h2 className="text-3xl font-bold tracking-tighter mb-4">Why Choose Our Virtualization Services</h2>
+            <h2 className="text-3xl font-bold tracking-tight mb-4">Why Choose Our Virtualization Services</h2>
             <p className="mx-auto max-w-[700px] text-muted-foreground">
               Years of experience building and managing large-scale virtualization infrastructure for demanding environments.
             </p>

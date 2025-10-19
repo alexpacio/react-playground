@@ -33,7 +33,7 @@ export function ObservabilitySRE() {
             Observability & Site Reliability Engineering
           </div>
           <div className="space-y-2">
-            <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl">
+            <h1 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl lg:text-6xl">
               Observability & SRE Services
             </h1>
             <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl">
@@ -54,7 +54,7 @@ export function ObservabilitySRE() {
 
         {/* The Three Pillars */}
         <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold tracking-tighter mb-4">The Three Pillars of Observability</h2>
+          <h2 className="text-3xl font-bold tracking-tight mb-4">The Three Pillars of Observability</h2>
           <p className="mx-auto max-w-[600px] text-muted-foreground mb-12">
             Complete visibility into your systems through logs, metrics, and traces - the foundation of reliable operations.
           </p>
@@ -86,7 +86,7 @@ export function ObservabilitySRE() {
         {/* Services Overview */}
         <div className="mb-16">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold tracking-tighter mb-4">Our Services</h2>
+            <h2 className="text-3xl font-bold tracking-tight mb-4">Our Services</h2>
             <p className="mx-auto max-w-[700px] text-muted-foreground">
               End-to-end observability and SRE services from infrastructure setup to culture transformation.
             </p>
@@ -100,7 +100,7 @@ export function ObservabilitySRE() {
                   <Database className="h-6 w-6 text-white" />
                 </div>
                 <div className="flex-1">
-                  <h2 className="text-2xl font-bold tracking-tighter mb-2">
+                  <h2 className="text-2xl font-bold tracking-tight mb-2">
                     High-Frequency Log, Traces, Metrics Ingestors & Data Retention
                   </h2>
                   <p className="text-muted-foreground mb-6 leading-relaxed">
@@ -179,7 +179,7 @@ export function ObservabilitySRE() {
                   <GraduationCap className="h-6 w-6 text-white" />
                 </div>
                 <div className="flex-1">
-                  <h2 className="text-2xl font-bold tracking-tighter mb-2">
+                  <h2 className="text-2xl font-bold tracking-tight mb-2">
                     SRE Principles Classrooms & Culture Spreading
                   </h2>
                   <p className="text-muted-foreground mb-6 leading-relaxed">
@@ -256,7 +256,7 @@ export function ObservabilitySRE() {
                   <AlertCircle className="h-6 w-6 text-white" />
                 </div>
                 <div className="flex-1">
-                  <h2 className="text-2xl font-bold tracking-tighter mb-2">
+                  <h2 className="text-2xl font-bold tracking-tight mb-2">
                     Incident Rooms, Post Mortems, RCA & SRE Team Onboarding
                   </h2>
                   <p className="text-muted-foreground mb-6 leading-relaxed">
@@ -335,7 +335,7 @@ export function ObservabilitySRE() {
                   <Globe className="h-6 w-6 text-white" />
                 </div>
                 <div className="flex-1">
-                  <h2 className="text-2xl font-bold tracking-tighter mb-2">
+                  <h2 className="text-2xl font-bold tracking-tight mb-2">
                     Distributed Operational Tooling for Global Infrastructure
                   </h2>
                   <p className="text-muted-foreground mb-6 leading-relaxed">
@@ -398,7 +398,7 @@ export function ObservabilitySRE() {
         {/* SRE Principles */}
         <div className="bg-gray-50 p-8 border border-border mb-16">
           <div className="text-center mb-8">
-            <h2 className="text-3xl font-bold tracking-tighter mb-4">Core SRE Principles</h2>
+            <h2 className="text-3xl font-bold tracking-tight mb-4">Core SRE Principles</h2>
             <p className="mx-auto max-w-[700px] text-muted-foreground">
               We implement these fundamental SRE principles to ensure reliable, scalable systems.
             </p>

@@ -14,7 +14,7 @@ export function Home() {
             System & Software Engineering
           </div>
           <div className="space-y-2">
-            <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl">
+            <h1 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl lg:text-6xl">
               Effective Solutions for Advanced Companies
             </h1>
             <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl">
@@ -30,7 +30,7 @@ export function Home() {
             <ConsultancyTileAnimation />
             <div className="relative z-10 backdrop-blur-sm bg-white/10 p-6 w-full lg:w-1/2 shadow-lg" style={{ mixBlendMode: 'difference', boxShadow: '0 10px 15px -3px rgba(107, 114, 128, 0.1), 0 4px 6px -2px rgba(107, 114, 128, 0.05)' }}>
               <Terminal className="h-12 w-12 text-white mb-4" />
-              <h2 className="text-2xl font-bold tracking-tighter mb-4 text-white">
+              <h2 className="text-2xl font-bold tracking-tight mb-4 text-white">
                 IT Consultancy Services
               </h2>
               <p className="text-white mb-6 leading-relaxed">
@@ -64,7 +64,7 @@ export function Home() {
             <ProductsTileAnimation />
             <div className="relative z-10 backdrop-blur-sm bg-white/10 p-6 w-full lg:w-1/2 shadow-lg" style={{ mixBlendMode: 'difference', boxShadow: '0 10px 15px -3px rgba(107, 114, 128, 0.1), 0 4px 6px -2px rgba(107, 114, 128, 0.05)' }}>
               <Sparkles className="h-12 w-12 text-white mb-4" />
-              <h2 className="text-2xl font-bold tracking-tighter mb-4 text-white">
+              <h2 className="text-2xl font-bold tracking-tight mb-4 text-white">
                 Cloud Native Products
               </h2>
               <p className="text-white/80 mb-6 leading-relaxed">

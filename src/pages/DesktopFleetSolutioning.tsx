@@ -35,7 +35,7 @@ export function DesktopFleetSolutioning() {
             Desktop Fleet Management Solutions
           </div>
           <div className="space-y-2">
-            <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl">
+            <h1 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl lg:text-6xl">
               Desktop Fleet Management
             </h1>
             <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl">
@@ -56,7 +56,7 @@ export function DesktopFleetSolutioning() {
 
         {/* Platform Support */}
         <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold tracking-tighter mb-4">Multi-Platform Support</h2>
+          <h2 className="text-3xl font-bold tracking-tight mb-4">Multi-Platform Support</h2>
           <p className="mx-auto max-w-[600px] text-muted-foreground mb-12">
             Unified management solutions for diverse desktop environments including Windows workstations, Linux desktops, thin clients, and laptops.
           </p>
@@ -81,7 +81,7 @@ export function DesktopFleetSolutioning() {
         {/* Services Overview */}
         <div className="mb-16">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold tracking-tighter mb-4">Our Services</h2>
+            <h2 className="text-3xl font-bold tracking-tight mb-4">Our Services</h2>
             <p className="mx-auto max-w-[700px] text-muted-foreground">
               End-to-end desktop fleet management solutions from monitoring and policy enforcement to security operations.
             </p>
@@ -95,7 +95,7 @@ export function DesktopFleetSolutioning() {
                   <Activity className="h-6 w-6 text-white" />
                 </div>
                 <div className="flex-1">
-                  <h2 className="text-2xl font-bold tracking-tighter mb-2">
+                  <h2 className="text-2xl font-bold tracking-tight mb-2">
                     RMM Solutions
                   </h2>
                   <p className="text-muted-foreground mb-6 leading-relaxed">
@@ -160,7 +160,7 @@ export function DesktopFleetSolutioning() {
                   <Lock className="h-6 w-6 text-white" />
                 </div>
                 <div className="flex-1">
-                  <h2 className="text-2xl font-bold tracking-tighter mb-2">
+                  <h2 className="text-2xl font-bold tracking-tight mb-2">
                     Active Directory Policy Restrictions
                   </h2>
                   <p className="text-muted-foreground mb-6 leading-relaxed">
@@ -231,7 +231,7 @@ export function DesktopFleetSolutioning() {
                   <ShieldAlert className="h-6 w-6 text-white" />
                 </div>
                 <div className="flex-1">
-                  <h2 className="text-2xl font-bold tracking-tighter mb-2">
+                  <h2 className="text-2xl font-bold tracking-tight mb-2">
                     Cyber Security Real-Time Monitoring Solutions
                   </h2>
                   <p className="text-muted-foreground mb-6 leading-relaxed">
@@ -302,7 +302,7 @@ export function DesktopFleetSolutioning() {
                   <Users className="h-6 w-6 text-white" />
                 </div>
                 <div className="flex-1">
-                  <h2 className="text-2xl font-bold tracking-tighter mb-2">
+                  <h2 className="text-2xl font-bold tracking-tight mb-2">
                     Internal NOC or SOC Creation Consulting
                   </h2>
                   <p className="text-muted-foreground mb-6 leading-relaxed">
@@ -379,7 +379,7 @@ export function DesktopFleetSolutioning() {
                   <WifiOff className="h-6 w-6 text-white" />
                 </div>
                 <div className="flex-1">
-                  <h2 className="text-2xl font-bold tracking-tighter mb-2">
+                  <h2 className="text-2xl font-bold tracking-tight mb-2">
                     Offline VMs RMM Agents
                   </h2>
                   <p className="text-muted-foreground mb-6 leading-relaxed">
@@ -444,7 +444,7 @@ export function DesktopFleetSolutioning() {
                   <Monitor className="h-6 w-6 text-white" />
                 </div>
                 <div className="flex-1">
-                  <h2 className="text-2xl font-bold tracking-tighter mb-2">
+                  <h2 className="text-2xl font-bold tracking-tight mb-2">
                     Thin Clients with Custom Linux/KDE Operating Systems
                   </h2>
                   <p className="text-muted-foreground mb-6 leading-relaxed">
@@ -509,7 +509,7 @@ export function DesktopFleetSolutioning() {
                   <Laptop className="h-6 w-6 text-white" />
                 </div>
                 <div className="flex-1">
-                  <h2 className="text-2xl font-bold tracking-tighter mb-2">
+                  <h2 className="text-2xl font-bold tracking-tight mb-2">
                     Linux-Powered Enterprise Laptop & Workstation Fleets
                   </h2>
                   <p className="text-muted-foreground mb-6 leading-relaxed">
@@ -580,7 +580,7 @@ export function DesktopFleetSolutioning() {
                   <Eye className="h-6 w-6 text-white" />
                 </div>
                 <div className="flex-1">
-                  <h2 className="text-2xl font-bold tracking-tighter mb-2">
+                  <h2 className="text-2xl font-bold tracking-tight mb-2">
                     Centralized, In-House Remote Control to Prevent Data Loss
                   </h2>
                   <p className="text-muted-foreground mb-6 leading-relaxed">
@@ -645,7 +645,7 @@ export function DesktopFleetSolutioning() {
                   <ShieldCheck className="h-6 w-6 text-white" />
                 </div>
                 <div className="flex-1">
-                  <h2 className="text-2xl font-bold tracking-tighter mb-2">
+                  <h2 className="text-2xl font-bold tracking-tight mb-2">
                     Data Leak Prevention Solutions
                   </h2>
                   <p className="text-muted-foreground mb-6 leading-relaxed">
@@ -714,7 +714,7 @@ export function DesktopFleetSolutioning() {
         {/* Why Choose Us */}
         <div className="bg-gray-50 p-8 border border-border mb-16">
           <div className="text-center mb-8">
-            <h2 className="text-3xl font-bold tracking-tighter mb-4">Why Choose Our Desktop Fleet Solutions</h2>
+            <h2 className="text-3xl font-bold tracking-tight mb-4">Why Choose Our Desktop Fleet Solutions</h2>
             <p className="mx-auto max-w-[700px] text-muted-foreground">
               Comprehensive fleet management with security-first approach and proven expertise.
             </p>

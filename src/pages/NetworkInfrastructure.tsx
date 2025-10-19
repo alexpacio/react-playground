@@ -32,7 +32,7 @@ export function NetworkInfrastructure() {
             Network Infrastructure Consultancy
           </div>
           <div className="space-y-2">
-            <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl">
+            <h1 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl lg:text-6xl">
               Network Infrastructure Services
             </h1>
             <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl">
@@ -53,7 +53,7 @@ export function NetworkInfrastructure() {
 
         {/* Target Audience */}
         <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold tracking-tighter mb-4">Built for Scale and Security</h2>
+          <h2 className="text-3xl font-bold tracking-tight mb-4">Built for Scale and Security</h2>
           <p className="mx-auto max-w-[600px] text-muted-foreground mb-12">
             Our network infrastructure solutions serve both service providers offering networking services and enterprises requiring robust, secure network architectures.
           </p>
@@ -77,7 +77,7 @@ export function NetworkInfrastructure() {
 
         {/* Platform Expertise */}
         <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold tracking-tighter mb-4">Platform Expertise</h2>
+          <h2 className="text-3xl font-bold tracking-tight mb-4">Platform Expertise</h2>
           <p className="mx-auto max-w-[600px] text-muted-foreground mb-12">
             Deep expertise across open-source and enterprise networking platforms with proven deployment experience.
           </p>
@@ -115,7 +115,7 @@ export function NetworkInfrastructure() {
         {/* Services Overview */}
         <div className="mb-16">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold tracking-tighter mb-4">Our Services</h2>
+            <h2 className="text-3xl font-bold tracking-tight mb-4">Our Services</h2>
             <p className="mx-auto max-w-[700px] text-muted-foreground">
               Comprehensive network infrastructure services from design and implementation to ongoing optimization and security.
             </p>
@@ -129,7 +129,7 @@ export function NetworkInfrastructure() {
                   <Building2 className="h-6 w-6 text-white" />
                 </div>
                 <div className="flex-1">
-                  <h2 className="text-2xl font-bold tracking-tighter mb-2">
+                  <h2 className="text-2xl font-bold tracking-tight mb-2">
                     Carrier-Grade Infrastructure Solutioning
                   </h2>
                   <p className="text-muted-foreground mb-6 leading-relaxed">
@@ -194,7 +194,7 @@ export function NetworkInfrastructure() {
                   <Layers className="h-6 w-6 text-white" />
                 </div>
                 <div className="flex-1">
-                  <h2 className="text-2xl font-bold tracking-tighter mb-2">
+                  <h2 className="text-2xl font-bold tracking-tight mb-2">
                     Strong TCP/IP, OpenWRT, VyOS, OPNSense Expertise
                   </h2>
                   <p className="text-muted-foreground mb-6 leading-relaxed">
@@ -265,7 +265,7 @@ export function NetworkInfrastructure() {
                   <Code2 className="h-6 w-6 text-white" />
                 </div>
                 <div className="flex-1">
-                  <h2 className="text-2xl font-bold tracking-tighter mb-2">
+                  <h2 className="text-2xl font-bold tracking-tight mb-2">
                     Custom Solutions Development
                   </h2>
                   <p className="text-muted-foreground mb-6 leading-relaxed">
@@ -330,7 +330,7 @@ export function NetworkInfrastructure() {
                   <GitBranch className="h-6 w-6 text-white" />
                 </div>
                 <div className="flex-1">
-                  <h2 className="text-2xl font-bold tracking-tighter mb-2">
+                  <h2 className="text-2xl font-bold tracking-tight mb-2">
                     Mesh Networking and VPN Protocols
                   </h2>
                   <p className="text-muted-foreground mb-6 leading-relaxed">
@@ -401,7 +401,7 @@ export function NetworkInfrastructure() {
                   <ShieldAlert className="h-6 w-6 text-white" />
                 </div>
                 <div className="flex-1">
-                  <h2 className="text-2xl font-bold tracking-tighter mb-2">
+                  <h2 className="text-2xl font-bold tracking-tight mb-2">
                     Deep Inspection (L7) and WAF Solutions
                   </h2>
                   <p className="text-muted-foreground mb-6 leading-relaxed">
@@ -476,7 +476,7 @@ export function NetworkInfrastructure() {
         {/* Why Choose Us */}
         <div className="bg-gray-50 p-8 border border-border mb-16">
           <div className="text-center mb-8">
-            <h2 className="text-3xl font-bold tracking-tighter mb-4">Why Choose Our Network Services</h2>
+            <h2 className="text-3xl font-bold tracking-tight mb-4">Why Choose Our Network Services</h2>
             <p className="mx-auto max-w-[700px] text-muted-foreground">
               Decades of combined experience designing and managing complex network infrastructure for demanding environments.
             </p>
