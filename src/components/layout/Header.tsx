@@ -1,5 +1,5 @@
 import { Button } from '@/components/ui/button';
-import { Terminal, Sparkles, Menu, X, ChevronDown, Database } from 'lucide-react';
+import { Terminal, Sparkles, Menu, X, ChevronDown, Database, Server, Code, MonitorSmartphone, Network, HardDrive, Activity } from 'lucide-react';
 import { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 
@@ -7,8 +7,11 @@ export function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [servicesDropdownOpen, setServicesDropdownOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
+  const servicesDropdownRef = useRef<HTMLDivElement>(null);
   const timeoutRef = useRef<NodeJS.Timeout>(null);
+  const servicesTimeoutRef = useRef<NodeJS.Timeout>(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -32,6 +35,20 @@ export function Header() {
     }, 500);
   };
 
+  const handleServicesMouseEnter = () => {
+    if (servicesTimeoutRef.current) {
+      clearTimeout(servicesTimeoutRef.current);
+      servicesTimeoutRef.current = null;
+    }
+    setServicesDropdownOpen(true);
+  };
+
+  const handleServicesMouseLeave = () => {
+    servicesTimeoutRef.current = setTimeout(() => {
+      setServicesDropdownOpen(false);
+    }, 500);
+  };
+
   // Close dropdown when clicking outside
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
@@ -42,9 +59,16 @@ export function Header() {
           timeoutRef.current = null;
         }
       }
+      if (servicesDropdownRef.current && !servicesDropdownRef.current.contains(event.target as Node)) {
+        setServicesDropdownOpen(false);
+        if (servicesTimeoutRef.current) {
+          clearTimeout(servicesTimeoutRef.current);
+          servicesTimeoutRef.current = null;
+        }
+      }
     };
 
-    if (dropdownOpen) {
+    if (dropdownOpen || servicesDropdownOpen) {
       document.addEventListener('mousedown', handleClickOutside);
     }
 
@@ -53,8 +77,11 @@ export function Header() {
       if (timeoutRef.current) {
         clearTimeout(timeoutRef.current);
       }
+      if (servicesTimeoutRef.current) {
+        clearTimeout(servicesTimeoutRef.current);
+      }
     };
-  }, [dropdownOpen]);
+  }, [dropdownOpen, servicesDropdownOpen]);
 
   return (
     <>
@@ -89,7 +116,7 @@ export function Header() {
                   ref={dropdownRef}
                 >
                   <button className="flex items-center text-sm font-medium text-white hover:text-white/80 transition-colors duration-200 px-4 py-2 rounded-md hover:bg-white/10">
-                    Projects
+                    Products
                     <ChevronDown className={`ml-1 h-4 w-4 transition-transform duration-200 ${dropdownOpen ? 'rotate-180' : ''}`} />
                   </button>
                   
@@ -112,7 +139,7 @@ export function Header() {
                         </div>
                         <div className="space-y-2">
                           <Link 
-                            to="/projects/web" 
+                            to="/products/web" 
                             className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
                           >
                             <div className="text-sm font-medium leading-none">Web Apps</div>
@@ -121,7 +148,7 @@ export function Header() {
                             </p>
                           </Link>
                           <Link 
-                            to="/projects/mobile" 
+                            to="/products/mobile" 
                             className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
                           >
                             <div className="text-sm font-medium leading-none">Mobile</div>
@@ -134,9 +161,128 @@ export function Header() {
                     </div>
                   )}
                 </div>
-                
-                <Link 
-                  to="/about" 
+
+                <div
+                  className="relative"
+                  onMouseEnter={handleServicesMouseEnter}
+                  onMouseLeave={handleServicesMouseLeave}
+                  ref={servicesDropdownRef}
+                >
+                  <button className="flex items-center text-sm font-medium text-white hover:text-white/80 transition-colors duration-200 px-4 py-2 rounded-md hover:bg-white/10">
+                    Services
+                    <ChevronDown className={`ml-1 h-4 w-4 transition-transform duration-200 ${servicesDropdownOpen ? 'rotate-180' : ''}`} />
+                  </button>
+
+                  {servicesDropdownOpen && (
+                    <div className="absolute top-full left-0 mt-5 w-[600px] bg-popover text-popover-foreground rounded-md border shadow-lg animate-in fade-in-0 zoom-in-95">
+                      <div className="grid gap-3 p-6 lg:grid-cols-2">
+                        <div className="space-y-2">
+                          <Link
+                            to="/services/backend"
+                            className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                          >
+                            <div className="flex items-center gap-2">
+                              <Server className="h-4 w-4" />
+                              <div className="text-sm font-medium leading-none">Backend Development</div>
+                            </div>
+                            <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                              Rust, Node.js, and Golang web services
+                            </p>
+                          </Link>
+                          <Link
+                            to="/services/frontend"
+                            className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                          >
+                            <div className="flex items-center gap-2">
+                              <Code className="h-4 w-4" />
+                              <div className="text-sm font-medium leading-none">Frontend Development</div>
+                            </div>
+                            <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                              Angular and React applications
+                            </p>
+                          </Link>
+                          <Link
+                            to="/services/dba"
+                            className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                          >
+                            <div className="flex items-center gap-2">
+                              <Database className="h-4 w-4" />
+                              <div className="text-sm font-medium leading-none">Database Administration</div>
+                            </div>
+                            <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                              MySQL, PostgreSQL, MongoDB, and Redis
+                            </p>
+                          </Link>
+                          <Link
+                            to="/services/virtualization"
+                            className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                          >
+                            <div className="flex items-center gap-2">
+                              <HardDrive className="h-4 w-4" />
+                              <div className="text-sm font-medium leading-none">Virtualization Infrastructure</div>
+                            </div>
+                            <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                              Large-scale virtualization consultancy
+                            </p>
+                          </Link>
+                        </div>
+                        <div className="space-y-2">
+                          <Link
+                            to="/services/networking"
+                            className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                          >
+                            <div className="flex items-center gap-2">
+                              <Network className="h-4 w-4" />
+                              <div className="text-sm font-medium leading-none">Network Infrastructure</div>
+                            </div>
+                            <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                              Large networking infrastructure consultancy
+                            </p>
+                          </Link>
+                          <Link
+                            to="/services/vdi"
+                            className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                          >
+                            <div className="flex items-center gap-2">
+                              <MonitorSmartphone className="h-4 w-4" />
+                              <div className="text-sm font-medium leading-none">VDI Migration</div>
+                            </div>
+                            <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                              Virtual Desktop Infrastructure migration services
+                            </p>
+                          </Link>
+                          <Link
+                            to="/services/desktop-fleet"
+                            className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                          >
+                            <div className="flex items-center gap-2">
+                              <Terminal className="h-4 w-4" />
+                              <div className="text-sm font-medium leading-none">Desktop Fleet Management</div>
+                            </div>
+                            <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                              Custom RMM and management for Windows and Linux fleets
+                            </p>
+                          </Link>
+                          <Link
+                            to="/services/observability-sre"
+                            className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                          >
+                            <div className="flex items-center gap-2">
+                              <Activity className="h-4 w-4" />
+                              <div className="text-sm font-medium leading-none">Observability & SRE</div>
+                            </div>
+                            <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                              Monitoring, logging, and site reliability engineering
+                            </p>
+                          </Link>
+                        </div>
+                      </div>
+                    </div>
+                  )}
+                </div>
+
+                <Link
+                  to="/about"
                   className="text-sm font-medium text-white hover:text-white/80 transition-colors duration-200 px-4 py-2 rounded-md hover:bg-white/10"
                 >
                   About
@@ -176,24 +322,24 @@ export function Header() {
               </Link>
               
               <div className="space-y-2">
-                <div className="text-sm font-medium text-white py-2">Projects</div>
+                <div className="text-sm font-medium text-white py-2">Products</div>
                 <div className="pl-4 space-y-2">
-                  <Link 
-                    to="/netter-dsql" 
+                  <Link
+                    to="/netter-dsql"
                     className="block text-sm text-white/80 hover:text-white transition-colors duration-200 py-1"
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     Netter DSQL
                   </Link>
-                  <Link 
-                    to="/projects/web" 
+                  <Link
+                    to="/products/web"
                     className="block text-sm text-white/80 hover:text-white transition-colors duration-200 py-1"
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     Web Apps
                   </Link>
-                  <Link 
-                    to="/projects/mobile" 
+                  <Link
+                    to="/products/mobile"
                     className="block text-sm text-white/80 hover:text-white transition-colors duration-200 py-1"
                     onClick={() => setMobileMenuOpen(false)}
                   >
@@ -201,9 +347,71 @@ export function Header() {
                   </Link>
                 </div>
               </div>
-              
-              <Link 
-                to="/about" 
+
+              <div className="space-y-2">
+                <div className="text-sm font-medium text-white py-2">Services</div>
+                <div className="pl-4 space-y-2">
+                  <Link
+                    to="/services/backend"
+                    className="block text-sm text-white/80 hover:text-white transition-colors duration-200 py-1"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    Backend Development
+                  </Link>
+                  <Link
+                    to="/services/frontend"
+                    className="block text-sm text-white/80 hover:text-white transition-colors duration-200 py-1"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    Frontend Development
+                  </Link>
+                  <Link
+                    to="/services/dba"
+                    className="block text-sm text-white/80 hover:text-white transition-colors duration-200 py-1"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    Database Administration
+                  </Link>
+                  <Link
+                    to="/services/virtualization"
+                    className="block text-sm text-white/80 hover:text-white transition-colors duration-200 py-1"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    Virtualization Infrastructure
+                  </Link>
+                  <Link
+                    to="/services/networking"
+                    className="block text-sm text-white/80 hover:text-white transition-colors duration-200 py-1"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    Network Infrastructure
+                  </Link>
+                  <Link
+                    to="/services/vdi"
+                    className="block text-sm text-white/80 hover:text-white transition-colors duration-200 py-1"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    VDI Migration
+                  </Link>
+                  <Link
+                    to="/services/desktop-fleet"
+                    className="block text-sm text-white/80 hover:text-white transition-colors duration-200 py-1"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    Desktop Fleet Management
+                  </Link>
+                  <Link
+                    to="/services/observability-sre"
+                    className="block text-sm text-white/80 hover:text-white transition-colors duration-200 py-1"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    Observability & SRE
+                  </Link>
+                </div>
+              </div>
+
+              <Link
+                to="/about"
                 className="block text-sm font-medium text-white hover:text-white/80 transition-colors duration-200 py-2"
                 onClick={() => setMobileMenuOpen(false)}
               >

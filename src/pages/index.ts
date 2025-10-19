@@ -1,3 +1,11 @@
 export { Home } from './Home';
 export { About } from './About';
 export { NetterDSQL } from './NetterDSQL';
+export { BackendDevelopment } from './BackendDevelopment';
+export { FrontendDevelopment } from './FrontendDevelopment';
+export { DatabaseAdministration } from './DatabaseAdministration';
+export { VirtualizationInfrastructure } from './VirtualizationInfrastructure';
+export { NetworkInfrastructure } from './NetworkInfrastructure';
+export { VDIMigration } from './VDIMigration';
+export { DesktopFleetSolutioning } from './DesktopFleetSolutioning';
+export { ObservabilitySRE } from './ObservabilitySRE';
